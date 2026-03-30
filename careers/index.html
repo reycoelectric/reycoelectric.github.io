@@ -1,0 +1,159 @@
+---
+layout: default
+title: "Careers at Reyco Electrical Services | Helper to Foreman"
+description: "Join Reyco's 53-person commercial electrical team in DC, Maryland, and Virginia. Competitive pay, real benefits, and a clear career path from Helper to Foreman."
+---
+
+<!-- Hero -->
+<section class="relative">
+  <div class="bg-stone-700 h-[420px] md:h-[480px] overflow-hidden">
+    <!-- TODO: Replace with crew action photo -->
+    <!-- <img src="/assets/images/hero/careers.jpg" alt="Reyco field crew working together" class="w-full h-full object-cover"> -->
+    <div class="w-full h-full photo-placeholder"></div>
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-r from-stone-900/85 via-stone-900/50 to-stone-900/10 flex items-center px-6 md:px-16">
+    <div class="max-w-xl">
+      <h1 class="text-white text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4">
+        Build a Career,<br>Not Just a Job
+      </h1>
+      <p class="text-stone-300 text-base md:text-lg mb-8 max-w-md">
+        From Helper to Foreman — grow your skills and your paycheck at a company that's been here 21 years and is just getting started.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="#openings" class="btn-teal">See Open Positions</a>
+        <a href="{{ '/careers/why-reyco/' | relative_url }}" class="btn-secondary">Why Reyco? →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Career Ladder — most important section on this page -->
+<section class="py-16 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10">
+      <div class="section-label text-center">Your Path Forward</div>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight">Real Growth. Clear Steps.</h2>
+      <p class="text-stone-500 mt-2">Not just promises — a documented path we've walked people through for 21 years.</p>
+    </div>
+    {% include career-ladder.html %}
+    <p class="text-center text-xs text-stone-400 mt-6">
+      Average field tenure: ~4 years. Apprenticeship fees paid by Reyco through IHS Peak Training.
+    </p>
+  </div>
+</section>
+
+<!-- Benefits Snapshot -->
+<section id="benefits" class="bg-stone-50 py-14 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-label">Pay & Benefits</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">Pay & Benefits That Compete</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {% for benefit in site.data.benefits %}
+      <div class="bg-white border border-stone-200 p-4 flex gap-3 items-start">
+        <div class="text-2xl shrink-0">{{ benefit.icon }}</div>
+        <div>
+          <div class="text-sm font-bold text-stone-800">{{ benefit.label }}</div>
+          <div class="text-xs text-stone-500 mt-0.5 leading-relaxed">{{ benefit.sub }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="mt-6">
+      <a href="{{ '/careers/why-reyco/' | relative_url }}" class="text-sm font-bold text-teal-700 hover:text-teal-600">Full benefits breakdown →</a>
+    </div>
+  </div>
+</section>
+
+<!-- What you'll work on -->
+<section class="py-14 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-label">The Work</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-2">Not the Same Job Every Day</h2>
+    <p class="text-stone-500 mb-8 text-sm">One day you're troubleshooting at a restaurant. The next you're upgrading panels in a multifamily building. The week after, you're on a government campus.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      {%- assign work_types = "Emergency service calls,Panel & riser upgrades,Institutional projects" | split: "," -%}
+      {% for work in work_types %}
+      <div>
+        <div class="photo-placeholder h-40 mb-3">
+          <!-- TODO: Add work-type photo -->
+        </div>
+        <div class="text-sm font-bold text-stone-700">{{ work }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Stability stats -->
+<section class="bg-stone-800 py-10 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    {%- assign stability = "21 yrs|In Business,53|Employees,$15M+|Current Backlog,New HQ|10,000 sq ft" | split: "," -%}
+    {% for item in stability %}
+    {%- assign parts = item | split: "|" -%}
+    <div>
+      <div class="text-white text-3xl font-extrabold">{{ parts[0] }}</div>
+      <div class="text-stone-400 text-xs uppercase tracking-widest mt-1">{{ parts[1] }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Open Positions -->
+<section id="openings" class="py-14 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto">
+    <div class="section-label">Open Positions</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">Current Openings</h2>
+
+    {% assign active_jobs = site.job_openings | where: "active", true %}
+    {% if active_jobs.size > 0 %}
+    <div class="space-y-3">
+      {% for job in active_jobs %}
+      <div class="border-2 border-stone-200 p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-stone-400 transition-colors">
+        <div>
+          <div class="text-base font-bold text-stone-800">{{ job.title }}</div>
+          <div class="text-sm text-stone-500 mt-0.5">{{ job.location }} · {{ job.type }}
+            {% if job.level %} · <span class="text-teal-700 font-semibold">{{ job.level }} level</span>{% endif %}
+          </div>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="{{ job.url | relative_url }}" class="text-sm font-bold text-teal-700 hover:text-teal-600">View Details</a>
+          {% if job.indeed_url %}
+          <a href="{{ job.indeed_url }}" target="_blank" rel="noopener noreferrer" class="btn-primary text-xs px-4 py-2">Apply on Indeed →</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="text-stone-500">No positions posted right now — check back soon or reach out directly.</p>
+    {% endif %}
+
+    <p class="text-sm text-stone-500 mt-8">
+      Don't see the right role? We're always interested in strong people.
+      <a href="{{ '/contact/' | relative_url }}" class="font-bold text-teal-700 hover:text-teal-600">Get in touch →</a>
+    </p>
+  </div>
+</section>
+
+<!-- Employee quote -->
+<section class="bg-stone-100 py-12 px-6 md:px-16">
+  <div class="max-w-3xl mx-auto text-center">
+    <blockquote class="text-lg italic text-stone-700 leading-relaxed mb-4">
+      "I started as a Helper four years ago. Now I'm running my own crews. Dave actually cares about where you're going, not just what you can do today."
+    </blockquote>
+    <cite class="text-sm font-bold text-stone-800 not-italic">
+      — [Employee Name], Foreman
+      <!-- TODO: Get real name and story from Dave -->
+    </cite>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-12 px-6 md:px-16 text-center">
+  <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-3">Ready to join the team?</h2>
+  <p class="text-stone-500 mb-7">Competitive pay, real benefits, and a path forward. Apply on Indeed or reach out directly.</p>
+  <div class="flex flex-col sm:flex-row gap-3 justify-center">
+    <a href="#openings" class="btn-teal">See Open Positions →</a>
+    <a href="{{ '/careers/why-reyco/' | relative_url }}" class="btn-secondary">Why Reyco? →</a>
+  </div>
+</section>

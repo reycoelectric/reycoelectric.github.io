@@ -1,0 +1,133 @@
+---
+layout: default
+title: "Why Work at Reyco | Benefits, Growth & Stability"
+description: "Real benefits, a documented career ladder, and a company that's been here 21 years. Here's what makes Reyco different from the other shops in the DMV."
+---
+
+{% include hero-dark.html
+  headline="More Than a Paycheck"
+  subhead="Here's what makes Reyco different from the other shops in the DMV — and why people stay."
+%}
+
+<!-- Benefits deep-dive -->
+<section class="py-16 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-label">Compensation & Benefits</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">Benefits That Compete With the Best</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="border-2 border-stone-200 p-6">
+        <div class="section-label">Compensation</div>
+        <p class="text-stone-600 leading-relaxed">Pay at the 60th–80th percentile for the DC/MD/VA region, benchmarked annually. Overtime available on projects. Your performance matters here — and we notice it.</p>
+      </div>
+      <div class="border-2 border-stone-200 p-6">
+        <div class="section-label">Health & Wellness</div>
+        <p class="text-stone-600 leading-relaxed">Health, dental, and vision coverage. We take care of the people who take care of our customers. Details to be confirmed — reach out if you have specific questions.</p>
+        <!-- TODO: Insert specific plan details from Dave -->
+      </div>
+      <div class="border-2 border-stone-200 p-6">
+        <div class="section-label">Retirement</div>
+        <p class="text-stone-600 leading-relaxed">401(k) with a 7% company contribution. This isn't a job for now — it's a career you can build a life around. We invest in your future from day one.</p>
+      </div>
+      <div class="border-2 border-stone-200 p-6">
+        <div class="section-label">Time Off & Training</div>
+        <p class="text-stone-600 leading-relaxed">PTO, paid holidays, and fully paid apprenticeship training through IHS Peak. We write the check so you can earn your license without taking on the cost yourself.</p>
+        <!-- TODO: Insert specific PTO days and paid holidays from Dave -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Training & growth -->
+<section class="bg-stone-50 py-14 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <div class="section-label">Training & Career Growth</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-5">A Real Apprentice-to-Journeyman Path</h2>
+      <div class="space-y-4 text-stone-600 leading-relaxed">
+        <p>At Reyco, growth isn't a vague promise. We pair new hires with experienced techs, support your licensing through the IHS Peak apprenticeship program, and promote from within.</p>
+        <p>Our career ladder: <strong class="text-stone-800">Helper → Apprentice → Mechanic → Service Tech → Foreman.</strong></p>
+        <p>Average field tenure is ~4 years. Back-office tenure averages ~10 years. People stay because the path is real and the company is stable.</p>
+      </div>
+      <a href="{{ '/careers/' | relative_url }}#openings" class="btn-primary mt-6 inline-block">See Open Positions →</a>
+    </div>
+    <div class="h-72 overflow-hidden">
+      <!-- TODO: Replace with mentor/apprentice working together photo -->
+      <!-- <img src="/assets/images/careers/training.jpg" alt="Reyco technician training an apprentice" class="w-full h-full object-cover"> -->
+      <div class="photo-placeholder w-full h-full"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Career ladder visual -->
+<section class="py-14 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-10">
+      <div class="section-label text-center">The Career Ladder</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight">Where You Start. Where You Can Go.</h2>
+    </div>
+    {% include career-ladder.html %}
+  </div>
+</section>
+
+<!-- Variety of work -->
+<section class="bg-stone-50 py-14 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-label">The Work</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-2">You Won't Be Bored</h2>
+    <p class="text-stone-600 mb-8">One day you're troubleshooting an emergency at a restaurant. The next you're upgrading panels in a multifamily building. The week after, you're on a project at the World Bank. This is not factory work.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {%- assign work_types = "Emergency calls,Panel upgrades,EV charging installs,Government projects" | split: "," -%}
+      {% for work in work_types %}
+      <div>
+        <div class="photo-placeholder h-24 mb-2">
+          <!-- TODO: Add work-type photo -->
+        </div>
+        <div class="text-xs font-bold text-stone-700 text-center">{{ work }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Systems & processes -->
+<section class="py-14 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="h-64 overflow-hidden">
+      <!-- TODO: Replace with photo of tech using tablet -->
+      <div class="photo-placeholder w-full h-full"></div>
+    </div>
+    <div>
+      <div class="section-label">How We Operate</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-5">Documented Processes. Modern Tools.</h2>
+      <div class="space-y-4 text-stone-600 leading-relaxed">
+        <p>Reyco isn't a "figure it out yourself" shop. We've documented how things work — dispatch, job workflows, folder structures, invoicing — and we train you on them from day one.</p>
+        <p>You'll use BuildOps on your tablet: your schedule, job details, customer info, and the ability to capture photos and generate invoices right on-site. No paper, no confusion.</p>
+        <p>We've been building these systems for 10+ years. When you join, you're not walking into chaos — you're joining a company that knows what it's doing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stability bar -->
+<section class="bg-stone-800 py-10 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-white text-center text-xl font-extrabold tracking-tight mb-8">A Company That's Not Going Anywhere</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      {%- assign stability = "21 yrs|In Business,53|Employees,$15M+|Current Backlog,New HQ|10,000 sq ft Hughesville" | split: "," -%}
+      {% for item in stability %}
+      {%- assign parts = item | split: "|" -%}
+      <div>
+        <div class="text-white text-3xl font-extrabold">{{ parts[0] }}</div>
+        <div class="text-stone-400 text-xs uppercase tracking-widest mt-1">{{ parts[1] }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-14 px-6 md:px-16 text-center">
+  <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-3">Ready to make a move?</h2>
+  <p class="text-stone-500 mb-7">View our open positions and apply directly on Indeed.</p>
+  <a href="{{ '/careers/' | relative_url }}#openings" class="btn-teal">See Open Positions →</a>
+</section>

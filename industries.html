@@ -1,0 +1,72 @@
+---
+layout: default
+title: "Industries We Serve | Reyco Electrical Services"
+description: "Reyco serves restaurants, multifamily, government, retail, and healthcare facilities across DC, Maryland, and Virginia. Specialized electrical for must-run operations."
+---
+
+{% include hero-dark.html
+  headline="Specialized Electrical Service for the Facilities That Matter Most"
+  subhead="We focus on must-run facilities — the ones that can't afford to wait until Monday."
+%}
+
+<!-- Industries alternating layout -->
+{% for industry in site.data.industries %}
+<section id="{{ industry.slug }}" class="py-14 px-6 md:px-16 {% cycle '', 'bg-stone-50' %}">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+    {% if forloop.index0 == 0 or forloop.index0 == 2 or forloop.index0 == 4 %}
+    <!-- Text left, photo right -->
+    <div class="md:col-span-2">
+      <h2 class="text-2xl font-extrabold text-stone-800 mb-3 pl-4 border-l-4 {{ industry.accent }}">{{ industry.name }}</h2>
+      <p class="text-stone-600 leading-relaxed mb-5">{{ industry.desc }}</p>
+      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-sm px-5 py-2.5">
+        Request Service for {{ industry.cta_label }} →
+      </a>
+    </div>
+    <div class="h-52 overflow-hidden">
+      <!-- TODO: Add industry-specific photo at /assets/images/industries/{{ industry.slug }}.jpg -->
+      <div class="photo-placeholder w-full h-full"></div>
+    </div>
+    {% else %}
+    <!-- Photo left, text right -->
+    <div class="h-52 overflow-hidden">
+      <!-- TODO: Add industry-specific photo at /assets/images/industries/{{ industry.slug }}.jpg -->
+      <div class="photo-placeholder w-full h-full"></div>
+    </div>
+    <div class="md:col-span-2">
+      <h2 class="text-2xl font-extrabold text-stone-800 mb-3 pl-4 border-l-4 {{ industry.accent }}">{{ industry.name }}</h2>
+      <p class="text-stone-600 leading-relaxed mb-5">{{ industry.desc }}</p>
+      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-sm px-5 py-2.5">
+        Request Service for {{ industry.cta_label }} →
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}
+
+{% include stats-bar.html %}
+
+<!-- Service conversion story -->
+<section class="py-14 px-6 md:px-16">
+  <div class="max-w-3xl mx-auto text-center">
+    <div class="section-label text-center">How We Grow With You</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-4">We Build It, Then We Keep It Running</h2>
+    <p class="text-stone-600 leading-relaxed mb-4">
+      Many of our longest service relationships started with a single construction project. We build it, we learn the facility, and when the general contractor moves on — we stay. That's why 68+ businesses trust us for both their daily electrical needs and their biggest upgrade projects.
+    </p>
+    <p class="text-stone-500 text-sm italic">
+      "We did two Raising Cane's, and now we're doing service for them... the GC is no longer involved, and we're doing service in their facilities."
+    </p>
+    <p class="text-stone-400 text-xs mt-1">— Dave Reynolds, Founder</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-stone-800 py-12 px-6 md:px-16 text-center">
+  <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">Serve a facility we should know about?</h2>
+  <p class="text-stone-400 mb-7">Tell us what you need. We respond fast.</p>
+  <div class="flex flex-col sm:flex-row gap-3 justify-center">
+    <a href="{{ '/contact/' | relative_url }}" class="btn-teal">Request Service →</a>
+    <a href="tel:{{ site.phone_link }}" class="btn-secondary">{{ site.phone }}</a>
+  </div>
+</section>

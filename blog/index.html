@@ -1,0 +1,61 @@
+---
+layout: default
+title: "Blog | Reyco Electrical Services"
+description: "Practical insights on commercial electrical service, safety, and facility management from the Reyco team."
+---
+
+{% include hero-dark.html
+  headline="From the Field"
+  subhead="Practical insights on commercial electrical service, facility management, and what it takes to keep operations running."
+%}
+
+<section class="py-16 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto">
+
+    {% if site.posts.size > 0 %}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {% for post in site.posts %}
+      <article class="border-2 border-stone-200 hover:border-teal-300 transition-colors flex flex-col">
+        {% if post.hero_image %}
+        <div class="h-48 overflow-hidden">
+          <img src="{{ post.hero_image | relative_url }}" alt="{{ post.title }}" class="w-full h-full object-cover">
+        </div>
+        {% else %}
+        <div class="photo-placeholder h-48"></div>
+        {% endif %}
+        <div class="p-6 flex-1 flex flex-col">
+          {% if post.category %}
+          <div class="text-xs font-bold text-teal-700 uppercase tracking-widest mb-2">{{ post.category }}</div>
+          {% endif %}
+          <h2 class="text-lg font-extrabold text-stone-800 tracking-tight mb-2 leading-snug">
+            <a href="{{ post.url | relative_url }}" class="hover:text-teal-700 transition-colors">{{ post.title }}</a>
+          </h2>
+          {% if post.excerpt %}
+          <p class="text-sm text-stone-500 leading-relaxed mb-4 flex-1">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+          <div class="flex items-center justify-between mt-auto pt-4 border-t border-stone-100">
+            <time class="text-xs text-stone-400" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+            <a href="{{ post.url | relative_url }}" class="text-xs font-bold text-teal-700 hover:text-teal-600 uppercase tracking-wide">Read More →</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="text-center py-16">
+      <p class="text-stone-500">Posts coming soon.</p>
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-stone-50 border-t border-stone-200 py-12 px-6 md:px-16 text-center">
+  <h2 class="text-xl font-extrabold text-stone-800 tracking-tight mb-2">Need commercial electrical service?</h2>
+  <p class="text-stone-500 text-sm mb-6">We're available 24/7 for emergencies across DC, Maryland, and Virginia.</p>
+  <div class="flex flex-col sm:flex-row gap-3 justify-center">
+    <a href="{{ '/contact/' | relative_url }}" class="btn-primary">Request Service →</a>
+    <a href="tel:{{ site.phone_link }}" class="btn-secondary">{{ site.phone }}</a>
+  </div>
+</section>
