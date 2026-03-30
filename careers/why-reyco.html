@@ -125,9 +125,9 @@ description: "Real benefits, a documented career ladder, and a company that's be
   </div>
 </section>
 
-<!-- CTA -->
-<section class="py-14 px-6 md:px-16 text-center">
-  <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-3">Ready to make a move?</h2>
-  <p class="text-stone-500 mb-7">View our open positions and apply directly on Indeed.</p>
-  <a href="{{ '/careers/' | relative_url }}#openings" class="btn-teal">See Open Positions →</a>
-</section>
+{% include cta-footer.html
+  headline="Ready to make a move?"
+  subhead="View our open positions and apply directly on Indeed."
+  cta1_label="See Open Positions →"
+  cta1_url="/careers/#openings"
+%}

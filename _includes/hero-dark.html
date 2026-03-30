@@ -1,8 +1,9 @@
-<!-- Usage: {% include hero-dark.html headline="..." subhead="..." %} -->
+<!-- Usage: include hero-dark.html headline="..." subhead="..." eyebrow="..." cta_label="..." cta_url="..." -->
 <section class="bg-stone-800 px-6 md:px-16 py-14 md:py-20">
+  <div class="max-w-7xl mx-auto">
   <div class="max-w-4xl">
     {% if include.eyebrow %}
-    <div class="text-teal-400 text-xs font-bold uppercase tracking-widest mb-3">{{ include.eyebrow }}</div>
+    <div class="text-reyco-red-400 text-xs font-bold uppercase tracking-widest mb-3">{{ include.eyebrow }}</div>
     {% endif %}
     <h1 class="text-white text-3xl md:text-4xl font-extrabold tracking-tight leading-tight mb-3">{{ include.headline }}</h1>
     {% if include.subhead %}
@@ -10,8 +11,9 @@
     {% endif %}
     {% if include.cta_label %}
     <div class="mt-7">
-      <a href="{{ include.cta_url | default: '/contact/' | relative_url }}" class="btn-teal">{{ include.cta_label }}</a>
+      <a href="{{ include.cta_url | default: '/contact/' | relative_url }}" class="btn-brand">{{ include.cta_label }}</a>
     </div>
     {% endif %}
+  </div>
   </div>
 </section>

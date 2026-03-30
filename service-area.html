@@ -41,27 +41,27 @@ description: "Reyco serves commercial facilities across Washington DC, Maryland,
 <section class="bg-stone-50 py-14 px-6 md:px-16">
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="border-t-4 border-teal-700 pt-5">
+      <div class="border-t-4 border-reyco-red-700 pt-5">
         <h3 class="text-lg font-extrabold text-stone-800 mb-3">Washington DC</h3>
         <p class="text-stone-600 text-sm leading-relaxed">All DC wards and neighborhoods. Including government and institutional campus work requiring badged access and EMR compliance.</p>
       </div>
-      <div class="border-t-4 border-teal-700 pt-5">
+      <div class="border-t-4 border-reyco-red-700 pt-5">
         <h3 class="text-lg font-extrabold text-stone-800 mb-3">Maryland</h3>
         <p class="text-stone-600 text-sm leading-relaxed mb-3">Our home base. Full coverage across:</p>
         <ul class="text-sm text-stone-600 space-y-1">
           {%- assign md_counties = "Prince George's County,Charles County,Montgomery County,Anne Arundel County,Southern Maryland" | split: "," -%}
           {% for county in md_counties %}
-          <li class="flex items-center gap-2"><span class="text-teal-600 text-xs">✓</span>{{ county }}</li>
+          <li class="flex items-center gap-2"><span class="text-reyco-red-600 text-xs">✓</span>{{ county }}</li>
           {% endfor %}
         </ul>
       </div>
-      <div class="border-t-4 border-teal-700 pt-5">
+      <div class="border-t-4 border-reyco-red-700 pt-5">
         <h3 class="text-lg font-extrabold text-stone-800 mb-3">Northern Virginia</h3>
         <p class="text-stone-600 text-sm leading-relaxed mb-3">Active growth market. Full coverage across:</p>
         <ul class="text-sm text-stone-600 space-y-1">
           {%- assign va_areas = "Fairfax County,Arlington County,City of Alexandria,Falls Church,Loudoun County" | split: "," -%}
           {% for area in va_areas %}
-          <li class="flex items-center gap-2"><span class="text-teal-600 text-xs">✓</span>{{ area }}</li>
+          <li class="flex items-center gap-2"><span class="text-reyco-red-600 text-xs">✓</span>{{ area }}</li>
           {% endfor %}
         </ul>
       </div>
@@ -71,12 +71,12 @@ description: "Reyco serves commercial facilities across Washington DC, Maryland,
 
 {% include stats-bar.html %}
 
-<!-- CTA -->
-<section class="py-12 px-6 md:px-16 text-center">
-  <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-3">In our service area?</h2>
-  <p class="text-stone-500 mb-7">Call us or submit a request — we respond fast.</p>
-  <div class="flex flex-col sm:flex-row gap-3 justify-center">
-    <a href="{{ '/contact/' | relative_url }}" class="btn-teal">Request Service →</a>
-    <a href="tel:{{ site.phone_link }}" class="btn-secondary">{{ site.phone }}</a>
-  </div>
-</section>
+{% include cta-footer.html
+  headline="In our service area?"
+  subhead="Call us or submit a request — we respond fast."
+  cta1_label="Request Service →"
+  cta1_url="/contact/"
+  cta2_label=site.phone
+  cta2_url="tel:3018431848"
+  cta2_class="btn-secondary"
+%}

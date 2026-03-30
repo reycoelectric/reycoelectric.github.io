@@ -1,0 +1,24 @@
+<section class="bg-stone-800 py-12 px-6 md:px-16 text-center">
+  <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">{{ include.headline }}</h2>
+  {% if include.subhead %}
+  <p class="text-stone-400 mb-7 max-w-xl mx-auto">{{ include.subhead }}</p>
+  {% endif %}
+  <div class="flex flex-col sm:flex-row gap-3 justify-center">
+    {% assign cta1_href = include.cta1_url | default: '/contact/' %}
+    {% unless cta1_href contains 'tel:' or cta1_href contains 'http' %}
+      {% assign cta1_href = cta1_href | relative_url %}
+    {% endunless %}
+    <a href="{{ cta1_href }}" class="{{ include.cta1_class | default: 'btn-brand' }}">
+      {{ include.cta1_label | default: 'Request Service →' }}
+    </a>
+    {% if include.cta2_label %}
+      {% assign cta2_href = include.cta2_url | default: '#' %}
+      {% unless cta2_href contains 'tel:' or cta2_href contains 'http' or cta2_href contains '#' %}
+        {% assign cta2_href = cta2_href | relative_url %}
+      {% endunless %}
+      <a href="{{ cta2_href }}" class="{{ include.cta2_class | default: 'btn-secondary' }}">
+        {{ include.cta2_label }}
+      </a>
+    {% endif %}
+  </div>
+</section>

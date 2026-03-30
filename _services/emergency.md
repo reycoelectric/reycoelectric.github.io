@@ -29,6 +29,17 @@ how_it_works:
   - step: "3"
     title: "Resolve"
     detail: "Tech arrives on-site, fixes the issue, digital invoice sent same day"
+availability: "Available 24/7 — Emergencies answered live"
+service_area_note: "Serving commercial facilities across Washington DC, Maryland, and Virginia. On-call technician and backup designated every week. Centralized dispatch out of Hughesville, MD."
+faq:
+  - q: "How fast do you respond to electrical emergencies?"
+    a: "Our dispatch team answers calls 24/7. An on-call technician and backup are assigned every week, so there's always someone ready to go. Response time depends on your location within DC, Maryland, and Virginia — we'll give you an honest ETA when you call."
+  - q: "Do you handle emergencies for restaurants and food service?"
+    a: "Yes. Kitchen electrical failures — tripped circuits, failed cooler lines, hood system issues — are among the most common emergency calls we receive. Our techs are familiar with commercial food service equipment and the urgency of keeping a kitchen operational."
+  - q: "What happens if the problem can't be fully fixed on the first visit?"
+    a: "We'll stabilize the situation and keep your facility operational where possible, then schedule the permanent repair as quickly as we can. You get a digital invoice same-day for whatever work was completed — no waiting weeks for paperwork."
+  - q: "Are you licensed and insured in Maryland, Virginia, and DC?"
+    a: "Yes. Reyco is licensed and insured in Maryland, Virginia, and Washington DC. Our safety EMR of 0.81 puts us in the top 10% of electrical contractors nationally."
 hero_image:
 related_photos:
 ---

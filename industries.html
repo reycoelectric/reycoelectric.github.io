@@ -5,49 +5,56 @@ description: "Reyco serves restaurants, multifamily, government, retail, and hea
 ---
 
 {% include hero-dark.html
-  headline="Specialized Electrical Service for the Facilities That Matter Most"
-  subhead="We focus on must-run facilities — the ones that can't afford to wait until Monday."
+  headline="Specialized Electrical for the Facilities That Matter Most"
+  subhead="We focus on must-run operations — the ones where a power failure isn't an inconvenience, it's a crisis."
 %}
 
-<!-- Industries alternating layout -->
-{% for industry in site.data.industries %}
-<section id="{{ industry.slug }}" class="py-14 px-6 md:px-16 {% cycle '', 'bg-stone-50' %}">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
-    {% if forloop.index0 == 0 or forloop.index0 == 2 or forloop.index0 == 4 %}
-    <!-- Text left, photo right -->
-    <div class="md:col-span-2">
-      <h2 class="text-2xl font-extrabold text-stone-800 mb-3 pl-4 border-l-4 {{ industry.accent }}">{{ industry.name }}</h2>
-      <p class="text-stone-600 leading-relaxed mb-5">{{ industry.desc }}</p>
-      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-sm px-5 py-2.5">
-        Request Service for {{ industry.cta_label }} →
+<!-- Industry card grid -->
+<section class="py-16 px-6 md:px-16 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-label text-center mb-3">Industries</div>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 text-center tracking-tight mb-4">
+      We Know Your Facility Type
+    </h2>
+    <p class="text-stone-500 text-center max-w-2xl mx-auto mb-12">
+      Different industries have different electrical priorities. Our teams understand the operational constraints, code requirements, and urgency expectations that come with each.
+    </p>
+
+    {% assign sorted_industries = site.industries | sort: "order" %}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for industry in sorted_industries %}
+      <a href="{{ industry.url | relative_url }}"
+        class="group block border-2 border-stone-200 hover:border-stone-300 hover:shadow-md transition-all duration-200 bg-white">
+        <!-- Accent bar -->
+        <div class="h-1.5 w-full border-t-4 {{ industry.accent }}"></div>
+        <!-- Photo placeholder -->
+        <div class="h-44 overflow-hidden">
+          {% if industry.hero_image %}
+          <img src="{{ industry.hero_image | relative_url }}" alt="{{ industry.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          {% else %}
+          <div class="photo-placeholder w-full h-full"></div>
+          {% endif %}
+        </div>
+        <!-- Content -->
+        <div class="p-6">
+          <h3 class="text-lg font-extrabold text-stone-800 mb-2 group-hover:text-reyco-red-700 transition-colors">
+            {{ industry.title }}
+          </h3>
+          <p class="text-stone-500 text-sm leading-relaxed mb-4">{{ industry.subhead }}</p>
+          <span class="text-xs font-bold text-reyco-red-700 uppercase tracking-wide">
+            Learn more →
+          </span>
+        </div>
       </a>
+      {% endfor %}
     </div>
-    <div class="h-52 overflow-hidden">
-      <!-- TODO: Add industry-specific photo at /assets/images/industries/{{ industry.slug }}.jpg -->
-      <div class="photo-placeholder w-full h-full"></div>
-    </div>
-    {% else %}
-    <!-- Photo left, text right -->
-    <div class="h-52 overflow-hidden">
-      <!-- TODO: Add industry-specific photo at /assets/images/industries/{{ industry.slug }}.jpg -->
-      <div class="photo-placeholder w-full h-full"></div>
-    </div>
-    <div class="md:col-span-2">
-      <h2 class="text-2xl font-extrabold text-stone-800 mb-3 pl-4 border-l-4 {{ industry.accent }}">{{ industry.name }}</h2>
-      <p class="text-stone-600 leading-relaxed mb-5">{{ industry.desc }}</p>
-      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-sm px-5 py-2.5">
-        Request Service for {{ industry.cta_label }} →
-      </a>
-    </div>
-    {% endif %}
   </div>
 </section>
-{% endfor %}
 
 {% include stats-bar.html %}
 
 <!-- Service conversion story -->
-<section class="py-14 px-6 md:px-16">
+<section class="py-14 px-6 md:px-16 bg-stone-50">
   <div class="max-w-3xl mx-auto text-center">
     <div class="section-label text-center">How We Grow With You</div>
     <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-4">We Build It, Then We Keep It Running</h2>
@@ -61,12 +68,12 @@ description: "Reyco serves restaurants, multifamily, government, retail, and hea
   </div>
 </section>
 
-<!-- CTA -->
-<section class="bg-stone-800 py-12 px-6 md:px-16 text-center">
-  <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">Serve a facility we should know about?</h2>
-  <p class="text-stone-400 mb-7">Tell us what you need. We respond fast.</p>
-  <div class="flex flex-col sm:flex-row gap-3 justify-center">
-    <a href="{{ '/contact/' | relative_url }}" class="btn-teal">Request Service →</a>
-    <a href="tel:{{ site.phone_link }}" class="btn-secondary">{{ site.phone }}</a>
-  </div>
-</section>
+{% include cta-footer.html
+  headline="Serve a facility we should know about?"
+  subhead="Tell us what you need. We respond fast."
+  cta1_label="Request Service →"
+  cta1_url="/contact/"
+  cta2_label=site.phone
+  cta2_url="tel:3018431848"
+  cta2_class="btn-secondary"
+%}

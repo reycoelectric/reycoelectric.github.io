@@ -2,8 +2,8 @@ title: "Reyco Electrical Services"
 tagline: "24/7 Commercial Electrical for DC, Maryland & Virginia"
 description: "Reyco provides 24/7 commercial electrical service for DC, Maryland & Virginia. Emergency response, small projects, and institutional construction since 2005."
 email: "info@reycoelectric.com"
-phone: "(301) 555-0199"
-phone_link: "3015550199"
+phone: "(301) 843-1848"
+phone_link: "3018431848"
 address: "Hughesville, MD 20637"
 service_area: "Washington DC, Maryland & Virginia"
 founded: "2005"
@@ -38,6 +38,9 @@ collections:
   services:
     output: true
     permalink: /services/:name/
+  industries:
+    output: true
+    permalink: /industries/:name/
   job_openings:
     output: true
     permalink: /careers/jobs/:name/
@@ -52,6 +55,11 @@ defaults:
       type: "services"
     values:
       layout: "service"
+  - scope:
+      path: ""
+      type: "industries"
+    values:
+      layout: "industry"
   - scope:
       path: ""
       type: "job_openings"

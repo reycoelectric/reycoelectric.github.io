@@ -29,6 +29,16 @@ how_it_works:
   - step: "3"
     title: "Complete"
     detail: "Our crew executes, we inspect, and you get a digital invoice"
+service_area_note: "Serving commercial properties across Washington DC, Maryland, and Virginia. Most small projects are scheduled within 1–2 weeks. Work is coordinated around your operating hours."
+faq:
+  - q: "What counts as a 'small project'?"
+    a: "Most work under $150,000. Panel upgrades, EV charging installations, generator replacements, LED retrofits, code corrections — anything that's a defined scope with a clear start and end. If a job is larger than that, we'll tell you upfront and handle it as a construction engagement."
+  - q: "How do you price small projects?"
+    a: "We assess the job on-site and give you a written quote before any work begins. No hourly estimates that balloon — a fixed scope with a fixed number."
+  - q: "Can you find upgrade needs during a service visit?"
+    a: "That's how many of our best project relationships start. Our service techs are trained to notice upgrade opportunities while on-site and flag them for follow-up. If we see a panel that's due for replacement or a parking lot with failing fixtures, we'll tell you — no pressure, just a straight quote if you want one."
+  - q: "Do you handle EV charging installations for commercial properties?"
+    a: "Yes. We install Level 2 and DC fast charging stations for office buildings, retail centers, multifamily garages, and government facilities. We handle the full scope: load analysis, panel upgrades if needed, trenching, conduit, and charging equipment installation."
 hero_image:
 related_photos:
 ---

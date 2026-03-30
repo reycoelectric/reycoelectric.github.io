@@ -5,14 +5,36 @@
 
   {% seo %}
 
+  <!-- ─── Fonts ─────────────────────────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap" rel="stylesheet">
 
+  <!-- ─── Styles ────────────────────────────────────────────────────────── -->
   <link rel="stylesheet" href="{{ '/assets/css/output.css' | relative_url }}">
 
-  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+  <!-- ─── Favicons & Icons ──────────────────────────────────────────────── -->
+  <!-- SVG favicon — works in all modern browsers -->
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/Icon.svg' | relative_url }}">
+  <!-- Fallback ICO for legacy browsers (drop a favicon.ico in root if needed) -->
+  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+  <!-- Safari pinned tab — uses the SVG, tinted to brand red -->
+  <link rel="mask-icon" href="{{ '/assets/Icon.svg' | relative_url }}" color="#af1c0f">
+  <!-- Apple Touch Icon — iOS home screen
+       TODO: Export Icon.svg as a 180×180 PNG and save to /assets/apple-touch-icon.png -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
+  <!-- Android / PWA theme color -->
+  <meta name="theme-color" content="#af1c0f">
+  <!-- Windows tile -->
+  <meta name="msapplication-TileColor" content="#af1c0f">
+  <meta name="msapplication-TileImage" content="{{ '/assets/Icon.svg' | relative_url }}">
 
+  <!-- ─── Open Graph / Social sharing ──────────────────────────────────── -->
+  <!-- TODO: Export a 1200×630 OG image (brand red bg + white full logo) and
+       save to /assets/og-default.png — referenced automatically by jekyll-seo-tag
+       via image: in _config.yml once the file exists -->
+
+  <!-- ─── Canonical ────────────────────────────────────────────────────── -->
   {% if page.canonical_url %}
   <link rel="canonical" href="{{ page.canonical_url }}">
   {% else %}

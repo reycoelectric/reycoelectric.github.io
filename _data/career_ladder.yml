@@ -15,10 +15,10 @@
 
 - role: "Service Tech"
   desc: "Higher-skill troubleshooting, small projects, customer-facing."
-  color: "bg-teal-600"
+  color: "bg-reyco-grey"
   height: 220
 
 - role: "Foreman"
   desc: "Run crews. Own job execution. Lead from the front."
-  color: "bg-teal-800"
+  color: "bg-reyco-red-800"
   height: 260
