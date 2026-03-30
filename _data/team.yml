@@ -1,0 +1,29 @@
+leadership:
+  - name: "Dave Reynolds"
+    title: "Founder & President"
+    tenure: "21 years"
+    note: "Knows every tech by name. Still runs the company day-to-day."
+
+  - name: "Andy Reynolds"
+    title: "Business Administrator"
+    note: "Manages IT, systems, and BuildOps implementation."
+
+  - name: "Thomas Bryant"
+    title: "Service Manager"
+    note: "Manages dispatch and coordinates field technicians."
+
+  - name: "Kevin Shipp"
+    title: "Superintendent"
+    note: "Field oversight, quality control, weekly job reviews."
+
+field_force:
+  total: 40
+  supervisors_foremen: 7
+  service_techs: 7
+  mechanics: 6
+  apprentices_helpers: 20
+  avg_tenure_years: 4
+
+office:
+  total: 13
+  avg_tenure_years: 10

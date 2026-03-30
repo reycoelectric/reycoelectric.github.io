@@ -1,0 +1,155 @@
+---
+layout: default
+title: "About Reyco Electrical Services | Since 2005"
+description: "Founded in 2005 by Dave Reynolds, Reyco is a 53-person commercial electrical team serving DC, Maryland, and Virginia. EMR 0.81, top 10% nationally."
+---
+
+{% include hero-dark.html
+  headline="21 Years of Doing It Right"
+  subhead="How a one-truck electrician built the DMV's most trusted commercial electrical team."
+%}
+
+<!-- Dave's Story -->
+<section class="py-16 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+    <div>
+      <div class="section-label">The Founding Story</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-6">Dave Reynolds, Founder & President</h2>
+      <div class="space-y-4 text-stone-600 leading-relaxed">
+        <p>
+          Dave Reynolds founded Reyco Electrical Services in 2005 with one truck, one phone, and a commitment to showing up when he said he would. Twenty-one years later, Reyco is a 53-person operation serving the most demanding commercial and institutional facilities in DC, Maryland, and Virginia.
+        </p>
+        <p>
+          From emergency service calls at 2 AM to multi-year institutional projects, Reyco's team handles the electrical work that keeps mission-critical facilities running. Our safety record — EMR 0.81, top 10% nationally — means we're trusted in environments where other contractors can't even get through the door.
+        </p>
+        <p>
+          Dave still runs the company day-to-day. He knows every tech by name, is personally involved in hiring, and is focused on building a company where people can grow their careers — not just collect a paycheck.
+        </p>
+        <!-- TODO: Ask Dave for his 2-sentence founding origin story to add here -->
+      </div>
+    </div>
+    <div class="space-y-3">
+      <div class="h-80 overflow-hidden">
+        <!-- TODO: Replace with Dave's headshot or team photo -->
+        <!-- <img src="/assets/images/team/dave-reynolds.jpg" alt="Dave Reynolds, Founder & President" class="w-full h-full object-cover"> -->
+        <div class="photo-placeholder w-full h-full"></div>
+      </div>
+      <p class="text-xs text-stone-400 text-center">Dave Reynolds, Founder & President</p>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="bg-stone-50 py-14 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10">
+      <div class="section-label text-center">What Sets Us Apart</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight">How We Operate</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="border-t-4 border-teal-700 pt-5">
+        <h3 class="text-lg font-extrabold text-stone-800 mb-2">Safety First</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">Our EMR of 0.81 puts us in the top 10% of electrical contractors nationally. That's not a marketing number — it's how we earn access to the World Bank, IFC, and other restricted facilities where average-safety contractors can't even get through the door.</p>
+      </div>
+      <div class="border-t-4 border-teal-700 pt-5">
+        <h3 class="text-lg font-extrabold text-stone-800 mb-2">Always Responsive</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">24/7 centralized dispatch. Same-day service. An on-call tech and backup every week. We pick up the phone and we show up — every time. We've never turned a service customer away for capacity. We figure it out.</p>
+      </div>
+      <div class="border-t-4 border-teal-700 pt-5">
+        <h3 class="text-lg font-extrabold text-stone-800 mb-2">People Matter</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">Benefits at the 60th–80th percentile. A real career ladder. Low turnover. We invest in our team because they're the whole business. Our back-office staff averages 10 years of tenure. People stay because the work is good and the company is stable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+{% include stats-bar.html %}
+
+<!-- Technology -->
+<section class="py-14 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <div class="section-label">How We Work</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-5">Modern Systems, Real Accountability</h2>
+      <div class="space-y-4 text-stone-600 leading-relaxed">
+        <p>We use BuildOps to dispatch, track, and invoice every service call. Our techs carry tablets with real-time job details, customer information, and the ability to capture photos, collect signatures, and generate invoices on-site.</p>
+        <p>That means you get a digital invoice the same day we're on-site — not 45 days later. And our account managers can see the status of every call in real time, so there's no phone tag and no surprises.</p>
+        <p>Larger projects are estimated through AccuBid and all costs sync to QuickBooks. We run tight, documented processes — our folder structures, job workflows, and dispatch systems have been refined over 10+ years.</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      {%- assign tech_items = "BuildOps Dispatch & CRM,Digital Invoicing,Tablet-Based Field Workflows,AccuBid Estimating,QuickBooks Accounting,Weekly Job Reviews" | split: "," -%}
+      {% for item in tech_items %}
+      <div class="bg-stone-50 border border-stone-200 p-4">
+        <div class="text-teal-600 font-bold text-xs mb-1">✓</div>
+        <div class="text-sm font-semibold text-stone-800">{{ item }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Team Structure -->
+<section class="bg-stone-50 py-14 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-label">The Team</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">53 People, One Standard</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Field Force — 40 People</h3>
+        <div class="space-y-3">
+          {%- assign field_items = "7 Supervisors & Foremen — run crews and own job execution,7 Service Technicians — higher-skill troubleshooting and small projects,6 Mechanics — mid-level production capacity,20 Apprentices & Helpers — leverage today and pipeline for tomorrow" | split: "," -%}
+          {% for item in field_items %}
+          <div class="flex items-start gap-3 text-sm text-stone-600">
+            <span class="text-teal-600 font-bold shrink-0">•</span>{{ item }}
+          </div>
+          {% endfor %}
+        </div>
+        <p class="text-xs text-stone-400 mt-4">Average field tenure: ~4 years</p>
+      </div>
+      <div>
+        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Office & Leadership — 13 People</h3>
+        <div class="space-y-2">
+          {% for person in site.data.team.leadership %}
+          <div class="text-sm text-stone-600">
+            <span class="font-semibold text-stone-800">{{ person.name }}</span> — {{ person.title }}
+          </div>
+          {% endfor %}
+          <div class="text-sm text-stone-600">3 Service Leadership (Coordinator + Account Managers)</div>
+          <div class="text-sm text-stone-600">4 Project Managers & Assistants (~8-yr avg tenure)</div>
+          <div class="text-sm text-stone-600">2 Warehouse (fleet loading, material flow)</div>
+          <div class="text-sm text-stone-600">3 Back-office (Finance, Office Admin, Business Admin)</div>
+        </div>
+        <p class="text-xs text-stone-400 mt-4">Average back-office tenure: ~10 years</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HQ -->
+<section class="py-14 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="h-64 overflow-hidden">
+      <!-- TODO: Replace with exterior photo of Hughesville HQ -->
+      <!-- <img src="/assets/images/hq/exterior.jpg" alt="Reyco Headquarters, Hughesville MD" class="w-full h-full object-cover"> -->
+      <div class="photo-placeholder w-full h-full"></div>
+    </div>
+    <div>
+      <div class="section-label">Our Home Base</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-4">New 10,000 sq ft HQ in Hughesville, MD</h2>
+      <p class="text-stone-600 leading-relaxed mb-4">In 2024, Reyco moved into a new 10,000 sq ft headquarters in Hughesville, MD. The facility consolidates our prior locations into a single hub — with yard space, truck parking, and warehouse capacity to support our growing fleet and team.</p>
+      <p class="text-stone-600 leading-relaxed">Positioned in Southern Maryland, we're centrally located to serve DC, the Maryland suburbs, and Northern Virginia from a single dispatch point.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTAs -->
+<section class="bg-stone-800 py-12 px-6 md:px-16 text-center">
+  <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">Ready to work with us?</h2>
+  <p class="text-stone-400 mb-7">Whether you need service today or want to join our team, we'd like to hear from you.</p>
+  <div class="flex flex-col sm:flex-row gap-3 justify-center">
+    <a href="{{ '/contact/' | relative_url }}" class="btn-teal">Request Service →</a>
+    <a href="{{ '/careers/' | relative_url }}" class="btn-secondary">See Open Positions →</a>
+  </div>
+</section>

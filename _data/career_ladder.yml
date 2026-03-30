@@ -1,0 +1,24 @@
+- role: "Helper"
+  desc: "Start here. Learn the basics, assist crews, build your foundation."
+  color: "bg-stone-300"
+  height: 100
+
+- role: "Apprentice"
+  desc: "Hands-on training. Work toward your journeyman license."
+  color: "bg-stone-400"
+  height: 140
+
+- role: "Mechanic"
+  desc: "Mid-level production. Run your own scope of work."
+  color: "bg-stone-500"
+  height: 180
+
+- role: "Service Tech"
+  desc: "Higher-skill troubleshooting, small projects, customer-facing."
+  color: "bg-teal-600"
+  height: 220
+
+- role: "Foreman"
+  desc: "Run crews. Own job execution. Lead from the front."
+  color: "bg-teal-800"
+  height: 260

@@ -1,0 +1,74 @@
+title: "Reyco Electrical Services"
+tagline: "24/7 Commercial Electrical for DC, Maryland & Virginia"
+description: "Reyco provides 24/7 commercial electrical service for DC, Maryland & Virginia. Emergency response, small projects, and institutional construction since 2005."
+email: "info@reycoelectric.com"
+phone: "(301) 555-0199"
+phone_link: "3015550199"
+address: "Hughesville, MD 20637"
+service_area: "Washington DC, Maryland & Virginia"
+founded: "2005"
+employees: "53"
+active_accounts: "68+"
+emr: "0.81"
+
+baseurl: ""
+url: "https://reycoelectric.com"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: America/New_York
+
+exclude:
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
+  - Gemfile
+  - Gemfile.lock
+  - BUILDPLAN.md
+  - "Reyco_Copy_Direction_From_Transcripts.docx"
+  - "reyco_wireframes.jsx"
+  - vendor/
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /services/:name/
+  job_openings:
+    output: true
+    permalink: /careers/jobs/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "job_openings"
+    values:
+      layout: "job"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /blog/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

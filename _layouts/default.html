@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="bg-white">
+    {% include nav.html %}
+    <main>{{ content }}</main>
+    {% include footer.html %}
+    <script src="{{ '/assets/js/nav.js' | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<footer class="bg-stone-900 text-stone-400">
+  <div class="max-w-7xl mx-auto px-6 py-14">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm">
+
+      <!-- Col 1: Company info -->
+      <div>
+        <a href="{{ '/' | relative_url }}" class="flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-8 bg-white/10 flex items-center justify-center text-white font-black text-xs">R</div>
+          <div class="text-white font-bold text-sm leading-none">REYCO ELECTRICAL</div>
+        </a>
+        <div class="space-y-1.5 text-stone-400 text-sm leading-relaxed">
+          <p>{{ site.address }}</p>
+          <p>Serving DC, Maryland & Virginia</p>
+          <a href="tel:{{ site.phone_link }}" class="block hover:text-white transition-colors font-semibold">{{ site.phone }}</a>
+          <p class="text-xs text-stone-500">Available 24/7 for emergencies</p>
+        </div>
+      </div>
+
+      <!-- Col 2: Services -->
+      <div>
+        <div class="text-white font-bold mb-4">Services</div>
+        <div class="space-y-2">
+          {% assign sorted_services = site.services | sort: "order" %}
+          {% for service in sorted_services %}
+          <a href="{{ service.url | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ service.nav_label }}</a>
+          {% endfor %}
+          <a href="{{ '/services/' | relative_url }}" class="block text-sm hover:text-white transition-colors">All Services</a>
+        </div>
+      </div>
+
+      <!-- Col 3: Company -->
+      <div>
+        <div class="text-white font-bold mb-4">Company</div>
+        <div class="space-y-2">
+          <a href="{{ '/about/' | relative_url }}" class="block text-sm hover:text-white transition-colors">About</a>
+          <a href="{{ '/safety/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Safety & Compliance</a>
+          <a href="{{ '/service-area/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Service Area</a>
+          <a href="{{ '/blog/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Blog</a>
+        </div>
+      </div>
+
+      <!-- Col 4: Careers -->
+      <div>
+        <div class="text-white font-bold mb-4">Careers</div>
+        <div class="space-y-2">
+          <a href="{{ '/careers/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Open Positions</a>
+          <a href="{{ '/careers/why-reyco/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Why Reyco</a>
+          <a href="{{ '/careers/' | relative_url }}#benefits" class="block text-sm hover:text-white transition-colors">Benefits & Growth</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-stone-700 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-stone-500">
+      <span>© {{ 'now' | date: "%Y" }} Reyco Electrical Services Inc. All rights reserved.</span>
+      <span>Licensed & Insured — DC, MD, VA</span>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,26 @@
+{% if include.compact %}
+<!-- Compact version: used on homepage careers teaser -->
+<div class="flex items-end gap-1 shrink-0">
+  {% for step in site.data.career_ladder %}
+  <div class="w-16 text-center">
+    <div class="{{ step.color }} text-white flex flex-col items-center justify-end px-1 pb-2"
+         style="height: {{ step.height | times: 0.46 | round }}px">
+      <div class="text-[8px] font-extrabold leading-tight">{{ step.role }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<!-- Full version: used on careers landing page -->
+<div class="flex items-end justify-center gap-2">
+  {% for step in site.data.career_ladder %}
+  <div class="flex-1 text-center">
+    <div class="{{ step.color }} text-white flex flex-col items-center justify-end px-2 pb-4 pt-2"
+         style="height: {{ step.height }}px">
+      <div class="text-sm font-extrabold mb-1">{{ step.role }}</div>
+      <div class="text-[9px] leading-tight opacity-90 hidden sm:block">{{ step.desc }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
