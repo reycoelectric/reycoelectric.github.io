@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20'
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -32,10 +32,18 @@ jobs:
           bundler-cache: true
 
       - name: Install Node dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Tailwind CSS
         run: NODE_ENV=production npm run build:css
+
+      - name: Verify CSS was generated
+        run: |
+          if [ ! -f assets/css/output.css ]; then
+            echo "ERROR: assets/css/output.css was not generated"
+            exit 1
+          fi
+          echo "CSS size: $(wc -c < assets/css/output.css) bytes"
 
       - name: Build Jekyll site
         run: bundle exec jekyll build

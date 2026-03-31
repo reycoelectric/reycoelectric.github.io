@@ -21,12 +21,11 @@ description: "Real benefits, a documented career ladder, and a company that's be
       </div>
       <div class="border-2 border-stone-200 p-6">
         <div class="section-label">Health & Wellness</div>
-        <p class="text-stone-600 leading-relaxed">Health, dental, and vision coverage. We take care of the people who take care of our customers. Details to be confirmed — reach out if you have specific questions.</p>
-        <!-- TODO: Insert specific plan details from Dave -->
+        <p class="text-stone-600 leading-relaxed">100% employer-paid for employee coverage. BlueChoice HMO with $0 deductible. Employer contributes over $9,000/year toward your individual medical coverage, $17,000+ for family.</p>
       </div>
       <div class="border-2 border-stone-200 p-6">
         <div class="section-label">Retirement</div>
-        <p class="text-stone-600 leading-relaxed">401(k) with a 7% company contribution. This isn't a job for now — it's a career you can build a life around. We invest in your future from day one.</p>
+        <p class="text-stone-600 leading-relaxed">5% company contribution regardless of whether you contribute. We put the money in because we want our people building a future. 94% of employees participate because it's worth it.</p>
       </div>
       <div class="border-2 border-stone-200 p-6">
         <div class="section-label">Time Off & Training</div>
@@ -74,7 +73,7 @@ description: "Real benefits, a documented career ladder, and a company that's be
   <div class="max-w-7xl mx-auto">
     <div class="section-label">The Work</div>
     <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-2">You Won't Be Bored</h2>
-    <p class="text-stone-600 mb-8">One day you're troubleshooting an emergency at a restaurant. The next you're upgrading panels in a multifamily building. The week after, you're on a project at the World Bank. This is not factory work.</p>
+    <p class="text-stone-600 mb-8">One day you're troubleshooting an emergency at a restaurant. The next you're upgrading panels in a multifamily building. The week after, you're on a project at a government institution. This is not factory work.</p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       {%- assign work_types = "Emergency calls,Panel upgrades,EV charging installs,Government projects" | split: "," -%}
       {% for work in work_types %}
@@ -113,7 +112,7 @@ description: "Real benefits, a documented career ladder, and a company that's be
   <div class="max-w-7xl mx-auto">
     <h2 class="text-white text-center text-xl font-extrabold tracking-tight mb-8">A Company That's Not Going Anywhere</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      {%- assign stability = "21 yrs|In Business,53|Employees,$15M+|Current Backlog,New HQ|10,000 sq ft Hughesville" | split: "," -%}
+      {%- assign stability = "21 yrs|In Business,53|Employees,68+|Active Accounts,New HQ|10,000 sq ft Hughesville" | split: "," -%}
       {% for item in stability %}
       {%- assign parts = item | split: "|" -%}
       <div>
@@ -121,6 +120,31 @@ description: "Real benefits, a documented career ladder, and a company that's be
         <div class="text-stone-400 text-xs uppercase tracking-widest mt-1">{{ parts[1] }}</div>
       </div>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Customer quotes -->
+<section class="py-14 px-6 md:px-16 bg-stone-50">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-label text-center">What Customers Say About Working with Our Team</div>
+    <h2 class="text-xl font-extrabold text-stone-800 text-center mb-10">The Team Is the Difference</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white border-2 border-stone-200 p-6">
+        <p class="text-stone-600 italic text-sm leading-relaxed mb-4">"The techs are knowledgeable. They provide recommendations. They turn in their paperwork. You don't even have to reach out to them — they already give you the information. No stress."</p>
+        <p class="text-xs font-bold text-stone-500">Facility Manager, National Services Company</p>
+        <p class="text-xs text-reyco-red font-bold">10/10 recommendation</p>
+      </div>
+      <div class="bg-white border-2 border-stone-200 p-6">
+        <p class="text-stone-600 italic text-sm leading-relaxed mb-4">"They're our most reliable electrician. They're getting 95% of our work. Whenever we're paying Reyco, we know the value that we're getting."</p>
+        <p class="text-xs font-bold text-stone-500">Director of Facilities, Regional Property Management Company</p>
+        <p class="text-xs text-reyco-red font-bold">10/10 recommendation</p>
+      </div>
+      <div class="bg-white border-2 border-stone-200 p-6">
+        <p class="text-stone-600 italic text-sm leading-relaxed mb-4">"This guy came to my office, sat down with me with the plans, and we used highlighters to mark every single line. By the time I hit the project, I was an experienced electrical project manager."</p>
+        <p class="text-xs font-bold text-stone-500">Director of Facilities, on a Reyco estimator</p>
+        <p class="text-xs text-stone-400">Regional Property Management Company</p>
+      </div>
     </div>
   </div>
 </section>

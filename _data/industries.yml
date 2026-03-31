@@ -1,6 +1,6 @@
 - name: "Restaurants & QSR"
   slug: "restaurants"
-  desc: "Kitchen electrical, exterior lighting, brand-standard buildouts, and emergency response when a cooler line trips at closing time. We serve chains like Dollar General, LongHorn, Olive Garden, and Raising Cane's."
+  desc: "Kitchen electrical, exterior lighting, brand-standard buildouts, and emergency response when a cooler line trips at closing time. We serve national QSR and restaurant chains across the DMV."
   accent: "border-orange-400"
   cta_label: "Restaurant"
 
@@ -12,7 +12,7 @@
 
 - name: "Government & Institutional"
   slug: "government"
-  desc: "Badged access, compliance credentials, and the safety record (EMR 0.81) to work in restricted environments. Clients include the World Bank, IFC, IDB, and other international institutions."
+  desc: "Badged access, compliance credentials, and the safety record (EMR 0.81) to work in restricted environments. We serve international institutions, federal agencies, and government campuses in the DC region."
   accent: "border-stone-600"
   cta_label: "Government"
 

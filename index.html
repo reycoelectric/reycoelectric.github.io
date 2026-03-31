@@ -1,30 +1,32 @@
 ---
 layout: default
 title: "24/7 Commercial Electrical Service | Reyco Electrical Services"
-description: "Reyco provides 24/7 commercial electrical service for DC, Maryland & Virginia. Emergency response, small projects, and institutional construction since 2005."
+description: "Reyco provides 24/7 commercial electrical service for DC, Maryland & Virginia. Emergency response, small
+projects, and institutional construction since 2005."
 ---
 
 <!-- Hero -->
 <section class="relative">
   <div class="bg-stone-700 h-[480px] md:h-[540px] overflow-hidden">
     <!-- TODO: Replace with real hero photo -->
-    <!-- <img src="/assets/images/hero/homepage.jpg" alt="Reyco crew at jobsite" class="w-full h-full object-cover"> -->
+    <img src="/assets/images/hero/homepage.jpg" alt="Reyco crew at jobsite" class="w-full h-full object-cover">
     <div class="w-full h-full photo-placeholder"></div>
   </div>
-  <div class="absolute inset-0 bg-gradient-to-r from-stone-900/85 via-stone-900/50 to-stone-900/10 flex items-center px-6 md:px-16">
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-stone-900/85 via-stone-900/50 to-stone-900/10 flex items-center px-6 md:px-16">
     <div class="max-w-7xl mx-auto w-full">
-    <div class="max-w-xl">
-      <h1 class="text-white text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4">
-        Keeping the Lights On for<br>DC, Maryland & Virginia
-      </h1>
-      <p class="text-stone-300 text-base md:text-lg mb-8 max-w-md">
-        24/7 commercial electrical service for the facilities that can't afford downtime. Since 2005.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-3">
-        <a href="{{ '/contact/' | relative_url }}" class="btn-brand">Request Service →</a>
-        <a href="{{ '/careers/' | relative_url }}" class="btn-secondary">Join Our Team →</a>
+      <div class="max-w-xl">
+        <h1 class="text-white text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4">
+          Keeping the Lights On for<br>DC, Maryland & Virginia
+        </h1>
+        <p class="text-stone-300 text-base md:text-lg mb-8 max-w-md">
+          24/7 commercial electrical service for the facilities that can't afford downtime. Since 2005.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="{{ '/contact/' | relative_url }}" class="btn-brand">Request Service →</a>
+          <a href="{{ '/careers/' | relative_url }}" class="btn-secondary">Join Our Team →</a>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </section>
@@ -36,7 +38,8 @@ description: "Reyco provides 24/7 commercial electrical service for DC, Maryland
 <section class="py-16 px-6 md:px-16">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight">Full-Service Commercial Electrical</h2>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight">Full-Service Commercial Electrical
+      </h2>
       <p class="text-stone-500 mt-2 text-base">From emergency calls to major infrastructure upgrades</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -45,7 +48,8 @@ description: "Reyco provides 24/7 commercial electrical service for DC, Maryland
       <div class="border-2 border-stone-200 flex flex-col hover:border-reyco-red-300 transition-colors group">
         <div class="h-48 overflow-hidden">
           {% if service.hero_image %}
-          <img src="{{ service.hero_image | relative_url }}" alt="{{ service.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <img src="{{ service.hero_image | relative_url }}" alt="{{ service.title }}"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           {% else %}
           <div class="photo-placeholder w-full h-full"></div>
           {% endif %}
@@ -55,7 +59,9 @@ description: "Reyco provides 24/7 commercial electrical service for DC, Maryland
           <p class="text-sm text-stone-500 leading-relaxed mb-5 flex-1">{{ service.description }}</p>
           <div class="flex items-center justify-between">
             <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-xs px-4 py-2">Request Service</a>
-            <a href="{{ service.url | relative_url }}" class="text-xs font-bold text-reyco-red-700 uppercase tracking-wide hover:text-reyco-red-600">Learn More →</a>
+            <a href="{{ service.url | relative_url }}"
+              class="text-xs font-bold text-reyco-red-700 uppercase tracking-wide hover:text-reyco-red-600">Learn More
+              →</a>
           </div>
         </div>
       </div>
@@ -79,25 +85,62 @@ description: "Reyco provides 24/7 commercial electrical service for DC, Maryland
       <div class="section-label">Our Story</div>
       <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-4">21 Years of Doing It Right</h2>
       <p class="text-stone-600 leading-relaxed mb-6">
-        Founded by Dave Reynolds in 2005, Reyco has grown from a one-truck operation into a 53-person team serving the region's most demanding facilities. We're headquartered in a new 10,000 sq ft facility in Hughesville, MD — and we're just getting started.
+        Founded by Dave Reynolds in 2005, Reyco has grown from a one-truck operation into a 53-person team serving the
+        region's most demanding facilities. We're headquartered in a new 10,000 sq ft facility in Hughesville, MD — and
+        we're just getting started.
       </p>
-      <a href="{{ '/about/' | relative_url }}" class="text-sm font-bold text-reyco-red-700 uppercase tracking-wide hover:text-reyco-red-600">Our Story →</a>
+      <a href="{{ '/about/' | relative_url }}"
+        class="text-sm font-bold text-reyco-red-700 uppercase tracking-wide hover:text-reyco-red-600">Our Story →</a>
     </div>
   </div>
 </section>
 
 <!-- Careers Teaser -->
 <section class="bg-reyco-red-50 border-y-2 border-reyco-red-200 py-14 px-6 md:px-16">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
-    <div class="flex-1">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div>
       <div class="text-xs font-bold text-reyco-red-700 uppercase tracking-widest mb-2">We're Hiring</div>
-      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-3">Build a Career, Not Just a Job</h2>
-      <p class="text-stone-600 leading-relaxed mb-6 max-w-lg">
-        Competitive pay, real benefits, and a clear path from Helper to Foreman. Join a team that's been here 21 years and is growing fast.
+      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-3">Build a Career, Not Just a Job
+      </h2>
+      <p class="text-stone-600 leading-relaxed mb-6">
+        Whether you're looking to start in the trades, grow as a licensed journeyman, or run projects on professional
+        systems — we're hiring. Real benefits, competitive pay, 21 years of stability.
       </p>
-      <a href="{{ '/careers/' | relative_url }}" class="btn-primary">View Open Positions →</a>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="{{ '/careers/field/' | relative_url }}" class="btn-brand">Field Careers →</a>
+        <a href="{{ '/careers/office/' | relative_url }}" class="btn-primary">Office & Professional →</a>
+      </div>
     </div>
-    {% include career-ladder.html compact=true %}
+    <div class="grid grid-cols-2 gap-4">
+      <div class="bg-white border-2 border-stone-200 p-5">
+        <div class="text-xs font-bold text-reyco-red-700 uppercase tracking-widest mb-2">Field</div>
+        <div class="text-sm font-extrabold text-stone-800 mb-1">Helper → Foreman</div>
+        <p class="text-xs text-stone-500 leading-relaxed">Clear career ladder. Paid apprenticeship. Emergency, service,
+          and construction work.</p>
+      </div>
+      <div class="bg-white border-2 border-stone-200 p-5">
+        <div class="text-xs font-bold text-reyco-red-700 uppercase tracking-widest mb-2">Office</div>
+        <div class="text-sm font-extrabold text-stone-800 mb-1">PMs, Estimators & More</div>
+        <p class="text-xs text-stone-500 leading-relaxed">Real systems, strong project pipeline. BuildOps, AccuBid,
+          QuickBooks.</p>
+      </div>
+      <div class="bg-white border border-stone-200 p-4 col-span-2">
+        <div class="flex items-center gap-6 justify-around text-center">
+          <div>
+            <div class="text-xl font-extrabold text-stone-800">100%</div>
+            <div class="text-xs text-stone-500">Employer-paid health</div>
+          </div>
+          <div>
+            <div class="text-xl font-extrabold text-stone-800">5%</div>
+            <div class="text-xs text-stone-500">401(k) contribution</div>
+          </div>
+          <div>
+            <div class="text-xl font-extrabold text-stone-800">Paid</div>
+            <div class="text-xs text-stone-500">Apprenticeship training</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -108,16 +151,22 @@ description: "Reyco provides 24/7 commercial electrical service for DC, Maryland
       <div class="section-label text-center">Industries We Serve</div>
       <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight">The Facilities That Can't Wait</h2>
     </div>
-    <div class="flex flex-wrap justify-center gap-3">
-      {% for industry in site.data.industries %}
-      <a href="{{ '/industries/' | relative_url }}#{{ industry.slug }}"
-         class="border-2 {{ industry.accent }} px-5 py-2.5 text-sm font-semibold text-stone-700 hover:bg-white transition-colors">
-        {{ industry.name }}
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {% assign sorted_industries = site.industries | sort: "order" %}
+      {% for industry in sorted_industries %}
+      <a href="{{ industry.url | relative_url }}"
+        class="border-t-4 {{ industry.accent }} bg-white shadow-sm hover:shadow-md p-5 flex flex-col gap-2 transition-all group">
+        <div class="font-extrabold text-stone-800 text-sm group-hover:text-reyco-red-700 transition-colors">{{
+          industry.title }}</div>
+        {% if industry.subhead %}<div class="text-xs text-stone-500 leading-snug line-clamp-2">{{ industry.subhead }}
+        </div>{% endif %}
+        <div class="text-xs font-bold text-reyco-red-700 mt-auto pt-2">Learn more →</div>
       </a>
       {% endfor %}
     </div>
     <div class="text-center mt-8">
-      <a href="{{ '/industries/' | relative_url }}" class="text-sm font-bold text-reyco-red-700">See all industries →</a>
+      <a href="{{ '/industries/' | relative_url }}" class="text-sm font-bold text-reyco-red-700">See all industries
+        →</a>
     </div>
   </div>
 </section>

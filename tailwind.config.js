@@ -2,12 +2,18 @@ module.exports = {
   content: [
     './_includes/**/*.html',
     './_layouts/**/*.html',
+    './_pages/**/*.html',
+    // Root-level pages
+    './*.html',
+    './careers/*.html',
+    './blog/*.html',
+    // Collections
     './_services/**/*.md',
+    './_industries/**/*.md',
     './_job_openings/**/*.md',
     './_projects/**/*.md',
     './_posts/**/*.md',
-    './**/*.html',
-    './**/*.md',
+    './_data/**/*.yml',
   ],
   safelist: [
     // Career ladder step colors (used dynamically from _data/career_ladder.yml)

@@ -4,32 +4,35 @@ slug: restaurants
 order: 1
 nav_label: "Restaurants & QSR"
 accent: "border-orange-400"
-headline: "Electrical Service for Restaurants & Quick Service Chains"
-subhead: "Fast response when your kitchen goes dark. Ongoing service when the GC is gone."
+headline: "When the Lights Go Out, the Revenue Stops"
+subhead: "In a restaurant, electrical problems are revenue problems. A tripped breaker shuts down a kitchen line. A failed parking lot light becomes a safety liability."
 cta_noun: "a restaurant or QSR"
-overview: "Restaurants can't afford to wait. A tripped circuit at 7 AM, a cooler line that fails at closing, a parking lot with half the lights out — these aren't scheduled problems. Reyco provides 24/7 emergency response for food service facilities across DC, Maryland, and Virginia, and we're already the service contractor for a number of regional and national chains. Many of those relationships started with a construction project. We built it, we learned the facility, and when the general contractor moved on, we stayed."
-electrical_needs:
-  - "Kitchen electrical failures — fryers, hood systems, walk-in coolers"
-  - "Parking lot and exterior lighting repair and replacement"
-  - "Emergency power restoration during and after operating hours"
-  - "Panel upgrades to support equipment additions or remodels"
-  - "Brand-standard buildouts for new locations and remodels"
-  - "LED lighting retrofits and energy-efficiency upgrades"
-  - "POS and signage circuit installation"
-why_reyco: "We have an on-call tech and backup every night of the week. When your kitchen goes dark at 6 AM, that call goes to a person — not a voicemail. We've been doing service for Raising Cane's, LongHorn, Olive Garden, and other chains long after the construction crews left. Our centralized dispatch means your facility manager deals with one team, not a rotating cast of subcontractors."
-clients:
-  - "Raising Cane's"
-  - "LongHorn Steakhouse"
-  - "Olive Garden"
-  - "Maggiano's Little Italy"
-  - "Dollar General"
-  - "Pilot Travel Centers"
+cta_label: "Request Service for Your Restaurant →"
+overview: "In a restaurant, electrical problems are revenue problems. A tripped breaker shuts down a kitchen line. A failed parking lot light becomes a safety liability. A brand-standard uplift that runs over schedule means the store stays closed an extra day.\n\nReyco serves national QSR and restaurant chains across the DMV — sit-down dining, fast casual, and quick service. We handle everything from emergency service calls to full restaurant buildouts, and we often remain the ongoing service provider after construction is complete."
 pain_points:
   - "A tripped circuit at 7 AM costs you breakfast service. A failed cooler at closing costs you an entire inventory."
   - "Most electricians can't get there fast enough — and when they do, they don't know food service equipment."
   - "National chains need contractors who can replicate work across multiple locations without relearning every time."
   - "The GC builds it and leaves. Then who do you call when something fails six months later?"
+electrical_needs:
+  - "Emergency response for kitchen electrical failures, tripped breakers, and power loss"
+  - "Parking lot and exterior lighting repairs and upgrades"
+  - "Brand-standard buildouts and uplifts for national chains"
+  - "LED lighting retrofits and time clock / controls work"
+  - "Ongoing service for multi-location portfolios"
+  - "Panel upgrades to support equipment additions or remodels"
+  - "POS and signage circuit installation"
+why_reyco: "Speed and reliability. When a chain operator dispatches us through their work order platform, we respond quickly and get it done right the first time. Our techs know restaurant electrical — kitchen circuits, walk-in cooler lines, exterior signage, hood systems. For buildout work, we often remain the ongoing service provider after construction is complete."
+quote: '"When something stops working in a restaurant, revenue stops too. Our clients call us because they know we''ll have someone there — and our techs know food service electrical." — Dave Reynolds, Founder'
+clients:
+  - "National sit-down dining chains"
+  - "Quick service restaurant brands"
+  - "Fast casual operators"
+  - "Multi-location portfolio operators"
+  - "Travel center and convenience operators"
 compliance_note: "Restaurant electrical work often intersects with health department requirements, hood suppression systems, and NSF-compliant equipment circuits. We understand the operational context — not just the electrical code."
-hero_image:
+hero_image: ../assets/images/hero/restaurant.jpg
 related_photos:
+  - ../assets/images/related/restaurant-1.jpg
+  - ../assets/images/related/restaurant-2.jpg
 ---

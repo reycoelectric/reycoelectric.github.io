@@ -4,30 +4,39 @@ nav_label: "Contract & Construction"
 slug: construction
 order: 3
 description: "Infrastructure projects for institutional and government clients. Used strategically for trusted partners — not our primary growth engine, but a core capability."
-overview: "Reyco does construction work selectively. We focus on institutional and government clients where our safety record (EMR 0.81, top 10% nationally) earns us access to facilities that other contractors can't enter. We keep three to five anchor construction projects running at a time — enough to stay sharp and serve our best partners, not so many that we pull service techs off service calls. Our construction relationships also build our service business: many of our longest service accounts started with a single buildout. We learn the facility, we earn the trust, and when the general contractor moves on, we stay."
+headline: "When the Job Demands More"
+overview: "Reyco has delivered over $7 million in complex electrical work for institutional clients, general contractors, and portfolio owners. These are the projects that require professional estimating, dedicated project management, and field crews with the credentials to work in restricted environments.\n\nWe take on a select number of larger projects at a time — enough to keep our best crews engaged and our institutional relationships strong, without overextending."
 what_we_handle:
-  - "Electrical infrastructure for institutional and government projects"
-  - "New construction and major renovation electrical work"
-  - "QSR and retail chain buildouts (new locations and remodels)"
-  - "Tenant fit-outs for commercial office and mixed-use buildings"
-  - "Coordination with general contractors and project managers"
-  - "Compliance with badged-access and restricted-facility requirements"
+  - "Infrastructure projects for international institutions and government clients"
+  - "Medium-sized renovation and tenant fit-out projects for institutional owners and GCs"
+  - "Ground-up electrical for QSR and retail buildouts — where we often stay on as the ongoing service provider"
+  - "Multi-floor retrofit programs in high-security environments with badged access"
+  - "Professional estimating, submittals, project management, and stored-material billing"
 who_its_for:
-  - "General contractors"
-  - "Government & international institutions"
-  - "QSR and retail chains"
-  - "Commercial real estate developers"
-  - "Multifamily developers"
+  - type: "General Contractors"
+    context: "You need a reliable electrical sub who shows up on time, manages their scope, and doesn't surprise you at close-out."
+    reyco_response: "Our project managers run weekly cost-to-complete tracking, our superintendent visits every job at least weekly, and our estimators stay involved through buyout so nothing falls through the cracks. We've worked with regional GCs across multiple divisions and project types for years."
+  - type: "Institutional Owners & Procurement Teams"
+    context: "You need a contractor with the EMR, the insurance, the badged access, and the documentation standards to pass your due diligence."
+    reyco_response: "EMR 0.81. Top 10% nationally. Experience in international institutions and restricted government facilities in DC. We can send our credentials package today."
+  - type: "Portfolio Owners Running Multi-Site Programs"
+    context: "You have a panel replacement program, a lighting retrofit rollout, or a renovation campaign across multiple properties."
+    reyco_response: "We execute programmatic work across portfolios with consistent pricing, consistent crews, and consistent documentation. One partner instead of five different subs."
 how_it_works:
   - step: "1"
-    title: "Bid"
-    detail: "We review plans via AccuBid and submit a detailed, accurate estimate"
+    title: "Estimate"
+    detail: "Our team reviews drawings in AccuBid and puts together a detailed number. If awarded, we do a full buyout with the estimator staying involved to catch any gaps."
   - step: "2"
-    title: "Execute"
-    detail: "Our foremen and superintendents run the job with weekly progress reviews"
+    title: "Kickoff"
+    detail: "We assign a PM and superintendent. The foreman comes in for a full review of drawings, submittals, and key details before starting."
   - step: "3"
-    title: "Transition"
-    detail: "Construction complete — many clients stay with us for ongoing service"
+    title: "Execute"
+    detail: "Weekly PM meetings tracking percent complete, cost-to-complete, and manpower. Superintendent on-site at least weekly."
+  - step: "4"
+    title: "Close Out & Convert"
+    detail: "Warranty letters, as-builts, O&Ms, lien waivers. And when the GC moves on, our account managers introduce themselves to the building team for ongoing service."
+quote: '"I''ve been working with Reyco for over a decade. I''ve dealt with four people the whole time. They''re a highly valued partner. Dave will call and say there''s going to be a change here — he keeps me informed." — Director of Facilities, Regional Property Management Company'
+cta_primary: "Discuss a Project"
 service_area_note: "Construction projects across Washington DC, Maryland, and Virginia. Selective project intake — we maintain 3–5 anchor construction projects at a time alongside our service operation."
 faq:
   - q: "Why does Reyco limit its construction volume?"
@@ -37,7 +46,9 @@ faq:
   - q: "Do construction clients often transition to service accounts?"
     a: "Frequently. We build the facility, we learn it, and when the general contractor moves on, we're the contractor who already knows where everything is. Many of our longest service accounts started as a single construction project."
   - q: "What estimating and project management systems do you use?"
-    a: "We estimate via AccuBid and manage projects through our field operations platform with real-time job tracking and digital documentation. Our foremen and superintendents run weekly progress reviews and coordinate directly with GC project managers."
-hero_image:
-related_photos:
+    a: "We estimate via AccuBid and manage projects through BuildOps with real-time job tracking and digital documentation. Our foremen and superintendents run weekly progress reviews and coordinate directly with GC project managers."
+hero_image: ../assets/images/hero/construction.jpg
+related_photos: 
+  - ../assets/images/related/construction-1.jpg
+  - ../assets/images/related/construction-2.jpg
 ---

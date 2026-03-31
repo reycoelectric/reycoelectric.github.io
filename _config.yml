@@ -29,7 +29,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - BUILDPLAN.md
+  - v4-update-plan.md
   - "Reyco_Copy_Direction_From_Transcripts.docx"
+  - "Reyco_Website_Copy_v4.docx"
   - "reyco_wireframes.jsx"
   - vendor/
 

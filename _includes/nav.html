@@ -57,7 +57,34 @@
           </a>
         </div>
       </div>
-      <a href="{{ '/careers/' | relative_url }}" class="hover:text-stone-900 transition-colors">Careers</a>
+      <!-- Careers dropdown -->
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-stone-900 transition-colors py-1 uppercase"
+          aria-haspopup="true">
+          Careers <span class="text-[9px] mt-px">▾</span>
+        </button>
+        <div class="absolute top-full left-0 mt-1 w-56 bg-white border-2 border-stone-200 shadow-lg
+                    opacity-0 invisible translate-y-1
+                    group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                    transition-all duration-150 z-50">
+          <a href="{{ '/careers/field/' | relative_url }}"
+            class="block px-4 py-3 text-[11px] text-stone-600 hover:bg-stone-50 hover:text-stone-900 normal-case font-semibold border-b border-stone-100">
+            Field Careers
+          </a>
+          <a href="{{ '/careers/office/' | relative_url }}"
+            class="block px-4 py-3 text-[11px] text-stone-600 hover:bg-stone-50 hover:text-stone-900 normal-case font-semibold border-b border-stone-100">
+            Office & Professional
+          </a>
+          <a href="{{ '/careers/why-reyco/' | relative_url }}"
+            class="block px-4 py-3 text-[11px] text-stone-600 hover:bg-stone-50 hover:text-stone-900 normal-case font-semibold border-b border-stone-100">
+            Why Reyco
+          </a>
+          <a href="{{ '/careers/' | relative_url }}"
+            class="block px-4 py-3 text-[11px] text-reyco-red-700 hover:bg-reyco-red-50 font-bold normal-case">
+            All Careers →
+          </a>
+        </div>
+      </div>
       <a href="{{ '/contact/' | relative_url }}" class="hover:text-stone-900 transition-colors">Contact</a>
     </div>
 
@@ -109,8 +136,15 @@
           Industries →</a>
       </div>
     </div>
-    <a href="{{ '/careers/' | relative_url }}"
-      class="block py-2 text-sm font-semibold text-stone-700 hover:text-stone-900">Careers</a>
+    <div class="py-2">
+      <div class="text-sm font-semibold text-stone-700 mb-2">Careers</div>
+      <div class="pl-4 space-y-1">
+        <a href="{{ '/careers/field/' | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">Field Careers</a>
+        <a href="{{ '/careers/office/' | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">Office & Professional</a>
+        <a href="{{ '/careers/why-reyco/' | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">Why Reyco</a>
+        <a href="{{ '/careers/' | relative_url }}" class="block py-1.5 text-sm text-reyco-red-700 font-bold">All Careers →</a>
+      </div>
+    </div>
     <a href="{{ '/contact/' | relative_url }}"
       class="block py-2 text-sm font-semibold text-stone-700 hover:text-stone-900">Contact</a>
     <div class="pt-3 border-t border-stone-200 flex flex-col gap-2">

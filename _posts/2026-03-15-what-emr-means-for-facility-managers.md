@@ -43,7 +43,7 @@ Reyco's current EMR is 0.81, which places us in the top 10% of electrical contra
 
 That number reflects 21 years of consistent safety practices — the same hiring standards, the same site protocols, the same expectations for our supervisors and crew members, maintained across a 40-person field force working in varied commercial and institutional environments.
 
-It's also why we work at the World Bank, IFC, IDB, and other international institutions in the DC metro area. Not because we applied and got lucky, but because we meet their requirements and other contractors don't.
+It's also why we work at international institutions and government facilities in the DC metro area that other contractors can't access. Not because we applied and got lucky, but because we meet their requirements and other contractors don't.
 
 Dave Reynolds, our founder, doesn't talk about our EMR unprompted. It's not a talking point — it's just how we operate. The number is the byproduct of that.
 

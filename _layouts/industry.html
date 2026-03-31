@@ -20,7 +20,8 @@ layout: default
     {% endif %}
   </div>
   <!-- Gradient: left-heavy so text is always readable -->
-  <div class="absolute inset-0 bg-gradient-to-r from-stone-900/90 via-stone-900/60 to-stone-900/20 flex items-end px-6 md:px-16 pb-10">
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-stone-900/90 via-stone-900/60 to-stone-900/20 flex items-end px-6 md:px-16 pb-10">
     <div class="max-w-7xl mx-auto w-full">
       <!-- Breadcrumb -->
       <div class="text-reyco-red-300 text-xs font-bold uppercase tracking-widest mb-3">
@@ -37,7 +38,8 @@ layout: default
     </div>
   </div>
   <!-- Industry accent bar at the very bottom of the hero -->
-  <div class="absolute bottom-0 left-0 right-0 h-1 border-b-4 {{ page.accent | default: 'border-reyco-red-600' }}"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-1 border-b-4 {{ page.accent | default: 'border-reyco-red-600' }}">
+  </div>
 </section>
 
 <!-- ─── Client proof strip ─── Full-width, above content -->
@@ -56,194 +58,205 @@ layout: default
 {% endif %}
 
 <!-- ─── Main content grid ─── -->
-<div class="max-w-7xl mx-auto px-6 md:px-16 py-14 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="px-6 md:px-16">
+  <div class="max-w-7xl mx-auto py-14 grid grid-cols-1 md:grid-cols-3 gap-12">
 
-  <!-- Main column: 2/3 -->
-  <div class="md:col-span-2 space-y-14">
+    <!-- Main column: 2/3 -->
+    <div class="md:col-span-2 space-y-14">
 
-    <!-- Overview — styled as empathy/understanding, not generic intro -->
-    {% if page.overview %}
-    <div class="border-l-4 {{ page.accent | default: 'border-reyco-red-600' }} pl-6">
-      <p class="text-stone-600 leading-relaxed text-base md:text-lg">{{ page.overview }}</p>
-    </div>
-    {% endif %}
-
-    <!-- Pain points (optional) — "What you're dealing with" -->
-    {% if page.pain_points %}
-    <div>
-      <div class="section-label">What You're Dealing With</div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {% for point in page.pain_points %}
-        <div class="bg-stone-50 border border-stone-200 p-5">
-          <p class="text-sm text-stone-700 leading-relaxed">{{ point }}</p>
-        </div>
-        {% endfor %}
+      <!-- Overview — styled as empathy/understanding, not generic intro -->
+      {% if page.overview %}
+      <div class="border-l-4 {{ page.accent | default: 'border-reyco-red-600' }} pl-6">
+        <p class="text-stone-600 leading-relaxed text-base md:text-lg">{{ page.overview }}</p>
       </div>
-    </div>
-    {% endif %}
+      {% endif %}
 
-    <!-- Electrical Needs — card grid, not just checklist -->
-    {% if page.electrical_needs %}
-    <div>
-      <div class="section-label">Electrical Work We Handle</div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
-        {% for item in page.electrical_needs %}
-        <div class="flex items-start gap-3">
-          <span class="w-5 h-5 rounded-full bg-reyco-red-100 flex items-center justify-center shrink-0 mt-0.5">
-            <span class="text-reyco-red-700 text-xs font-black">✓</span>
-          </span>
-          <span class="text-sm text-stone-700 leading-snug">{{ item }}</span>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-
-    <!-- Why Reyco — distinctive callout block, not just a paragraph -->
-    {% if page.why_reyco %}
-    <div class="bg-stone-900 px-8 py-8 text-white">
-      <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-400 mb-4">Why Reyco for {{ page.title }}</div>
-      <p class="text-stone-300 leading-relaxed">{{ page.why_reyco }}</p>
-      <div class="mt-6 pt-6 border-t border-stone-700 grid grid-cols-3 gap-4 text-center">
-        <div>
-          <div class="text-2xl font-black text-white">0.81</div>
-          <div class="text-xs text-stone-500 mt-1">Safety EMR<br>top 10% nationally</div>
-        </div>
-        <div>
-          <div class="text-2xl font-black text-white">24/7</div>
-          <div class="text-xs text-stone-500 mt-1">Emergency<br>dispatch</div>
-        </div>
-        <div>
-          <div class="text-2xl font-black text-white">21 yrs</div>
-          <div class="text-xs text-stone-500 mt-1">In business<br>DC · MD · VA</div>
-        </div>
-      </div>
-    </div>
-    {% endif %}
-
-    <!-- Compliance / credential note (optional) -->
-    {% if page.compliance_note %}
-    <div class="flex items-start gap-4 bg-stone-50 border border-stone-200 px-6 py-5">
-      <svg class="w-5 h-5 text-reyco-red-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-      </svg>
-      <p class="text-sm text-stone-600 leading-relaxed">{{ page.compliance_note }}</p>
-    </div>
-    {% endif %}
-
-    <!-- Body content from .md file -->
-    {% if content != "" %}
-    <div class="prose prose-stone max-w-none">{{ content }}</div>
-    {% endif %}
-
-    <!-- Services for this industry -->
-    <div>
-      <div class="section-label">Services We Bring to {{ page.title }}</div>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        {% assign sorted_services = site.services | sort: "order" %}
-        {% for service in sorted_services %}
-        <a href="{{ service.url | relative_url }}"
-          class="group border-2 border-stone-200 p-4 hover:border-reyco-red-300 hover:bg-reyco-red-50 transition-colors">
-          <div class="text-sm font-extrabold text-stone-800 group-hover:text-reyco-red-700 transition-colors mb-1">
-            {{ service.nav_label }}
+      <!-- Pain points (optional) — "What you're dealing with" -->
+      {% if page.pain_points %}
+      <div>
+        <div class="section-label">What You're Dealing With</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {% for point in page.pain_points %}
+          <div class="bg-stone-50 border border-stone-200 p-5">
+            <p class="text-sm text-stone-700 leading-relaxed">{{ point }}</p>
           </div>
-          <div class="text-xs text-stone-500 leading-snug">{{ service.description | truncatewords: 12 }}</div>
-        </a>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
-    </div>
+      {% endif %}
 
-    <!-- Other industries — cross-linking -->
-    <div>
-      <div class="section-label">Other Industries We Serve</div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {% assign other_industries = site.industries | where_exp: "i", "i.slug != page.slug" | sort: "order" %}
-        {% for ind in other_industries %}
-        <a href="{{ ind.url | relative_url }}"
-          class="group flex items-center gap-3 border-2 border-stone-200 p-4 hover:border-stone-300 transition-colors">
-          <span class="w-1 h-8 shrink-0 border-l-4 {{ ind.accent }}"></span>
-          <div class="flex-1 min-w-0">
-            <div class="text-sm font-bold text-stone-800 group-hover:text-stone-900">{{ ind.title }}</div>
-            <div class="text-xs text-stone-500 truncate">{{ ind.subhead | truncatewords: 8 }}</div>
+      <!-- Electrical Needs — card grid, not just checklist -->
+      {% if page.electrical_needs %}
+      <div>
+        <div class="section-label">Electrical Work We Handle</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+          {% for item in page.electrical_needs %}
+          <div class="flex items-start gap-3">
+            <span class="w-5 h-5 rounded-full bg-reyco-red-100 flex items-center justify-center shrink-0 mt-0.5">
+              <span class="text-reyco-red-700 text-xs font-black">✓</span>
+            </span>
+            <span class="text-sm text-stone-700 leading-snug">{{ item }}</span>
           </div>
-          <span class="text-reyco-red-700 text-xs font-bold group-hover:translate-x-1 transition-transform">→</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Why Reyco — distinctive callout block, not just a paragraph -->
+      {% if page.why_reyco %}
+      <div class="bg-stone-900 px-8 py-8 text-white">
+        <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-400 mb-4">{{ page.why_reyco_heading |
+          default: "Why Reyco for " }}{% unless page.why_reyco_heading %}{{ page.title }}{% endunless %}</div>
+        <p class="text-stone-300 leading-relaxed">{{ page.why_reyco }}</p>
+        <div class="mt-6 pt-6 border-t border-stone-700 grid grid-cols-3 gap-4 text-center">
+          <div>
+            <div class="text-2xl font-black text-white">0.81</div>
+            <div class="text-xs text-stone-500 mt-1">Safety EMR<br>top 10% nationally</div>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-white">24/7</div>
+            <div class="text-xs text-stone-500 mt-1">Emergency<br>dispatch</div>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-white">21 yrs</div>
+            <div class="text-xs text-stone-500 mt-1">In business<br>DC · MD · VA</div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.quote %}
+      <div class="border-l-4 {{ page.accent | default: 'border-reyco-red-600' }} bg-stone-50 px-6 py-5 italic">
+        <p class="text-stone-700 leading-relaxed text-sm">{{ page.quote }}</p>
+      </div>
+      {% endif %}
+
+      <!-- Compliance / credential note (optional) -->
+      {% if page.compliance_note %}
+      <div class="flex items-start gap-4 bg-stone-50 border border-stone-200 px-6 py-5">
+        <svg class="w-5 h-5 text-reyco-red-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+        <p class="text-sm text-stone-600 leading-relaxed">{{ page.compliance_note }}</p>
+      </div>
+      {% endif %}
+
+      <!-- Body content from .md file -->
+      {% if content != "" %}
+      <div class="prose prose-stone max-w-none">{{ content }}</div>
+      {% endif %}
+
+      <!-- Services for this industry -->
+      <div>
+        <div class="section-label">Services We Bring to {{ page.title }}</div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {% assign sorted_services = site.services | sort: "order" %}
+          {% for service in sorted_services %}
+          <a href="{{ service.url | relative_url }}"
+            class="group border-2 border-stone-200 p-4 hover:border-reyco-red-300 hover:bg-reyco-red-50 transition-colors">
+            <div class="text-sm font-extrabold text-stone-800 group-hover:text-reyco-red-700 transition-colors mb-1">
+              {{ service.nav_label }}
+            </div>
+            <div class="text-xs text-stone-500 leading-snug">{{ service.description | truncatewords: 12 }}</div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Other industries — cross-linking -->
+      <div>
+        <div class="section-label">Other Industries We Serve</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {% assign other_industries = site.industries | where_exp: "i", "i.slug != page.slug" | sort: "order" %}
+          {% for ind in other_industries %}
+          <a href="{{ ind.url | relative_url }}"
+            class="group flex items-center gap-3 border-2 border-stone-200 p-4 hover:border-stone-300 transition-colors">
+            <span class="w-1 h-8 shrink-0 border-l-4 {{ ind.accent }}"></span>
+            <div class="flex-1 min-w-0">
+              <div class="text-sm font-bold text-stone-800 group-hover:text-stone-900">{{ ind.title }}</div>
+              <div class="text-xs text-stone-500 truncate">{{ ind.subhead | truncatewords: 8 }}</div>
+            </div>
+            <span class="text-reyco-red-700 text-xs font-bold group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div><!-- /main column -->
+
+    <!-- Sidebar: 1/3 -->
+    <div class="space-y-6">
+
+      <!-- Industry-specific sticky CTA -->
+      <div class="border-2 border-stone-800 p-6 sticky top-24 bg-white">
+        <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-600 mb-2">{{ page.title }} Electrical
+        </div>
+        <h3 class="text-base font-extrabold text-stone-800 mb-3 leading-snug">
+          Serve {{ page.cta_noun | default: "a facility" }} that needs reliable electrical service?
+        </h3>
+        <p class="text-xs text-stone-500 mb-5 leading-relaxed">
+          We respond fast, we know your industry, and we're available 24/7 for emergencies.
+        </p>
+        <a href="{{ '/contact/' | relative_url }}" class="btn-brand text-xs px-4 py-2.5 w-full text-center block mb-3">
+          {{ page.cta_label | default: "Get in Touch →" }}
         </a>
-        {% endfor %}
+        <a href="tel:{{ site.phone_link }}"
+          class="block text-center text-sm font-bold text-stone-800 hover:text-reyco-red-700 transition-colors py-2 border border-stone-200 hover:border-reyco-red-200">
+          {{ site.phone }}
+        </a>
+        <p class="text-xs text-stone-400 mt-3 text-center">Available 24/7 for emergencies</p>
       </div>
-    </div>
 
-  </div><!-- /main column -->
-
-  <!-- Sidebar: 1/3 -->
-  <div class="space-y-6">
-
-    <!-- Industry-specific sticky CTA -->
-    <div class="border-2 border-stone-800 p-6 sticky top-24">
-      <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-600 mb-2">{{ page.title }} Electrical</div>
-      <h3 class="text-base font-extrabold text-stone-800 mb-3 leading-snug">
-        Serve {{ page.cta_noun | default: "a facility" }} that needs reliable electrical service?
-      </h3>
-      <p class="text-xs text-stone-500 mb-5 leading-relaxed">
-        We respond fast, we know your industry, and we're available 24/7 for emergencies.
-      </p>
-      <a href="{{ '/contact/' | relative_url }}"
-        class="btn-brand text-xs px-4 py-2.5 w-full text-center block mb-3">
-        Get in Touch →
-      </a>
-      <a href="tel:{{ site.phone_link }}"
-        class="block text-center text-sm font-bold text-stone-800 hover:text-reyco-red-700 transition-colors py-2 border border-stone-200 hover:border-reyco-red-200">
-        {{ site.phone }}
-      </a>
-      <p class="text-xs text-stone-400 mt-3 text-center">Available 24/7 for emergencies</p>
-    </div>
-
-    <!-- Trust credentials -->
-    <div class="bg-stone-50 border border-stone-200 divide-y divide-stone-200">
-      <div class="px-4 py-3">
-        <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">Safety Record</div>
-        <div class="text-sm font-extrabold text-stone-800">EMR 0.81 — top 10% nationally</div>
+      <!-- Trust credentials -->
+      <div class="bg-stone-50 border border-stone-200 divide-y divide-stone-200">
+        <div class="px-4 py-3">
+          <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">Safety Record</div>
+          <div class="text-sm font-extrabold text-stone-800">EMR 0.81 — top 10% nationally</div>
+        </div>
+        <div class="px-4 py-3">
+          <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">Service Area</div>
+          <div class="text-sm font-extrabold text-stone-800">DC, Maryland & Virginia</div>
+        </div>
+        <div class="px-4 py-3">
+          <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">Emergency Response</div>
+          <div class="text-sm font-extrabold text-stone-800">24/7 dispatch, on-call tech every night</div>
+        </div>
+        <div class="px-4 py-3">
+          <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">Invoicing</div>
+          <div class="text-sm font-extrabold text-stone-800">Same-day digital — no billing cycles</div>
+        </div>
       </div>
-      <div class="px-4 py-3">
-        <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">Service Area</div>
-        <div class="text-sm font-extrabold text-stone-800">DC, Maryland & Virginia</div>
-      </div>
-      <div class="px-4 py-3">
-        <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">Emergency Response</div>
-        <div class="text-sm font-extrabold text-stone-800">24/7 dispatch, on-call tech every night</div>
-      </div>
-      <div class="px-4 py-3">
-        <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">Invoicing</div>
-        <div class="text-sm font-extrabold text-stone-800">Same-day digital — no billing cycles</div>
-      </div>
-    </div>
 
-    <!-- Project photos -->
-    {% if page.related_photos %}
-    <div>
-      <div class="section-label">Project Photos</div>
+      <!-- Project photos -->
+      {% if page.related_photos %}
+      <div>
+        <div class="section-label">Project Photos</div>
+        <div class="space-y-2">
+          {% for photo in page.related_photos %}
+          <div class="h-36 overflow-hidden">
+            <img src="{{ photo | relative_url }}" alt="{{ page.title }} project" class="w-full h-full object-cover">
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% else %}
       <div class="space-y-2">
-        {% for photo in page.related_photos %}
-        <div class="h-36 overflow-hidden">
-          <img src="{{ photo | relative_url }}" alt="{{ page.title }} project" class="w-full h-full object-cover">
-        </div>
-        {% endfor %}
+        <div class="photo-placeholder h-36"></div>
+        <div class="photo-placeholder h-36"></div>
       </div>
-    </div>
-    {% else %}
-    <div class="space-y-2">
-      <div class="photo-placeholder h-36"></div>
-      <div class="photo-placeholder h-36"></div>
-    </div>
-    {% endif %}
+      {% endif %}
 
-  </div><!-- /sidebar -->
-
+    </div><!-- /sidebar -->
+  </div>
 </div><!-- /grid -->
 
 <!-- Bottom CTA — industry-specific -->
 <section class="bg-stone-800 py-12 px-6 md:px-16 text-center">
   <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">Electrical service built for your industry.</h2>
-  <p class="text-stone-400 mb-7 max-w-xl mx-auto">Tell us about your facility. We respond fast and we're available around the clock.</p>
+  <p class="text-stone-400 mb-7 max-w-xl mx-auto">Tell us about your facility. We respond fast and we're available
+    around the clock.</p>
   <div class="flex flex-col sm:flex-row gap-3 justify-center">
     <a href="{{ '/contact/' | relative_url }}" class="btn-brand">Request Service →</a>
     <a href="tel:{{ site.phone_link }}" class="btn-secondary">{{ site.phone }}</a>

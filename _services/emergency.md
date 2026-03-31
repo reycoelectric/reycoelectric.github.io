@@ -4,31 +4,37 @@ nav_label: "24/7 Emergency Service"
 slug: emergency
 order: 1
 description: "Same-day and after-hours emergency response for commercial facilities across DC, Maryland, and Virginia. When the lights go out, we show up."
-overview: "When the lights go out at 2 AM, you need someone who picks up the phone and shows up. Reyco provides same-day and after-hours emergency response for commercial facilities across DC, Maryland, and Virginia. Our centralized dispatch team classifies every call — emergency or scheduled — and assigns the right technician based on the problem type. An on-call tech and backup are designated every week, so there's always someone available. Our techs carry tablets with real-time job details, so there's no phone tag and no surprises when they arrive."
+headline: "When the Lights Go Out, We Show Up"
+overview: "Electrical problems don't wait for business hours. Neither do we. Reyco provides same-day and after-hours emergency response for commercial facilities across DC, Maryland, and Virginia. Our centralized dispatch team classifies your call, assigns the right technician, and gets someone on their way.\n\nEvery tech carries a tablet with real-time job details. You'll get a digital invoice with full documentation — tech notes, photos, materials used, time on-site — typically by end of day."
 what_we_handle:
-  - "Circuit troubleshooting and repair of failed panels, breakers, and branch wiring"
-  - "Power restoration and temporary solutions to keep facilities operational"
-  - "Parking lot and exterior lighting repairs"
+  - "Troubleshooting and repair of failed circuits, panels, and branch wiring"
+  - "Power restoration and temporary solutions to keep your facility operational"
+  - "Parking lot and exterior lighting repairs for safety and code compliance"
   - "Kitchen electrical failures at restaurants and food service facilities"
-  - "Common area and corridor lighting for multifamily properties"
-  - "On-site response within tight SLA windows"
-  - "Digital invoicing the same day service is completed — no 45-day billing cycles"
+  - "Fire alarm system troubleshooting with proprietary vendor coordination"
+  - "Emergency generator and UPS response"
 who_its_for:
-  - "Restaurants & QSR chains"
-  - "Multifamily / apartment buildings"
-  - "Institutional & government facilities"
-  - "Retail stores"
-  - "Healthcare facilities"
+  - type: "Facility Managers & Building Engineers"
+    context: "Your lights are out, your tenants are calling, and you need someone now."
+    reyco_response: "Call us. We dispatch based on urgency and tech specialization. Our on-call rotation means there's always someone available, including nights and weekends."
+  - type: "Property Management Companies"
+    context: "You manage a portfolio and need one reliable electrical vendor across the DMV."
+    reyco_response: "We handle banks, restaurants, multifamily common areas, and retail locations every week. One point of contact, consistent quality, digital documentation for your records."
+  - type: "National Facility Services Companies"
+    context: "You dispatch vendors through work order platforms and need contractors who integrate cleanly."
+    reyco_response: "We're set up to receive work orders, check in on arrival, report findings same-day, and submit quotes immediately. No chasing us for paperwork."
 how_it_works:
   - step: "1"
     title: "Call"
-    detail: "(301) 555-0199 — available 24/7"
+    detail: "Reach our dispatch team 24/7. Tell us what's happening and where."
   - step: "2"
     title: "Dispatch"
-    detail: "Your call is classified, a tech is assigned, and ETA is confirmed"
+    detail: "We classify the call, assign a qualified tech based on the problem type, and confirm an ETA."
   - step: "3"
     title: "Resolve"
-    detail: "Tech arrives on-site, fixes the issue, digital invoice sent same day"
+    detail: "Tech arrives, diagnoses, and fixes. Digital invoice with full documentation the same day."
+quote: '"I literally call and most of the time they say yes, I can have a tech. They are always willing to work with us time-wise and money-wise." — Facility Manager, National Services Company'
+cta_primary: "Request Emergency Service"
 availability: "Available 24/7 — Emergencies answered live"
 service_area_note: "Serving commercial facilities across Washington DC, Maryland, and Virginia. On-call technician and backup designated every week. Centralized dispatch out of Hughesville, MD."
 faq:
@@ -40,6 +46,8 @@ faq:
     a: "We'll stabilize the situation and keep your facility operational where possible, then schedule the permanent repair as quickly as we can. You get a digital invoice same-day for whatever work was completed — no waiting weeks for paperwork."
   - q: "Are you licensed and insured in Maryland, Virginia, and DC?"
     a: "Yes. Reyco is licensed and insured in Maryland, Virginia, and Washington DC. Our safety EMR of 0.81 puts us in the top 10% of electrical contractors nationally."
-hero_image:
+hero_image: ../assets/images/hero/emergency.jpg
 related_photos:
+  - ../assets/images/related/emergency-1.jpg
+  - ../assets/images/related/emergency-2.jpg
 ---
