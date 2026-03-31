@@ -19,7 +19,7 @@ layout: default
     <div class="w-full h-full photo-placeholder opacity-50"></div>
     {% endif %}
   </div>
-  <div class="absolute inset-0 flex items-center px-6 md:px-16">
+  <div class="absolute inset-0 flex items-center px-4 md:px-16">
     <div class="max-w-7xl mx-auto w-full">
       <!-- Breadcrumb -->
       <div class="text-reyco-red-300 text-xs font-bold uppercase tracking-widest mb-3">
@@ -48,13 +48,12 @@ layout: default
   </div>
 </section>
 
-<!-- ─── How It Works ─── Full-width, above the fold fold -->
-{% if page.how_it_works %}
-<div class="bg-stone-900 px-6 md:px-16 py-10">
+<!-- ─── How It Works ─── Full-width, above the fold -->
+<div class="bg-stone-900 px-4 md:px-16 py-10">
   <div class="max-w-7xl mx-auto">
     <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-400 mb-6">How It Works</div>
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-stone-700">
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-stone-700">
       {% for step in page.how_it_works %}
       <div
         class="flex items-start gap-4 px-0 sm:px-8 py-6 sm:py-0 {% if forloop.first %}sm:pl-0{% endif %} {% if forloop.last %}sm:pr-0{% endif %}">
@@ -73,7 +72,7 @@ layout: default
 {% endif %}
 
 <!-- ─── Main content grid ─── -->
-<div class="px-6 md:px-16">
+<div class="px-4 md:px-16">
   <div class="max-w-7xl mx-auto py-14 grid grid-cols-1 md:grid-cols-3 gap-12">
 
     <!-- Main column: 2/3 -->
@@ -132,7 +131,7 @@ layout: default
 
       <!-- Service area callout (if specified) -->
       {% if page.service_area_note %}
-      <div class="bg-stone-50 border border-stone-200 px-6 py-4 flex items-start gap-4">
+      <div class="bg-stone-50 border border-stone-200 px-4 md:px-6 py-4 flex items-start gap-4">
         <svg class="w-5 h-5 text-reyco-red-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
           stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -142,7 +141,7 @@ layout: default
         <p class="text-sm text-stone-600">{{ page.service_area_note }}</p>
       </div>
       {% else %}
-      <div class="bg-stone-50 border border-stone-200 px-6 py-4 flex items-start gap-4">
+      <div class="bg-stone-50 border border-stone-200 px-4 md:px-6 py-4 flex items-start gap-4">
         <svg class="w-5 h-5 text-reyco-red-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
           stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -257,13 +256,13 @@ layout: default
 </div><!-- /grid -->
 
 <!-- Bottom CTA -->
-<section class="bg-stone-800 py-12 px-6 md:px-16 text-center">
+<section class="bg-stone-800 py-12 px-4 md:px-16 text-center">
   <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">Ready when you are.</h2>
   <p class="text-stone-400 mb-7 max-w-xl mx-auto">Whether it's an emergency call at 2 AM or a scheduled project next
     month — we respond.</p>
-  <div class="flex flex-col sm:flex-row gap-3 justify-center">
-    <a href="{{ '/contact/' | relative_url }}" class="btn-brand">{{ page.cta_primary | default: 'Request Service' }}
+  <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+    <a href="{{ '/contact/' | relative_url }}" class="btn-brand w-full sm:w-auto">{{ page.cta_primary | default: 'Request Service' }}
       →</a>
-    <a href="tel:{{ site.phone_link }}" class="btn-secondary">{{ site.phone }}</a>
+    <a href="tel:{{ site.phone_link }}" class="btn-secondary w-full sm:w-auto">{{ site.phone }}</a>
   </div>
 </section>
