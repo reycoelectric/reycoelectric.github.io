@@ -19,6 +19,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 timezone: America/New_York
+future: true
 
 exclude:
   - node_modules/
@@ -34,6 +35,9 @@ exclude:
   - "Reyco_Website_Copy_v4.docx"
   - "reyco_wireframes.jsx"
   - vendor/
+
+include:
+  - assets/css/output.css
 
 # Collections
 collections:
