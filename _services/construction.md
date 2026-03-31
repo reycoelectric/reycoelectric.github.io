@@ -5,7 +5,7 @@ slug: construction
 order: 3
 description: "Infrastructure projects for institutional and government clients. Used strategically for trusted partners — not our primary growth engine, but a core capability."
 headline: "When the Job Demands More"
-overview: "Reyco has delivered over $7 million in complex electrical work for institutional clients, general contractors, and portfolio owners. These are the projects that require professional estimating, dedicated project management, and field crews with the credentials to work in restricted environments.\n\nWe take on a select number of larger projects at a time — enough to keep our best crews engaged and our institutional relationships strong, without overextending."
+overview: "Reyco has delivered millions of dollars in complex electrical work for institutional clients, general contractors, and portfolio owners. These are the projects that require professional estimating, dedicated project management, and field crews with the credentials to work in restricted environments.\n\nWe take on a select number of larger projects at a time — enough to keep our best crews engaged and our institutional relationships strong, without overextending."
 what_we_handle:
   - "Infrastructure projects for international institutions and government clients"
   - "Medium-sized renovation and tenant fit-out projects for institutional owners and GCs"
