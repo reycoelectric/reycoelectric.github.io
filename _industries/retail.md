@@ -29,7 +29,5 @@ clients:
   - "National retail chains across the DMV"
 compliance_note: "Retail electrical work across Maryland, Virginia, and DC must meet local commercial building codes and, for national chains, brand-standard specifications. We've executed to both — and our account managers track the specifics for each client's locations."
 hero_image: ../assets/images/hero/retail.jpg
-related_photos:
-  - ../assets/images/related/retail-1.jpg
-  - ../assets/images/related/retail-2.jpg
+
 ---
