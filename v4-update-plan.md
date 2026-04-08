@@ -32,7 +32,7 @@ Resolve these with Dave before starting the relevant sections. Do not write plac
 | Founding story (2–3 sentences from Dave about why he started Reyco) | `about.html` | Marked `[PENDING]` in v4 |
 | Named employee example ("So-and-so started as a Helper and is now a Foreman") | `careers/field.html` | Marked `[PENDING]` in v4 |
 | Phone number | All pages, nav, footer | v4 shows `(301) XXX-XXXX` — confirm whether to keep existing `(301) 843-1848` |
-| 401(k) match rate | `careers/why-reyco.html`, `careers/field.html`, `careers/office.html` | v4 says 5%, current `why-reyco.html` says 7% — confirm with Dave |
+| 401(k) match rate | `careers/why-reyco.html`, `careers/field.html`, `careers/office.html` | v4 says 7%, current `why-reyco.html` says 7% — confirm with Dave |
 | Vision / STD / LTD benefits | Why Reyco, Field, Office pages | v4 notes these are being added — do NOT add until confirmed |
 
 ---
@@ -184,7 +184,7 @@ New page. Use a new layout (`_layouts/careers-field.html`) or a standalone HTML 
 **Pay & Benefits detail for this page:**
 - Pay in top percentile for the market
 - Health/dental: 100% employer-paid for employee coverage
-- 401(k): [PENDING — confirm 5% or 7%] company contribution; 94% of employees participate
+- 401(k): [PENDING — confirm 7% or 7%] company contribution; 94% of employees participate
 - IHS Peak fees covered
 - PTO
 - Company vehicle or vehicle allowance
@@ -525,7 +525,7 @@ Card 2 — Office & Professional Careers:
 - Our 24/7 dispatch means we've never turned a service customer away for capacity. When you call, someone answers.
 
 **People Matter**
-- 100% employer-paid health and dental. 401(k) with [PENDING — confirm 5% or 7%] company contribution. Paid apprenticeship for field staff.
+- 100% employer-paid health and dental. 401(k) with [PENDING — confirm 7% or 7%] company contribution. Paid apprenticeship for field staff.
 
 ---
 
@@ -647,7 +647,7 @@ In a healthcare setting, an electrical contractor needs to understand infection 
 | Section | Change |
 |---------|--------|
 | Health benefit | Update to: "100% employer-paid for employee coverage. BlueChoice HMO with $0 deductible. Employer contributes over $9,000/year toward your individual medical coverage, $17,000+ for family." |
-| 401(k) | Update participation stat: "94% of employees participate" / **CONFIRM rate with Dave before publishing — v4 says 5%, site currently says 7%** |
+| 401(k) | Update participation stat: "94% of employees participate" / **CONFIRM rate with Dave before publishing — v4 says 7%, site currently says 7%** |
 | Culture section | Update with v4 copy about Dave's estimating-to-PM handoff design; "team-first company that treats its people like adults" |
 | Customer quotes | Add new section with three quotes: Katina O. (Action Services Group) and Richard P. ×2 (Piece Management) |
 
@@ -776,7 +776,7 @@ quote: "Quote text here. — First Last, Company Name"
 
 ### 401(k) rate — do not publish until confirmed
 
-Wherever the 401(k) match rate appears (why-reyco.html, careers/field.html, careers/office.html, about.html), leave a `[PENDING]` comment or placeholder until Dave confirms whether it is 5% or 7%. The discrepancy between the current site (7%) and v4 (5%) must be resolved before going live.
+Wherever the 401(k) match rate appears (why-reyco.html, careers/field.html, careers/office.html, about.html), leave a `[PENDING]` comment or placeholder until Dave confirms whether it is 7% or 7%. The discrepancy between the current site (7%) and v4 (7%) must be resolved before going live.
 
 ### `nav_label` for Healthcare
 

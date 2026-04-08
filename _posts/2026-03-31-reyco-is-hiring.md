@@ -29,7 +29,7 @@ We're growing, and we're looking for people to grow with us. This isn't a post a
 Compensation is competitive and based on experience — we're not going to post numbers here that don't reflect the full picture. What we will tell you is what's included beyond base pay:
 
 - **Health and dental insurance: 100% employer-paid.** Not a contribution toward a premium — we cover it.
-- **401(k) with 5% employer match.** That's above market, and it vests on a reasonable schedule.
+- **401(k) with 7% employer match.** That's above market, and it vests on a reasonable schedule.
 - **Paid apprenticeship through IHS Peak** for field staff pursuing their license. We pay for the program, and we schedule around it.
 
 ## The Work
