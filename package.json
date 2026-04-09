@@ -5,7 +5,8 @@
   "scripts": {
     "build:css": "postcss assets/css/main.css -o assets/css/output.css",
     "watch:css": "postcss assets/css/main.css -o assets/css/output.css --watch",
-    "dev": "concurrently \"npm run watch:css\" \"bundle exec jekyll serve --livereload\"",
+    "dev": "concurrently \"npm run watch:css\" \"bundle exec jekyll serve --livereload --config _config.yml,_config_dev.yml\"",
+
     "build": "NODE_ENV=production npm run build:css && bundle exec jekyll build"
   },
   "devDependencies": {

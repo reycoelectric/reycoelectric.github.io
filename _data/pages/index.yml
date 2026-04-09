@@ -1,0 +1,40 @@
+hero:
+  headline: "Keeping the Lights On for<br>DC, Maryland & Virginia"
+  subhead: "24/7 commercial electrical service for the facilities that can't afford downtime. Since 2004."
+  cta1: { label: "Request Service →", url: "/contact/" }
+  cta2: { label: "Join Our Team →", url: "/careers/" }
+
+services_overview:
+  headline: "Full-Service Commercial Electrical"
+  subhead: "From emergency calls to major infrastructure upgrades"
+
+about_teaser:
+  label: "Our Story"
+  headline: "21 Years of Doing It Right"
+  text: |
+    Founded by Dave Reynolds in 2004, Reyco has grown from a one-truck operation into a 53-person team serving the
+    region's most demanding facilities. We're headquartered in a new 10,000 sq ft facility in Hughesville, MD — and
+    we're just getting started.
+  cta: { label: "Our Story →", url: "/about/" }
+
+careers_teaser:
+  label: "We're Hiring"
+  headline: "Build a Career, Not Just a Job"
+  text: |
+    Whether you're looking to start in the trades, grow as a licensed journeyman, or run projects on professional
+    systems — we're hiring. Real benefits, competitive pay, 21 years of stability.
+  cta1: { label: "Field Careers →", url: "/careers/field/" }
+  cta2: { label: "Office & Professional →", url: "/careers/office/" }
+  track:
+    label: "Field"
+    headline: "Helper → Foreman"
+    text: "Clear career ladder. Paid apprenticeship. Emergency, service, and construction work."
+  benefits:
+    - { number: "100%", label: "Employer-paid health" }
+    - { number: "7%", label: "401(k) contribution" }
+    - { number: "Paid", label: "Apprenticeship training" }
+
+industries_overview:
+  label: "Industries We Serve"
+  headline: "The Facilities That Can't Wait"
+  all_cta: { label: "See all industries →", url: "/industries/" }

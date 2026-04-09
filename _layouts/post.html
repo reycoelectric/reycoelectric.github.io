@@ -1,12 +1,9 @@
----
-layout: default
----
-
+{% assign ui = site.data.ui.post_layout %}
 <article class="max-w-3xl mx-auto px-6 md:px-8 py-14">
 
   <!-- Breadcrumb -->
   <div class="text-xs text-stone-500 mb-8">
-    <a href="{{ '/blog/' | relative_url }}" class="hover:text-stone-800 transition-colors">Blog</a>
+    <a href="{{ '/blog/' | relative_url }}" class="hover:text-stone-800 transition-colors">{{ ui.breadcrumb_root }}</a>
     <span class="mx-1.5">›</span>
     <span class="text-stone-800">{{ page.title }}</span>
   </div>
@@ -24,7 +21,7 @@ layout: default
       {% endif %}
       {% if page.read_time %}
       <span>·</span>
-      <span>{{ page.read_time }} min read</span>
+      <span>{{ page.read_time }}{{ ui.read_time_suffix }}</span>
       {% endif %}
     </div>
   </header>
@@ -43,17 +40,17 @@ layout: default
 
   <!-- CTA -->
   <div class="mt-14 bg-reyco-red-50 border border-reyco-red-200 p-6">
-    <div class="text-sm font-bold text-stone-800 mb-1">Need commercial electrical service?</div>
-    <p class="text-sm text-stone-600 mb-4">We're available 24/7 for emergencies across DC, Maryland, and Virginia.</p>
+    <div class="text-sm font-bold text-stone-800 mb-1">{{ ui.cta_headline }}</div>
+    <p class="text-sm text-stone-600 mb-4">{{ ui.cta_text }}</p>
     <div class="flex flex-wrap gap-3">
-      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-sm px-5 py-2.5">Request Service →</a>
+      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-sm px-5 py-2.5">{{ ui.cta_button }}</a>
       <a href="tel:{{ site.phone_link }}" class="btn-secondary text-sm px-5 py-2.5">{{ site.phone }}</a>
     </div>
   </div>
 
   <!-- Back to blog -->
   <div class="mt-8">
-    <a href="{{ '/blog/' | relative_url }}" class="text-sm font-bold text-reyco-red-700">← Back to Blog</a>
+    <a href="{{ '/blog/' | relative_url }}" class="text-sm font-bold text-reyco-red-700">{{ ui.back_to_blog }}</a>
   </div>
 
 </article>

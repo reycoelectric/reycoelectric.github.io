@@ -1,0 +1,40 @@
+hero:
+  headline: "Safety Is Not a Slogan. It's How We Work."
+  subhead: "Our safety record isn't a marketing talking point. It's the reason we work in facilities that other contractors can't enter."
+
+record:
+  label: "Our Safety Record"
+  headline: "EMR 0.81 — Top 10% Nationally"
+  text1: |
+    EMR stands for Experience Modification Rate — the insurance industry's measure of a contractor's safety performance relative to their peers. An EMR of 1.0 is average. Below 1.0 means you're safer than average. Our EMR of 0.81 places Reyco in the top 10% of electrical contractors in the country.
+  text2: |
+    That number matters because many institutional and government facilities require a minimum EMR to even bid on work. International institutions and federal agencies in the DC region often require contractors below 0.85 or 0.90 — average-safety contractors can't get through the door. We can.
+  text3: |
+    Dave doesn't talk about this in meetings unprompted. It's just how we operate. The number reflects what happens when you hire carefully, train consistently, and take safety seriously every single day.
+
+why_it_matters:
+  label: "Why It Matters for You"
+  headline: "If you're evaluating contractors"
+  text: |
+    A contractor's EMR tells you how they treat their people — and how seriously they take their work. When you hire Reyco, you're hiring a team with a proven safety culture, not just a license on the wall.
+
+stat_callout:
+  number: "0.81"
+  label: "Experience Modification Rate"
+  sub: "Top 10% of electrical contractors nationally"
+  explainer_label: "What 0.81 Means"
+  explainer_items:
+    - "1.0 = industry average"
+    - "Below 1.0 = safer than average"
+    - "<strong>0.81 = top decile</strong>"
+
+licensing:
+  label: "Licensing & Insurance"
+  headline: "Licensed & Insured Across the Region"
+  footer_text: "Fully insured for general liability and workers' compensation. Certificate of insurance available on request."
+
+footer_cta:
+  headline: "Need a contractor who can get through the door?"
+  subhead: "Our safety credentials get us into facilities that other contractors can't access. Let's talk."
+  cta1: { label: "Request Service →", url: "/contact/" }
+  cta2: { label: "Call (301) 843-1848", url: "tel:3018431848" }

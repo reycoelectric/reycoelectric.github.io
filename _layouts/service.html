@@ -9,6 +9,7 @@ layout: default
      Structure: Hero → Process → Content + Sidebar → CTA
      ═══════════════════════════════════════════════ -->
 
+{% assign ui = site.data.ui.service_layout %}
 <!-- Hero: compact, breadcrumb, availability badge -->
 <section class="relative">
   <div class="bg-stone-800 h-52 md:h-64 overflow-hidden">
@@ -23,7 +24,7 @@ layout: default
     <div class="max-w-7xl mx-auto w-full">
       <!-- Breadcrumb -->
       <div class="text-reyco-red-300 text-xs font-bold uppercase tracking-widest mb-3">
-        <a href="{{ '/services/' | relative_url }}" class="hover:text-reyco-red-200 transition-colors">Services</a>
+        <a href="{{ '/services/' | relative_url }}" class="hover:text-reyco-red-200 transition-colors">{{ ui.breadcrumb_root }}</a>
         <span class="mx-1.5 opacity-60">›</span>
         {{ page.nav_label }}
       </div>
@@ -41,7 +42,7 @@ layout: default
       <span
         class="inline-flex items-center gap-2 bg-reyco-red-700/80 text-white text-xs font-bold px-3 py-1.5 uppercase tracking-wide">
         <span class="w-2 h-2 rounded-full bg-green-400 shrink-0"></span>
-        Available 24/7
+        {{ ui.availability_default }}
       </span>
       {% endif %}
     </div>
@@ -52,7 +53,7 @@ layout: default
 {% if page.how_it_works %}
 <div class="bg-stone-900 px-4 md:px-16 py-10">
   <div class="max-w-7xl mx-auto">
-    <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-400 mb-6">How It Works</div>
+    <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-400 mb-6">{{ ui.how_it_works_label }}</div>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-stone-700">
       {% for step in page.how_it_works %}
@@ -89,7 +90,7 @@ layout: default
       <!-- What We Handle — 2-col grid for scannability -->
       {% if page.what_we_handle %}
       <div>
-        <div class="section-label">What We Handle</div>
+        <div class="section-label">{{ ui.what_we_handle_label }}</div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
           {% for item in page.what_we_handle %}
           <div class="flex items-start gap-3 text-stone-600">
@@ -104,7 +105,7 @@ layout: default
       <!-- Who It's For — buyer callout blocks -->
       {% if page.who_its_for %}
       <div>
-        <div class="section-label">Who This Is For</div>
+        <div class="section-label">{{ ui.who_its_for_label }}</div>
         <div class="space-y-6">
           {% for audience in page.who_its_for %}
           {% if audience.type %}
@@ -149,15 +150,14 @@ layout: default
             d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
-        <p class="text-sm text-stone-600">Serving commercial facilities across <strong>Washington DC, Maryland, and
-            Virginia</strong>. Centralized dispatch out of Hughesville, MD.</p>
+        <p class="text-sm text-stone-600">{{ ui.service_area_default }}</p>
       </div>
       {% endif %}
 
       <!-- FAQ — high SEO value for featured snippets -->
       {% if page.faq %}
       <div>
-        <div class="section-label">Frequently Asked</div>
+        <div class="section-label">{{ ui.faq_label }}</div>
         <div class="space-y-0 divide-y divide-stone-200 border-t border-b border-stone-200">
           {% for item in page.faq %}
           <div class="py-5">
@@ -176,7 +176,7 @@ layout: default
 
       <!-- Related Services -->
       <div>
-        <div class="section-label">Other Services</div>
+        <div class="section-label">{{ ui.other_services_label }}</div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {% assign other_services = site.services | where_exp: "s", "s.slug != page.slug" | sort: "order" %}
           {% for s in other_services %}
@@ -196,9 +196,8 @@ layout: default
 
       <!-- Sticky CTA — urgent, phone prominent -->
       <div class="bg-reyco-red-700 p-6 sticky top-24 text-white">
-        <h3 class="text-lg font-extrabold mb-1">Need service now?</h3>
-        <p class="text-reyco-red-200 text-sm mb-5 leading-relaxed">Our dispatch team is available around the clock. Call
-          for emergencies — or submit online for scheduled work.</p>
+        <h3 class="text-lg font-extrabold mb-1">{{ ui.sidebar_cta_headline }}</h3>
+        <p class="text-reyco-red-200 text-sm mb-5 leading-relaxed">{{ ui.sidebar_cta_text }}</p>
         <a href="tel:{{ site.phone_link }}"
           class="flex items-center justify-center gap-2 bg-white text-reyco-red-700 text-base font-extrabold px-5 py-3 mb-3 hover:bg-reyco-red-50 transition-colors w-full text-center">
           <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -209,34 +208,34 @@ layout: default
         </a>
         <a href="{{ '/contact/' | relative_url }}"
           class="block text-center text-xs font-bold text-reyco-red-200 hover:text-white transition-colors py-2 border border-reyco-red-500 hover:border-reyco-red-300">
-          Submit a Request Online
+          {{ ui.sidebar_cta_online }}
         </a>
       </div>
 
       <!-- Quick facts -->
       <div class="border-2 border-stone-200 divide-y divide-stone-200">
         <div class="px-4 py-3 flex items-center justify-between">
-          <span class="text-xs font-bold text-stone-500 uppercase tracking-wide">Availability</span>
-          <span class="text-xs font-extrabold text-stone-800">24/7 Dispatch</span>
+          <span class="text-xs font-bold text-stone-500 uppercase tracking-wide">{{ ui.facts.availability }}</span>
+          <span class="text-xs font-extrabold text-stone-800">{{ ui.facts.availability_val }}</span>
         </div>
         <div class="px-4 py-3 flex items-center justify-between">
-          <span class="text-xs font-bold text-stone-500 uppercase tracking-wide">Service Area</span>
-          <span class="text-xs font-extrabold text-stone-800">DC · MD · VA</span>
+          <span class="text-xs font-bold text-stone-500 uppercase tracking-wide">{{ ui.facts.service_area }}</span>
+          <span class="text-xs font-extrabold text-stone-800">{{ ui.facts.service_area_val }}</span>
         </div>
         <div class="px-4 py-3 flex items-center justify-between">
-          <span class="text-xs font-bold text-stone-500 uppercase tracking-wide">Safety EMR</span>
-          <span class="text-xs font-extrabold text-stone-800">0.81 (top 10%)</span>
+          <span class="text-xs font-bold text-stone-500 uppercase tracking-wide">{{ ui.facts.safety }}</span>
+          <span class="text-xs font-extrabold text-stone-800">{{ site.emr }} (top 10%)</span>
         </div>
         <div class="px-4 py-3 flex items-center justify-between">
-          <span class="text-xs font-bold text-stone-500 uppercase tracking-wide">Invoicing</span>
-          <span class="text-xs font-extrabold text-stone-800">Same-day digital</span>
+          <span class="text-xs font-bold text-stone-500 uppercase tracking-wide">{{ ui.facts.invoicing }}</span>
+          <span class="text-xs font-extrabold text-stone-800">{{ ui.facts.invoicing_val }}</span>
         </div>
       </div>
 
       <!-- Project photos -->
       {% if page.related_photos %}
       <div>
-        <div class="section-label">Project Photos</div>
+        <div class="section-label">{{ ui.photos_label }}</div>
         <div class="space-y-2">
           {% for photo in page.related_photos %}
           <div class="h-32 overflow-hidden">
@@ -258,11 +257,10 @@ layout: default
 
 <!-- Bottom CTA -->
 <section class="bg-stone-800 py-12 px-4 md:px-16 text-center">
-  <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">Ready when you are.</h2>
-  <p class="text-stone-400 mb-7 max-w-xl mx-auto">Whether it's an emergency call at 2 AM or a scheduled project next
-    month — we respond.</p>
+  <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">{{ ui.bottom_cta_headline }}</h2>
+  <p class="text-stone-400 mb-7 max-w-xl mx-auto">{{ ui.bottom_cta_text }}</p>
   <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-    <a href="{{ '/contact/' | relative_url }}" class="btn-brand w-full sm:w-auto">{{ page.cta_primary | default: 'Request Service' }}
+    <a href="{{ '/contact/' | relative_url }}" class="btn-brand w-full sm:w-auto">{{ page.cta_primary | default: ui.bottom_cta_button }}
       →</a>
     <a href="tel:{{ site.phone_link }}" class="btn-secondary w-full sm:w-auto">{{ site.phone }}</a>
   </div>

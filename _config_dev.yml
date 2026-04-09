@@ -1,0 +1,5 @@
+# Development-specific configuration
+# This overrides settings in _config.yml for local testing
+
+baseurl: ""
+url: "http://localhost:4000"

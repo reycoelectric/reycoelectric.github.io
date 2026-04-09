@@ -1,20 +1,21 @@
+{% assign ui = site.data.ui.nav %}
 <nav class="sticky top-0 z-50 bg-white border-b-2 border-stone-200 px-4 md:px-6">
   <div class="max-w-7xl mx-auto py-3 flex items-center justify-between">
 
     <!-- Logo -->
     <a href="{{ '/' | relative_url }}" class="shrink-0">
-      <img src="{{ '/assets/logo/Mark.svg' | relative_url }}" alt="Reyco Electrical Services" class="h-8 w-auto">
+      <img src="{{ '/assets/logo/Mark.svg' | relative_url }}" alt="{{ site.title }}" class="h-8 w-auto">
     </a>
 
     <!-- Desktop nav -->
     <div class="hidden md:flex items-center gap-6 text-[11px] font-bold text-stone-600 tracking-wide uppercase">
-      <a href="{{ '/about/' | relative_url }}" class="hover:text-stone-900 transition-colors">About</a>
+      <a href="{{ '/about/' | relative_url }}" class="hover:text-stone-900 transition-colors">{{ ui.about }}</a>
 
       <!-- Services dropdown -->
       <div class="relative group">
         <button class="flex items-center gap-1 hover:text-stone-900 transition-colors py-1 uppercase"
           aria-haspopup="true">
-          Services <span class="text-[9px] mt-px">▾</span>
+          {{ ui.services }} <span class="text-[9px] mt-px">▾</span>
         </button>
         <div class="absolute top-full left-0 mt-1 w-56 bg-white border-2 border-stone-200 shadow-lg
                     opacity-0 invisible translate-y-1
@@ -29,7 +30,7 @@
           {% endfor %}
           <a href="{{ '/services/' | relative_url }}"
             class="block px-4 py-3 text-[11px] text-reyco-red-700 hover:bg-reyco-red-50 font-bold normal-case">
-            All Services →
+            {{ ui.all_services }}
           </a>
         </div>
       </div>
@@ -38,7 +39,7 @@
       <div class="relative group">
         <button class="flex items-center gap-1 hover:text-stone-900 transition-colors py-1 uppercase"
           aria-haspopup="true">
-          Industries <span class="text-[9px] mt-px">▾</span>
+          {{ ui.industries }} <span class="text-[9px] mt-px">▾</span>
         </button>
         <div class="absolute top-full left-0 mt-1 w-56 bg-white border-2 border-stone-200 shadow-lg
                     opacity-0 invisible translate-y-1
@@ -53,7 +54,7 @@
           {% endfor %}
           <a href="{{ '/industries/' | relative_url }}"
             class="block px-4 py-3 text-[11px] text-reyco-red-700 hover:bg-reyco-red-50 font-bold normal-case">
-            All Industries →
+            {{ ui.all_industries }}
           </a>
         </div>
       </div>
@@ -61,7 +62,7 @@
       <div class="relative group">
         <button class="flex items-center gap-1 hover:text-stone-900 transition-colors py-1 uppercase"
           aria-haspopup="true">
-          Careers <span class="text-[9px] mt-px">▾</span>
+          {{ ui.careers }} <span class="text-[9px] mt-px">▾</span>
         </button>
         <div class="absolute top-full left-0 mt-1 w-56 bg-white border-2 border-stone-200 shadow-lg
                     opacity-0 invisible translate-y-1
@@ -69,23 +70,23 @@
                     transition-all duration-150 z-50">
           <a href="{{ '/careers/field/' | relative_url }}"
             class="block px-4 py-3 text-[11px] text-stone-600 hover:bg-stone-50 hover:text-stone-900 normal-case font-semibold border-b border-stone-100">
-            Field Careers
+            {{ ui.field_careers }}
           </a>
           <a href="{{ '/careers/office/' | relative_url }}"
             class="block px-4 py-3 text-[11px] text-stone-600 hover:bg-stone-50 hover:text-stone-900 normal-case font-semibold border-b border-stone-100">
-            Office & Professional
+            {{ ui.office_careers }}
           </a>
           <a href="{{ '/careers/why-reyco/' | relative_url }}"
             class="block px-4 py-3 text-[11px] text-stone-600 hover:bg-stone-50 hover:text-stone-900 normal-case font-semibold border-b border-stone-100">
-            Why Reyco
+            {{ ui.why_reyco }}
           </a>
           <a href="{{ '/careers/' | relative_url }}"
             class="block px-4 py-3 text-[11px] text-reyco-red-700 hover:bg-reyco-red-50 font-bold normal-case">
-            All Careers →
+            {{ ui.all_careers }}
           </a>
         </div>
       </div>
-      <a href="{{ '/contact/' | relative_url }}" class="hover:text-stone-900 transition-colors">Contact</a>
+      <a href="{{ '/contact/' | relative_url }}" class="hover:text-stone-900 transition-colors">{{ ui.contact }}</a>
     </div>
 
     <!-- Right: phone + CTA -->
@@ -94,7 +95,7 @@
         class="text-xs font-bold text-stone-800 hover:text-reyco-red-700 transition-colors">
         {{ site.phone }}
       </a>
-      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-xs px-4 py-2">Request Service</a>
+      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-xs px-4 py-2">{{ ui.request_service_cta }}</a>
     </div>
 
     <!-- Mobile hamburger -->
@@ -112,44 +113,45 @@
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden md:hidden border-t border-stone-200 bg-white px-4 py-6 space-y-4">
     <a href="{{ '/about/' | relative_url }}"
-      class="block py-2 text-sm font-semibold text-stone-700 hover:text-stone-900">About</a>
+      class="block py-2 text-sm font-semibold text-stone-700 hover:text-stone-900">{{ ui.about }}</a>
     <div class="py-2">
-      <div class="text-sm font-semibold text-stone-700 mb-2">Services</div>
+      <div class="text-sm font-semibold text-stone-700 mb-2">{{ ui.services }}</div>
       <div class="pl-4 space-y-1">
         {% for service in sorted_services %}
         <a href="{{ service.url | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">{{
           service.nav_label }}</a>
         {% endfor %}
-        <a href="{{ '/services/' | relative_url }}" class="block py-1.5 text-sm text-reyco-red-700 font-bold">All
-          Services →</a>
+        <a href="{{ '/services/' | relative_url }}" class="block py-1.5 text-sm text-reyco-red-700 font-bold">{{ ui.all_services }}</a>
       </div>
     </div>
     <div class="py-2">
-      <div class="text-sm font-semibold text-stone-700 mb-2">Industries</div>
+      <div class="text-sm font-semibold text-stone-700 mb-2">{{ ui.industries }}</div>
       <div class="pl-4 space-y-1">
         {% assign sorted_industries = site.industries | sort: "order" %}
         {% for industry in sorted_industries %}
         <a href="{{ industry.url | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">{{
           industry.nav_label }}</a>
         {% endfor %}
-        <a href="{{ '/industries/' | relative_url }}" class="block py-1.5 text-sm text-reyco-red-700 font-bold">All
-          Industries →</a>
+        <a href="{{ '/industries/' | relative_url }}" class="block py-1.5 text-sm text-reyco-red-700 font-bold">{{ ui.all_industries }}</a>
       </div>
     </div>
     <div class="py-2">
-      <div class="text-sm font-semibold text-stone-700 mb-2">Careers</div>
+      <div class="text-sm font-semibold text-stone-700 mb-2">{{ ui.careers }}</div>
       <div class="pl-4 space-y-1">
-        <a href="{{ '/careers/field/' | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">Field Careers</a>
-        <a href="{{ '/careers/office/' | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">Office & Professional</a>
-        <a href="{{ '/careers/why-reyco/' | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">Why Reyco</a>
-        <a href="{{ '/careers/' | relative_url }}" class="block py-1.5 text-sm text-reyco-red-700 font-bold">All Careers →</a>
+        <a href="{{ '/careers/field/' | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">{{ ui.field_careers }}</a>
+        <a href="{{ '/careers/office/' | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">{{ ui.office_careers }}</a>
+        <a href="{{ '/careers/why-reyco/' | relative_url }}" class="block py-1.5 text-sm text-stone-600 hover:text-stone-900">{{ ui.why_reyco }}</a>
+        <a href="{{ '/careers/' | relative_url }}" class="block py-1.5 text-sm text-reyco-red-700 font-bold">{{ ui.all_careers }}</a>
       </div>
     </div>
     <a href="{{ '/contact/' | relative_url }}"
-      class="block py-2 text-sm font-semibold text-stone-700 hover:text-stone-900">Contact</a>
+      class="block py-2 text-sm font-semibold text-stone-700 hover:text-stone-900">{{ ui.contact }}</a>
     <div class="pt-3 border-t border-stone-200 flex flex-col gap-2">
       <a href="tel:{{ site.phone_link }}" class="text-sm font-bold text-stone-800">{{ site.phone }}</a>
-      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-xs px-4 py-2 self-start">Request Service</a>
+      <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-xs px-4 py-2 self-start">{{ ui.request_service_cta }}</a>
     </div>
+  </div>
+</nav>
+v>
   </div>
 </nav>

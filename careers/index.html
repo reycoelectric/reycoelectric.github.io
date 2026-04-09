@@ -4,12 +4,13 @@ title: "Careers at Reyco Electrical Services | Helper to Foreman"
 description: "Join Reyco's 53-person commercial electrical team in DC, Maryland, and Virginia. Competitive pay, real
 benefits, and a clear career path from Helper to Foreman."
 ---
+{% assign copy = site.data.pages.careers_index %}
 
 <!-- Hero -->
 <section class="relative">
   <div class="bg-stone-700 h-[420px] md:h-[480px] overflow-hidden">
     <!-- TODO: Replace with crew action photo -->
-    <!-- <img src="/assets/images/hero/careers.jpg" alt="Reyco field crew working together" class="w-full h-full object-cover"> -->
+    <!-- <img src="{{ '/assets/images/hero/careers.jpg' | relative_url }}" alt="{{ copy.hero.headline | strip_html }}" class="w-full h-full object-cover"> -->
     <div class="w-full h-full photo-placeholder"></div>
   </div>
   <div
@@ -17,16 +18,14 @@ benefits, and a clear career path from Helper to Foreman."
     <div class="max-w-7xl mx-auto w-full">
       <div class="max-w-xl">
         <h1 class="text-white text-3xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4">
-          Build a Career,<br>Not Just a Job
+          {{ copy.hero.headline }}
         </h1>
         <p class="text-stone-300 text-base md:text-lg mb-8 max-w-md">
-          Whether you're a Helper looking to start in the trades, a licensed journeyman who wants better pay and
-          variety, or a project manager who wants to run real projects on professional systems — we're hiring across the
-          board.
+          {{ copy.hero.subhead }}
         </p>
         <div class="flex flex-col sm:flex-row gap-3">
-          <a href="#openings" class="btn-brand">See Open Positions</a>
-          <a href="{{ '/careers/why-reyco/' | relative_url }}" class="btn-secondary">Why Reyco? →</a>
+          <a href="{{ copy.hero.cta1.url | relative_url }}" class="btn-brand">{{ copy.hero.cta1.label }}</a>
+          <a href="{{ copy.hero.cta2.url | relative_url }}" class="btn-secondary">{{ copy.hero.cta2.label }}</a>
         </div>
       </div>
     </div>
@@ -36,34 +35,25 @@ benefits, and a clear career path from Helper to Foreman."
 <!-- Two career tracks -->
 <section class="py-16 px-6 md:px-16 bg-white">
   <div class="max-w-7xl mx-auto">
-    <div class="section-label text-center">Your Path</div>
-    <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 text-center tracking-tight mb-4">Two Tracks. One Team.
-    </h2>
+    <div class="section-label text-center">{{ copy.tracks_overview.label }}</div>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 text-center tracking-tight mb-4">{{ copy.tracks_overview.headline }}</h2>
     <p class="text-stone-500 text-center max-w-2xl mx-auto mb-10">
-      We offer 100% employer-paid health and dental, a 401(k) with 7% company contribution, paid training, and the kind
-      of work that keeps things interesting. The details differ by role — that's why we've built two career paths.
+      {{ copy.tracks_overview.subhead }}
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <!-- Field track -->
       <div class="border-2 border-stone-200 p-8">
-        <div class="text-xs font-bold text-reyco-red uppercase tracking-widest mb-3">Field Careers</div>
-        <h3 class="text-xl font-extrabold text-stone-800 mb-3">Build a Career with Your Hands</h3>
-        <p class="text-stone-500 text-sm leading-relaxed mb-6">For electricians, apprentices, helpers, and anyone
-          looking to get into the trades. A clear ladder from Helper to Foreman, paid apprenticeship, and the variety of
-          working on emergency calls, panel upgrades, and institutional projects — not the same outlet box every day.
-        </p>
-        <a href="{{ '/careers/field/' | relative_url }}" class="btn-brand text-sm px-5 py-2.5">Explore Field Careers
-          →</a>
+        <div class="text-xs font-bold text-reyco-red uppercase tracking-widest mb-3">{{ copy.tracks_overview.field.label }}</div>
+        <h3 class="text-xl font-extrabold text-stone-800 mb-3">{{ copy.tracks_overview.field.headline }}</h3>
+        <p class="text-stone-500 text-sm leading-relaxed mb-6">{{ copy.tracks_overview.field.text }}</p>
+        <a href="{{ copy.tracks_overview.field.cta.url | relative_url }}" class="btn-brand text-sm px-5 py-2.5">{{ copy.tracks_overview.field.cta.label }}</a>
       </div>
       <!-- Office track -->
       <div class="border-2 border-stone-800 p-8">
-        <div class="text-xs font-bold text-reyco-red uppercase tracking-widest mb-3">Office & Professional</div>
-        <h3 class="text-xl font-extrabold text-stone-800 mb-3">Build the Business, Not Just Buildings</h3>
-        <p class="text-stone-500 text-sm leading-relaxed mb-6">For project managers, estimators, account managers, and
-          operations professionals. Real systems (BuildOps, AccuBid, QuickBooks), a a strong project pipeline, and the
-          chance to build something at a company that's scaling — not just maintaining.</p>
-        <a href="{{ '/careers/office/' | relative_url }}" class="btn-primary text-sm px-5 py-2.5">Explore Office Careers
-          →</a>
+        <div class="text-xs font-bold text-reyco-red uppercase tracking-widest mb-3">{{ copy.tracks_overview.office.label }}</div>
+        <h3 class="text-xl font-extrabold text-stone-800 mb-3">{{ copy.tracks_overview.office.headline }}</h3>
+        <p class="text-stone-500 text-sm leading-relaxed mb-6">{{ copy.tracks_overview.office.text }}</p>
+        <a href="{{ copy.tracks_overview.office.cta.url | relative_url }}" class="btn-primary text-sm px-5 py-2.5">{{ copy.tracks_overview.office.cta.label }}</a>
       </div>
     </div>
   </div>
@@ -72,8 +62,8 @@ benefits, and a clear career path from Helper to Foreman."
 <!-- Benefits Snapshot -->
 <section id="benefits" class="bg-stone-50 py-14 px-6 md:px-16">
   <div class="max-w-7xl mx-auto">
-    <div class="section-label">Pay & Benefits</div>
-    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">Pay & Benefits That Compete</h2>
+    <div class="section-label">{{ copy.benefits_snapshot.label }}</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">{{ copy.benefits_snapshot.headline }}</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {% for benefit in site.data.benefits %}
       <div class="bg-white border border-stone-200 p-4 flex gap-3 items-start">
@@ -86,8 +76,8 @@ benefits, and a clear career path from Helper to Foreman."
       {% endfor %}
     </div>
     <div class="mt-6">
-      <a href="{{ '/careers/why-reyco/' | relative_url }}"
-        class="text-sm font-bold text-reyco-red-700 hover:text-reyco-red-600">Full benefits breakdown →</a>
+      <a href="{{ copy.benefits_snapshot.cta.url | relative_url }}"
+        class="text-sm font-bold text-reyco-red-700 hover:text-reyco-red-600">{{ copy.benefits_snapshot.cta.label }}</a>
     </div>
   </div>
 </section>
@@ -95,13 +85,11 @@ benefits, and a clear career path from Helper to Foreman."
 <!-- What you'll work on -->
 <section class="py-14 px-6 md:px-16">
   <div class="max-w-7xl mx-auto">
-    <div class="section-label">The Work</div>
-    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-2">Not the Same Job Every Day</h2>
-    <p class="text-stone-500 mb-8 text-sm">One day you're troubleshooting at a restaurant. The next you're upgrading
-      panels in a multifamily building. The week after, you're on a government campus.</p>
+    <div class="section-label">{{ copy.work_overview.label }}</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-2">{{ copy.work_overview.headline }}</h2>
+    <p class="text-stone-500 mb-8 text-sm">{{ copy.work_overview.subhead }}</p>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-      {%- assign work_types = "Emergency service calls,Panel & riser upgrades,Institutional projects" | split: "," -%}
-      {% for work in work_types %}
+      {% for work in copy.work_overview.types %}
       <div>
         <div class="photo-placeholder h-40 mb-3">
           <!-- TODO: Add work-type photo -->
@@ -116,22 +104,30 @@ benefits, and a clear career path from Helper to Foreman."
 <!-- Stability stats -->
 <section class="bg-stone-800 py-10 px-6 md:px-16">
   <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-    {%- assign stability = "21 yrs|In Business,53|Employees,68+|Active Accounts,New HQ|10,000 sq ft" | split: "," -%}
-    {% for item in stability %}
-    {%- assign parts = item | split: "|" -%}
     <div>
-      <div class="text-white text-3xl font-extrabold">{{ parts[0] }}</div>
-      <div class="text-stone-400 text-xs uppercase tracking-widest mt-1">{{ parts[1] }}</div>
+      <div class="text-white text-3xl font-extrabold">{{ site.founded | date: "%Y" | minus: 2004 | plus: 21 }} yrs</div>
+      <div class="text-stone-400 text-xs uppercase tracking-widest mt-1">In Business</div>
     </div>
-    {% endfor %}
+    <div>
+      <div class="text-white text-3xl font-extrabold">{{ site.employees }}</div>
+      <div class="text-stone-400 text-xs uppercase tracking-widest mt-1">{{ copy.stats.employees_label }}</div>
+    </div>
+    <div>
+      <div class="text-white text-3xl font-extrabold">{{ site.active_accounts }}</div>
+      <div class="text-stone-400 text-xs uppercase tracking-widest mt-1">{{ copy.stats.active_accounts_label }}</div>
+    </div>
+    <div>
+      <div class="text-white text-3xl font-extrabold">{{ copy.stats.new_hq_title }}</div>
+      <div class="text-stone-400 text-xs uppercase tracking-widest mt-1">{{ copy.stats.new_hq_size }}</div>
+    </div>
   </div>
 </section>
 
 <!-- Open Positions -->
 <section id="openings" class="py-14 px-6 md:px-16">
   <div class="max-w-5xl mx-auto">
-    <div class="section-label">Open Positions</div>
-    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">Current Openings</h2>
+    <div class="section-label">{{ copy.openings_section.label }}</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">{{ copy.openings_section.headline }}</h2>
 
     {% assign active_jobs = site.job_openings | where: "active", true %}
     {% if active_jobs.size > 0 %}
@@ -147,23 +143,22 @@ benefits, and a clear career path from Helper to Foreman."
         </div>
         <div class="flex items-center gap-3 shrink-0">
           <a href="{{ job.url | relative_url }}"
-            class="text-sm font-bold text-reyco-red-700 hover:text-reyco-red-600">View Details</a>
+            class="text-sm font-bold text-reyco-red-700 hover:text-reyco-red-600">{{ copy.openings_section.view_details_label }}</a>
           {% if job.indeed_url %}
           <a href="{{ job.indeed_url }}" target="_blank" rel="noopener noreferrer"
-            class="btn-primary text-xs px-4 py-2">Apply on Indeed →</a>
+            class="btn-primary text-xs px-4 py-2">{{ copy.openings_section.apply_indeed_label }}</a>
           {% endif %}
         </div>
       </div>
       {% endfor %}
     </div>
     {% else %}
-    <p class="text-stone-500">No positions posted right now — check back soon or reach out directly.</p>
+    <p class="text-stone-500">{{ copy.openings_section.no_openings_text }}</p>
     {% endif %}
 
     <p class="text-sm text-stone-500 mt-8">
-      Don't see the right role? We're always interested in strong people.
-      <a href="{{ '/contact/' | relative_url }}" class="font-bold text-reyco-red-700 hover:text-reyco-red-600">Get in
-        touch →</a>
+      {{ copy.openings_section.footer_text }}
+      <a href="{{ copy.openings_section.contact_cta.url | relative_url }}" class="font-bold text-reyco-red-700 hover:text-reyco-red-600">{{ copy.openings_section.contact_cta.label }}</a>
     </p>
   </div>
 </section>
@@ -172,21 +167,21 @@ benefits, and a clear career path from Helper to Foreman."
 <section class="bg-stone-100 py-12 px-6 md:px-16">
   <div class="max-w-3xl mx-auto text-center">
     <blockquote class="text-lg italic text-stone-700 leading-relaxed mb-4">
-      "I started as a Helper four years ago. Now I'm running my own crews. Dave actually cares about where you're going,
-      not just what you can do today."
+      "{{ copy.employee_quote.text }}"
     </blockquote>
     <cite class="text-sm font-bold text-stone-800 not-italic">
-      — [Employee Name], Foreman
-      <!-- TODO: Get real name and story from Dave -->
+      — {{ copy.employee_quote.cite }}
     </cite>
   </div>
 </section>
 
 {% include cta-footer.html
-headline="Ready to join the team?"
-subhead="Two paths. One team. Competitive pay, real benefits, and a company that's been building for 21 years."
-cta1_label="Field Careers →"
-cta1_url="/careers/field/"
-cta2_label="Office & Professional →"
-cta2_url="/careers/office/"
+  headline=copy.footer_cta.headline
+  subhead=copy.footer_cta.subhead
+  cta1_label=copy.footer_cta.cta1.label
+  cta1_url=copy.footer_cta.cta1.url
+  cta2_label=copy.footer_cta.cta2.label
+  cta2_url=copy.footer_cta.cta2.url
+%}
+e/"
 %}

@@ -1,0 +1,72 @@
+hero:
+  headline: "Build the Business, Not Just Buildings"
+  subhead: "We're building out the office and leadership team that will take Reyco from a growing regional contractor to a scaled platform across the mid-Atlantic."
+
+roles_section:
+  label: "Open Roles"
+  headline: "What We're Building"
+  role_prefix: "Role"
+  items:
+    - title: "Project Manager"
+      summary: "~8-year average PM tenure. Strong project pipeline. Real autonomy."
+      description: "You own the full lifecycle of assigned projects from award through close-out. You run weekly project meetings with the superintendent and foremen, track cost-to-complete, manage submittals and scheduling, and coordinate with GCs and owners."
+      details:
+        - label: "What you'll use"
+          text: "BuildOps for project tracking and job costing. AccuBid data for buyout. QuickBooks for financial reporting."
+        - label: "What makes it different"
+          text: "Estimators stay involved through buyout — you don't inherit blind spots. The superintendent is your partner. Dave is accessible when you need a decision."
+    - title: "Estimator"
+      summary: "Selective bid volume. Relationship-driven work. Margins that hold."
+      description: "You put numbers together on plan-spec commercial electrical work. You use AccuBid for takeoffs, manage the bid log, and coordinate with the PM team on buyout after award. At Reyco, estimators don't just throw numbers over the wall — you stay involved through buyout to make sure what you estimated is what gets built."
+      details:
+        - label: "Bid volume"
+          text: "We target negotiated and relationship-driven work over hard-bid commodity jobs. You won't be cranking out 50 bids a month for work we'll never win."
+        - label: "What you'll use"
+          text: "AccuBid for estimating. BuildOps integration coming. Plan sets, submittals, and vendor coordination."
+    - title: "Account Manager"
+      summary: "68+ active accounts. DMV territory. Expanding to Richmond and NoVA."
+      description: "You own a book of business across QSR, multifamily, and institutional accounts. You visit facilities, identify service needs, put together proposals for work that doesn't come with drawings, and make sure Reyco is the first call when something goes wrong. You're measured on bids out, dollars returned, new customer development, and service-to-project conversion."
+      details:
+        - label: "The territory"
+          text: "The DMV. Restaurants, apartment buildings, institutional facilities, and retail. Reyco is actively expanding into Northern Virginia and Richmond."
+        - label: "What makes it different"
+          text: "No single person \"owns\" a customer — it's Reyco's relationship. Multiple people touch every account, so you have support and coverage."
+
+operations_hire:
+  label: "Also Hiring"
+  headline: "Operations & Administrative Roles"
+  text: "FP&A, Service Coordination, and warehouse operations. If you want to work at a company that's growing, uses real systems, and has a back-office team with ~10-year average tenure, reach out."
+  cta: { label: "Get in Touch →", url: "/contact/" }
+
+benefits_section:
+  label: "Compensation"
+  headline: "Pay & Benefits"
+  items:
+    - label: "Competitive Salary"
+      text: "Benchmarked for the role and market. Performance matters here and we notice it."
+    - label: "Health & Dental"
+      text: "100% employer-paid for employees. BlueChoice HMO, $0 deductible."
+    - label: "401(k)"
+      text: "7% company contribution regardless of whether you contribute."
+    - label: "PTO & Holidays"
+      text: "Paid time off and paid holidays."
+    - label: "Professional Development"
+      text: "Systems training and professional development support."
+    - label: "Real Backlog"
+      text: "Strong active backlog. This company isn't slowing down."
+
+retention_section:
+  label: "Retention"
+  headline: "Why Professionals Stay at Reyco"
+  text: "Our Project Managers have been here 12 and 16 years. Our Service Account Manager has nearly 14 years. The back-office team averages over 10 years of tenure. People stay because the work is real, the backlog is strong, the leadership is accessible, and the company is at an inflection point — growing, professionalizing, and building something bigger."
+  stats:
+    active_accounts: "Active Accounts"
+    avg_tenure: "Avg Office Tenure"
+    employees: "Employees"
+    in_business: "In Business"
+
+footer_cta:
+  headline: "Ready to build something?"
+  subhead: "We're growing and we're building out the team to match."
+  cta1: { label: "See Open Positions →", url: "/careers/#openings" }
+  cta2: { label: "Why Reyco? →", url: "/careers/why-reyco/" }

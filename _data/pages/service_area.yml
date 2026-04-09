@@ -1,0 +1,33 @@
+hero:
+  headline: "Serving DC, Maryland & Virginia"
+  subhead: "Headquartered in Hughesville, MD — dispatching 24/7 across the entire DMV region."
+
+overview:
+  label: "Where We Work"
+  headline: "The Full DMV Metro Area"
+  text: "Reyco's headquarters is in Hughesville, Maryland. We cover DC proper, suburban Maryland (Prince George's, Montgomery, Charles, Calvert, St. Mary's counties), Northern Virginia (Arlington, Fairfax, Alexandria), and regularly travel to Baltimore, Richmond, Virginia Beach, and Hagerstown for the right partners."
+  map_label: "Service Area Map — DC, MD, VA"
+
+grid:
+  dc:
+    headline: "Washington DC"
+    text: "All DC wards and neighborhoods. Including government and institutional campus work requiring badged access and EMR compliance."
+  md:
+    headline: "Maryland"
+    text: "Our home base. Full coverage across:"
+  va:
+    headline: "Northern Virginia"
+    text: "Active growth market. Full coverage across:"
+
+growth:
+  label: "Expanding Coverage"
+  headline: "Growing Along the I-95 Corridor"
+  text: "Reyco is actively expanding coverage into Richmond, VA and deeper into Northern Virginia. If you're in the mid-Atlantic and need a reliable commercial electrician, we're likely closer than you think."
+  quote: "They go all the way to Virginia Beach for us, they go to Richmond, they go to Baltimore, Hagerstown. They go everywhere we go — up to three and a half hours away."
+  quote_cite: "Director of Facilities, Regional Property Management Company"
+
+footer_cta:
+  headline: "In our service area?"
+  subhead: "Call us or submit a request — we respond fast."
+  cta1: { label: "Request Service →", url: "/contact/" }
+  cta2: { label: "Call (301) 843-1848", url: "tel:3018431848" }

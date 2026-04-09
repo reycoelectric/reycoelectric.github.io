@@ -1,0 +1,52 @@
+hero:
+  headline: "Get in Touch"
+  subhead: "Need electrical service? Have a question? We're here 24/7."
+
+form:
+  label: "Service Request"
+  headline: "Tell Us What You Need"
+  fields:
+    name: "Name"
+    company: "Company"
+    email: "Email"
+    phone: "Phone"
+    facility_type: "Facility Type"
+    service_needed: "Service Needed"
+    message: "Tell Us More"
+    message_placeholder: "Describe the issue or project. Include address if relevant."
+  options:
+    facility_types:
+      - "Select facility type…"
+      - "Restaurant / QSR"
+      - "Multifamily / Apartment Building"
+      - "Government / Institutional"
+      - "Retail"
+      - "Healthcare"
+      - "Other Commercial"
+    service_types:
+      - "Select service type…"
+      - "Emergency / Same-Day Service"
+      - "Planned Service or Maintenance"
+      - "Small Project or Upgrade Quote"
+      - "Construction / Large Project Bid"
+      - "General Inquiry"
+  submit_label: "Submit Service Request →"
+  footer_text: "For immediate emergencies, call us directly:"
+
+sidebar:
+  info_label: "Contact Info"
+  availability: "Available 24/7 for emergencies"
+  office_hours: "Office hours: Mon–Fri, 7AM–5PM"
+  address_label: "Address"
+  service_area_label: "Service Area"
+  service_area_text: "Washington DC, Maryland & Virginia"
+  service_area_cta: "View full service area →"
+  licensed_label: "Licensed & Insured"
+  licensed_text: "DC · Maryland · Virginia"
+  location_label: "Location"
+  map_placeholder: "Map — Hughesville, MD 20637"
+
+emergency_callout:
+  headline: "Emergency?"
+  text: "Don't wait for the form. Call us now — we have an on-call tech every night of the week."
+  cta: "Call"

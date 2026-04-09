@@ -1,0 +1,67 @@
+hero:
+  headline: "More Than a Paycheck"
+  subhead: "Here's what makes Reyco different from the other shops in the DMV — and why people stay."
+
+benefits_deep_dive:
+  label: "Compensation & Benefits"
+  headline: "Benefits That Compete With the Best"
+  items:
+    - label: "Compensation"
+      text: "Pay at the 80th percentile for the DC/MD/VA region, benchmarked annually. Overtime available on projects. Your performance matters here — and we notice it."
+    - label: "Health & Wellness"
+      text: "100% employer-paid for employee coverage. BlueChoice HMO with $0 deductible. Employer contributes over $9,000/year toward your individual medical coverage, $17,000+ for family."
+    - label: "Retirement"
+      text: "7% company contribution regardless of whether you contribute. We put the money in because we want our people building a future. 94% of employees participate because it's worth it."
+    - label: "Time Off & Training"
+      text: "PTO, paid holidays, and fully paid apprenticeship training through IHS Peak. We write the check so you can earn your license without taking on the cost yourself."
+
+training_growth:
+  label: "Training & Career Growth"
+  headline: "A Real Apprentice-to-Journeyman Path"
+  text1: "At Reyco, growth isn't a vague promise. We pair new hires with experienced techs, support your licensing through the IHS Peak apprenticeship program, and promote from within."
+  text2: "Our career ladder: <strong class=\"text-stone-800\">Helper → Apprentice → Mechanic → Service Tech → Foreman.</strong>"
+  text3: "Average field tenure is ~4 years. Back-office tenure averages ~10 years. People stay because the path is real and the company is stable."
+  cta: { label: "See Open Positions →", url: "/careers/#openings" }
+
+career_ladder:
+  label: "The Career Ladder"
+  headline: "Where You Start. Where You Can Go."
+
+work_variety:
+  label: "The Work"
+  headline: "You Won't Be Bored"
+  text: "One day you're troubleshooting an emergency at a restaurant. The next you're upgrading panels in a multifamily building. The week after, you're on a project at a government institution. This is not factory work."
+  types:
+    - "Emergency calls"
+    - "Panel upgrades"
+    - "EV charging installs"
+    - "Government projects"
+
+operating_culture:
+  label: "How We Operate"
+  headline: "Documented Processes. Modern Tools."
+  text1: "Reyco isn't a \"figure it out yourself\" shop. We've documented how things work — dispatch, job workflows, folder structures, invoicing — and we train you on them from day one."
+  text2: "You'll use BuildOps on your tablet: your schedule, job details, customer info, and the ability to capture photos and generate invoices right on-site. No paper, no confusion."
+  text3: "We've been building these systems for 10+ years. When you join, you're not walking into chaos — you're joining a company that knows what it's doing."
+
+stability_section:
+  headline: "A Company That's Here to Stay"
+
+customer_quotes:
+  label: "What Customers Say About Working with Our Team"
+  headline: "The Team Is the Difference"
+  items:
+    - quote: "The techs are knowledgeable. They provide recommendations. They turn in their paperwork. You don't even have to reach out to them — they already give you the information. No stress."
+      cite: "Facility Manager, National Services Company"
+      badge: "10/10 recommendation"
+    - quote: "They're our most reliable electrician. They're getting 97% of our work. Whenever we're paying Reyco, we know the value that we're getting."
+      cite: "Director of Facilities, Regional Property Management Company"
+      badge: "10/10 recommendation"
+    - quote: "This guy came to my office, sat down with me with the plans, and we used highlighters to mark every single line. By the time I hit the project, I was an experienced electrical project manager."
+      cite: "Director of Facilities, on a Reyco estimator"
+      note: "Regional Property Management Company"
+
+footer_cta:
+  headline: "Ready to make a move?"
+  subhead: "View our open positions and apply directly on Indeed."
+  cta: { label: "See Open Positions →", url: "/careers/#openings" }

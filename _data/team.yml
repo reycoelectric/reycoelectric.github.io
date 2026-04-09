@@ -18,12 +18,26 @@ leadership:
 
 field_force:
   total: 40
-  supervisors_foremen: 7
-  service_techs: 7
-  mechanics: 6
-  apprentices_helpers: 20
   avg_tenure_years: 4
+  roles:
+    - label: "Supervisors & Foremen"
+      count: 7
+      description: "Run crews and own job execution"
+    - label: "Service Technicians"
+      count: 7
+      description: "Higher-skill troubleshooting and small projects"
+    - label: "Mechanics"
+      count: 6
+      description: "Mid-level production capacity"
+    - label: "Apprentices & Helpers"
+      count: 20
+      description: "Leverage today and pipeline for tomorrow"
 
 office:
   total: 13
   avg_tenure_years: 10
+  breakdown:
+    - "3 Service Leadership (Coordinator + Account Managers)"
+    - "4 Project Managers & Assistants (~8-yr avg tenure)"
+    - "2 Warehouse (fleet loading, material flow)"
+    - "3 Back-office (Finance, Office Admin, Business Admin)"

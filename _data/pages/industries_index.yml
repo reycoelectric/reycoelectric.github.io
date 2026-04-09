@@ -1,0 +1,22 @@
+hero:
+  headline: "Specialized Electrical for the Facilities That Matter Most"
+  subhead: "We focus on must-run operations — the ones where a power failure isn't an inconvenience, it's a crisis."
+
+section:
+  label: "Industries"
+  headline: "We Know Your Facility Type"
+  description: "Different industries have different electrical priorities. Our teams understand the operational constraints, code requirements, and urgency expectations that come with each."
+  learn_more: "Learn more →"
+
+conversion_story:
+  label: "How We Grow With You"
+  headline: "We Build It, Then We Keep It Running"
+  text: "Many of our longest service relationships started with a single construction project. We build it, we learn the facility, and when the general contractor moves on — we stay. That's why 68+ businesses trust us for both their daily electrical needs and their biggest upgrade projects."
+  quote: '"We built it, the GC moved on — and now we''re doing all the service. That''s the typical pattern. We stay because we already know the facility."'
+  source: "— Dave Reynolds, Founder"
+
+cta:
+  headline: "Serve a facility we should know about?"
+  subhead: "Tell us what you need. We respond fast."
+  primary_label: "Request Service →"
+  secondary_label: site.phone

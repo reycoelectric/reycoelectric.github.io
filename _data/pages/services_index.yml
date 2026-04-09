@@ -1,0 +1,29 @@
+hero:
+  headline: "Full-Service Commercial Electrical"
+  subhead: "From emergency calls to major infrastructure upgrades — for the facilities that can't wait."
+
+cards:
+  request_service: "Request Service"
+  details: "Details →"
+
+dispatch:
+  label: "How It Works"
+  headline: "Call Us Any Time"
+  description: "Our centralized dispatch team classifies every call and assigns the right technician based on the problem and your priority window."
+  steps:
+    - title: "Call"
+      text: "Call us — 24/7 for emergencies"
+    - title: "Dispatch"
+      text: "Your call is classified as emergency or scheduled. A tech is assigned based on capability and location."
+    - title: "Resolve"
+      text: "Tech arrives on-site with full job details on their tablet. Fix is made. Digital invoice same day."
+
+industries:
+  label: "Industries"
+  headline: "Who We Serve"
+  details_link: "See industry details →"
+
+cta:
+  headline: "Need electrical service?"
+  subhead: "We're available 24/7. Call or submit a request and we'll get back to you fast."
+  primary_label: "Request Service →"

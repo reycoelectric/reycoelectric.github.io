@@ -1,0 +1,59 @@
+hero:
+  headline: "Build a Career with Your Hands"
+  subhead: "Reyco's field team is 40 people strong, organized into clear tiers with real upward mobility. This isn't a company where you top out after two years."
+
+career_ladder_section:
+  label: "The Career Ladder"
+  headline: "Where You Start. Where You Can Go."
+
+typical_week:
+  label: "The Work"
+  headline: "What a Typical Week Looks Like"
+  text1: "You won't be stuck doing the same thing every day. In a given week, a Reyco tech might troubleshoot an emergency at a restaurant on Monday, run a panel upgrade at a multifamily building Tuesday through Thursday, and spend Friday on a fire alarm job at a government facility."
+  text2: "The work variety is one of the main reasons people stay."
+  types:
+    - label: "Emergency"
+      text: "Same-day dispatch for restaurants, multifamily, retail"
+    - label: "Projects"
+      text: "Panel upgrades, EV charging, lighting retrofits"
+    - label: "Institutional"
+      text: "Government campuses, institutional facilities, badged-access environments"
+
+benefits_section:
+  label: "Pay & Benefits"
+  headline: "Benefits That Compete"
+  items:
+    - label: "Competitive Pay"
+      text: "Benchmarked at the 80th percentile for the DMV region. Overtime available."
+    - label: "Health & Dental"
+      text: "100% employer-paid for employees. BlueChoice HMO, $0 deductible. No out-of-pocket premium."
+    - label: "401(k)"
+      text: "7% company contribution — we put it in whether or not you contribute. 94% of employees participate."
+    - label: "Paid Apprenticeship"
+      text: "We pay your IHS Peak apprenticeship fees. You don't pay out of pocket."
+    - label: "Vehicle & Tablet"
+      text: "Company vehicle and tablet for Service Techs and above."
+    - label: "PTO & Holidays"
+      text: "Paid time off and paid holidays."
+
+tenure_section:
+  label: "Why Field Guys Stay"
+  headline: "Stability in a High-Turnover Industry"
+  text: "While the electrical industry is known for transient crews, our core team has been together for years. We have a Supervisor with 13 years, a Foreman with nearly 9, Service Techs with over a decade. Dave Reynolds is personally involved in hiring and knows every tech by name."
+  stats:
+    in_business: "In Business"
+    field_staff: "Field Staff"
+    avg_tenure: "Avg Field Tenure"
+    health: "Employer-Paid Health"
+
+openings_section:
+  label: "Open Positions"
+  headline: "Field Openings"
+  apply_label: "Apply on Indeed →"
+  view_label: "View Position →"
+
+footer_cta:
+  headline: "Ready to join the team?"
+  subhead: "Competitive pay, real benefits, and a clear path from Helper to Foreman."
+  cta1: { label: "See Open Positions →", url: "/careers/field/#openings" }
+  cta2: { label: "Why Reyco? →", url: "/careers/why-reyco/" }

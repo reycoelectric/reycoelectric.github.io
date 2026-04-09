@@ -1,0 +1,12 @@
+hero:
+  headline: "From the Field"
+  subhead: "Practical insights on commercial electrical service, facility management, and what it takes to keep operations running."
+
+section:
+  read_more: "Read More →"
+  no_posts: "Posts coming soon."
+
+cta:
+  headline: "Need commercial electrical service?"
+  subhead: "We're available 24/7 for emergencies across DC, Maryland, and Virginia."
+  button_label: "Request Service →"

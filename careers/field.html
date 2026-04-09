@@ -1,22 +1,19 @@
 ---
 layout: default
-title: "Field Careers | Reyco Electrical Services"
-description: "Join Reyco's field team as a Helper, Apprentice, Mechanic, Service Tech, or Foreman. Competitive pay, paid
-apprenticeship, 100% employer-paid benefits, and a clear path forward."
 ---
 
+{% assign copy = site.data.pages.careers_field %}
+
 {% include hero-dark.html
-headline="Build a Career with Your Hands"
-subhead="Reyco's field team is 40 people strong, organized into clear tiers with real upward mobility. This isn't a
-company where you top out after two years."
+  headline=copy.hero.headline
+  subhead=copy.hero.subhead
 %}
 
 <!-- Career ladder — full version -->
 <section class="py-16 px-6 md:px-16 bg-white">
   <div class="max-w-7xl mx-auto">
-    <div class="section-label">The Career Ladder</div>
-    <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-10">Where You Start. Where You Can
-      Go.</h2>
+    <div class="section-label">{{ copy.career_ladder_section.label }}</div>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-10">{{ copy.career_ladder_section.headline }}</h2>
 
     <div class="space-y-0">
       {% assign ladder = site.data.career_ladder %}
@@ -39,26 +36,20 @@ company where you top out after two years."
 <section class="py-14 px-6 md:px-16 bg-stone-50">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div>
-      <div class="section-label">The Work</div>
-      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-4">What a Typical Week Looks Like</h2>
-      <p class="text-stone-600 leading-relaxed mb-6">You won't be stuck doing the same thing every day. In a given week,
-        a Reyco tech might troubleshoot an emergency at a restaurant on Monday, run a panel upgrade at a multifamily
-        building Tuesday through Thursday, and spend Friday on a fire alarm job at a government facility.</p>
-      <p class="text-stone-600 leading-relaxed">The work variety is one of the main reasons people stay.</p>
+      <div class="section-label">{{ copy.typical_week.label }}</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-4">{{ copy.typical_week.headline }}</h2>
+      <div class="space-y-4 text-stone-600 leading-relaxed max-w-lg mb-6">
+        <p>{{ copy.typical_week.text1 }}</p>
+        <p>{{ copy.typical_week.text2 }}</p>
+      </div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      {% for type in copy.typical_week.types %}
       <div class="bg-white border-2 border-stone-200 p-5 text-center">
-        <div class="text-reyco-red font-extrabold text-sm uppercase tracking-wide mb-2">Emergency</div>
-        <p class="text-xs text-stone-500">Same-day dispatch for restaurants, multifamily, retail</p>
+        <div class="text-reyco-red font-extrabold text-sm uppercase tracking-wide mb-2">{{ type.label }}</div>
+        <p class="text-xs text-stone-500 leading-snug">{{ type.text }}</p>
       </div>
-      <div class="bg-white border-2 border-stone-200 p-5 text-center">
-        <div class="text-reyco-red font-extrabold text-sm uppercase tracking-wide mb-2">Projects</div>
-        <p class="text-xs text-stone-500">Panel upgrades, EV charging, lighting retrofits</p>
-      </div>
-      <div class="bg-white border-2 border-stone-200 p-5 text-center">
-        <div class="text-reyco-red font-extrabold text-sm uppercase tracking-wide mb-2">Institutional</div>
-        <p class="text-xs text-stone-500">Government campuses, institutional facilities, badged-access environments</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -66,37 +57,15 @@ company where you top out after two years."
 <!-- Pay & Benefits -->
 <section class="py-14 px-6 md:px-16 bg-white">
   <div class="max-w-7xl mx-auto">
-    <div class="section-label">Pay & Benefits</div>
-    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">Benefits That Compete</h2>
+    <div class="section-label">{{ copy.benefits_section.label }}</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">{{ copy.benefits_section.headline }}</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {% for item in copy.benefits_section.items %}
       <div class="bg-stone-50 border border-stone-200 p-5">
-        <div class="text-sm font-extrabold text-stone-800 mb-2">Competitive Pay</div>
-        <p class="text-xs text-stone-500 leading-relaxed">Benchmarked at the 80th percentile for the DMV region.
-          Overtime available.</p>
+        <div class="text-sm font-extrabold text-stone-800 mb-2">{{ item.label }}</div>
+        <p class="text-xs text-stone-500 leading-relaxed">{{ item.text }}</p>
       </div>
-      <div class="bg-stone-50 border border-stone-200 p-5">
-        <div class="text-sm font-extrabold text-stone-800 mb-2">Health & Dental</div>
-        <p class="text-xs text-stone-500 leading-relaxed">100% employer-paid for employees. BlueChoice HMO, $0
-          deductible. No out-of-pocket premium.</p>
-      </div>
-      <div class="bg-stone-50 border border-stone-200 p-5">
-        <div class="text-sm font-extrabold text-stone-800 mb-2">401(k)</div>
-        <p class="text-xs text-stone-500 leading-relaxed">7% company contribution — we put it in whether or not you
-          contribute. 94% of employees participate.</p>
-      </div>
-      <div class="bg-stone-50 border border-stone-200 p-5">
-        <div class="text-sm font-extrabold text-stone-800 mb-2">Paid Apprenticeship</div>
-        <p class="text-xs text-stone-500 leading-relaxed">We pay your IHS Peak apprenticeship fees. You don't pay out of
-          pocket.</p>
-      </div>
-      <div class="bg-stone-50 border border-stone-200 p-5">
-        <div class="text-sm font-extrabold text-stone-800 mb-2">Vehicle & Tablet</div>
-        <p class="text-xs text-stone-500 leading-relaxed">Company vehicle and tablet for Service Techs and above.</p>
-      </div>
-      <div class="bg-stone-50 border border-stone-200 p-5">
-        <div class="text-sm font-extrabold text-stone-800 mb-2">PTO & Holidays</div>
-        <p class="text-xs text-stone-500 leading-relaxed">Paid time off and paid holidays.</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -104,28 +73,25 @@ company where you top out after two years."
 <!-- Why people stay -->
 <section class="py-14 px-6 md:px-16 bg-stone-900">
   <div class="max-w-7xl mx-auto">
-    <div class="text-xs font-bold text-reyco-red-400 uppercase tracking-widest mb-4">Why Field Guys Stay</div>
-    <h2 class="text-2xl font-extrabold text-white tracking-tight mb-6">Average Field Tenure: ~4 Years</h2>
-    <p class="text-stone-300 leading-relaxed max-w-2xl mb-8">We have a Supervisor with 13 years, a Foreman with nearly
-      9, Service Techs with over a decade. People stay because the pay is competitive, the work is varied, the benefits
-      are real, and the company is run professionally. Dave Reynolds is personally involved in hiring and knows every
-      tech by name.</p>
+    <div class="text-xs font-bold text-reyco-red-400 uppercase tracking-widest mb-4">{{ copy.tenure_section.label }}</div>
+    <h2 class="text-2xl font-extrabold text-white tracking-tight mb-6">{{ copy.tenure_section.headline }}</h2>
+    <p class="text-stone-300 leading-relaxed max-w-2xl mb-8">{{ copy.tenure_section.text }}</p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-t border-stone-700 pt-8">
       <div>
-        <div class="text-3xl font-black text-white">21 yrs</div>
-        <div class="text-xs text-stone-400 uppercase tracking-widest mt-1">In Business</div>
+        <div class="text-3xl font-black text-white">{{ site.founded | date: "%Y" | minus: 2004 | plus: 21 }} yrs</div>
+        <div class="text-xs text-stone-400 uppercase tracking-widest mt-1">{{ copy.tenure_section.stats.in_business }}</div>
       </div>
       <div>
-        <div class="text-3xl font-black text-white">40</div>
-        <div class="text-xs text-stone-400 uppercase tracking-widest mt-1">Field Staff</div>
+        <div class="text-3xl font-black text-white">{{ site.field_staff }}</div>
+        <div class="text-xs text-stone-400 uppercase tracking-widest mt-1">{{ copy.tenure_section.stats.field_staff }}</div>
       </div>
       <div>
-        <div class="text-3xl font-black text-white">~4 yrs</div>
-        <div class="text-xs text-stone-400 uppercase tracking-widest mt-1">Avg Field Tenure</div>
+        <div class="text-3xl font-black text-white">{{ site.avg_field_tenure }}</div>
+        <div class="text-xs text-stone-400 uppercase tracking-widest mt-1">{{ copy.tenure_section.stats.avg_tenure }}</div>
       </div>
       <div>
-        <div class="text-3xl font-black text-white">100%</div>
-        <div class="text-xs text-stone-400 uppercase tracking-widest mt-1">Employer-Paid Health</div>
+        <div class="text-3xl font-black text-white">{{ site.health_benefit }}</div>
+        <div class="text-xs text-stone-400 uppercase tracking-widest mt-1">{{ copy.tenure_section.stats.health }}</div>
       </div>
     </div>
   </div>
@@ -134,8 +100,8 @@ company where you top out after two years."
 <!-- Open positions -->
 <section id="openings" class="py-14 px-6 md:px-16 bg-white">
   <div class="max-w-7xl mx-auto">
-    <div class="section-label">Open Positions</div>
-    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">Field Openings</h2>
+    <div class="section-label">{{ copy.openings_section.label }}</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">{{ copy.openings_section.headline }}</h2>
     {% assign field_jobs = site.job_openings | where: "active", true | where: "track", "field" %}
     {% assign all_jobs = site.job_openings | where: "active", true %}
     {% if field_jobs.size > 0 %}
@@ -148,8 +114,7 @@ company where you top out after two years."
           </div>
           {% if job.location %}<div class="text-sm text-stone-500 mt-0.5">{{ job.location }}</div>{% endif %}
         </div>
-        <span class="text-reyco-red-700 font-bold text-sm group-hover:translate-x-1 transition-transform">Apply on
-          Indeed →</span>
+        <span class="text-reyco-red-700 font-bold text-sm group-hover:translate-x-1 transition-transform">{{ copy.openings_section.apply_label }}</span>
       </a>
       {% endfor %}
     </div>
@@ -163,8 +128,7 @@ company where you top out after two years."
           </div>
           {% if job.location %}<div class="text-sm text-stone-500 mt-0.5">{{ job.location }}</div>{% endif %}
         </div>
-        <span class="text-reyco-red-700 font-bold text-sm group-hover:translate-x-1 transition-transform">View Position
-          →</span>
+        <span class="text-reyco-red-700 font-bold text-sm group-hover:translate-x-1 transition-transform">{{ copy.openings_section.view_label }}</span>
       </a>
       {% endfor %}
     </div>
@@ -173,10 +137,10 @@ company where you top out after two years."
 </section>
 
 {% include cta-footer.html
-headline="Ready to join the team?"
-subhead="Competitive pay, real benefits, and a clear path from Helper to Foreman."
-cta1_label="See Open Positions →"
-cta1_url="/careers/field/#openings"
-cta2_label="Why Reyco? →"
-cta2_url="/careers/why-reyco/"
+  headline=copy.footer_cta.headline
+  subhead=copy.footer_cta.subhead
+  cta1_label=copy.footer_cta.cta1.label
+  cta1_url=copy.footer_cta.cta1.url
+  cta2_label=copy.footer_cta.cta2.label
+  cta2_url=copy.footer_cta.cta2.url
 %}

@@ -4,9 +4,11 @@ title: "Contact Reyco Electrical Services | Request Service"
 description: "Request commercial electrical service or get in touch with our team. Available 24/7 for emergencies across DC, Maryland, and Virginia."
 ---
 
+{% assign copy = site.data.pages.contact %}
+
 {% include hero-dark.html
-  headline="Get in Touch"
-  subhead="Need electrical service? Have a question? We're here 24/7."
+  headline=copy.hero.headline
+  subhead=copy.hero.subhead
 %}
 
 <section class="py-14 px-6 md:px-16">
@@ -14,20 +16,20 @@ description: "Request commercial electrical service or get in touch with our tea
 
     <!-- Form: 3/5 -->
     <div class="md:col-span-3">
-      <div class="section-label">Service Request</div>
-      <h2 class="text-xl font-extrabold text-stone-800 tracking-tight mb-7">Tell Us What You Need</h2>
+      <div class="section-label">{{ copy.form.label }}</div>
+      <h2 class="text-xl font-extrabold text-stone-800 tracking-tight mb-7">{{ copy.form.headline }}</h2>
 
       <!-- TODO: Replace YOUR_FORM_ID with your Formspree form ID -->
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5">
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label for="name" class="block text-sm font-semibold text-stone-700 mb-1.5">Name <span class="text-red-500">*</span></label>
+            <label for="name" class="block text-sm font-semibold text-stone-700 mb-1.5">{{ copy.form.fields.name }} <span class="text-red-500">*</span></label>
             <input type="text" id="name" name="name" required
               class="w-full border-2 border-stone-300 px-3 py-2.5 text-sm text-stone-800 focus:border-reyco-red-600 focus:outline-none transition-colors">
           </div>
           <div>
-            <label for="company" class="block text-sm font-semibold text-stone-700 mb-1.5">Company</label>
+            <label for="company" class="block text-sm font-semibold text-stone-700 mb-1.5">{{ copy.form.fields.company }}</label>
             <input type="text" id="company" name="company"
               class="w-full border-2 border-stone-300 px-3 py-2.5 text-sm text-stone-800 focus:border-reyco-red-600 focus:outline-none transition-colors">
           </div>
@@ -35,61 +37,54 @@ description: "Request commercial electrical service or get in touch with our tea
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label for="email" class="block text-sm font-semibold text-stone-700 mb-1.5">Email <span class="text-red-500">*</span></label>
+            <label for="email" class="block text-sm font-semibold text-stone-700 mb-1.5">{{ copy.form.fields.email }} <span class="text-red-500">*</span></label>
             <input type="email" id="email" name="email" required
               class="w-full border-2 border-stone-300 px-3 py-2.5 text-sm text-stone-800 focus:border-reyco-red-600 focus:outline-none transition-colors">
           </div>
           <div>
-            <label for="phone" class="block text-sm font-semibold text-stone-700 mb-1.5">Phone <span class="text-red-500">*</span></label>
+            <label for="phone" class="block text-sm font-semibold text-stone-700 mb-1.5">{{ copy.form.fields.phone }} <span class="text-red-500">*</span></label>
             <input type="tel" id="phone" name="phone" required
               class="w-full border-2 border-stone-300 px-3 py-2.5 text-sm text-stone-800 focus:border-reyco-red-600 focus:outline-none transition-colors">
           </div>
         </div>
 
         <div>
-          <label for="facility_type" class="block text-sm font-semibold text-stone-700 mb-1.5">Facility Type</label>
+          <label for="facility_type" class="block text-sm font-semibold text-stone-700 mb-1.5">{{ copy.form.fields.facility_type }}</label>
           <select id="facility_type" name="facility_type"
             class="w-full border-2 border-stone-300 px-3 py-2.5 text-sm text-stone-800 focus:border-reyco-red-600 focus:outline-none transition-colors bg-white">
-            <option value="">Select facility type…</option>
-            <option>Restaurant / QSR</option>
-            <option>Multifamily / Apartment Building</option>
-            <option>Government / Institutional</option>
-            <option>Retail</option>
-            <option>Healthcare</option>
-            <option>Other Commercial</option>
+            {% for opt in copy.form.options.facility_types %}
+            <option value="{% if forloop.first %}{% else %}{{ opt }}{% endif %}">{{ opt }}</option>
+            {% endfor %}
           </select>
         </div>
 
         <div>
-          <label for="service_needed" class="block text-sm font-semibold text-stone-700 mb-1.5">Service Needed</label>
+          <label for="service_needed" class="block text-sm font-semibold text-stone-700 mb-1.5">{{ copy.form.fields.service_needed }}</label>
           <select id="service_needed" name="service_needed"
             class="w-full border-2 border-stone-300 px-3 py-2.5 text-sm text-stone-800 focus:border-reyco-red-600 focus:outline-none transition-colors bg-white">
-            <option value="">Select service type…</option>
-            <option>Emergency / Same-Day Service</option>
-            <option>Planned Service or Maintenance</option>
-            <option>Small Project or Upgrade Quote</option>
-            <option>Construction / Large Project Bid</option>
-            <option>General Inquiry</option>
+            {% for opt in copy.form.options.service_types %}
+            <option value="{% if forloop.first %}{% else %}{{ opt }}{% endif %}">{{ opt }}</option>
+            {% endfor %}
           </select>
         </div>
 
         <div>
-          <label for="message" class="block text-sm font-semibold text-stone-700 mb-1.5">Tell Us More</label>
+          <label for="message" class="block text-sm font-semibold text-stone-700 mb-1.5">{{ copy.form.fields.message }}</label>
           <textarea id="message" name="message" rows="5"
-            placeholder="Describe the issue or project. Include address if relevant."
+            placeholder="{{ copy.form.fields.message_placeholder }}"
             class="w-full border-2 border-stone-300 px-3 py-2.5 text-sm text-stone-800 focus:border-reyco-red-600 focus:outline-none transition-colors resize-y"></textarea>
         </div>
 
         <!-- Honeypot spam prevention -->
         <input type="text" name="_gotcha" style="display:none">
-        <input type="hidden" name="_subject" value="New service request from reycoelectric.com">
+        <input type="hidden" name="_subject" value="New service request from {{ site.url | remove: 'https://' | remove: 'http://' }}">
 
         <button type="submit" class="btn-primary w-full sm:w-auto px-8 py-3">
-          Submit Service Request →
+          {{ copy.form.submit_label }}
         </button>
 
         <p class="text-xs text-stone-400">
-          For immediate emergencies, call us directly: <a href="tel:{{ site.phone_link }}" class="font-bold text-stone-600 hover:text-reyco-red-700">{{ site.phone }}</a>
+          {{ copy.form.footer_text }} <a href="tel:{{ site.phone_link }}" class="font-bold text-stone-600 hover:text-reyco-red-700">{{ site.phone }}</a>
         </p>
       </form>
     </div>
@@ -98,48 +93,48 @@ description: "Request commercial electrical service or get in touch with our tea
     <div class="md:col-span-2 space-y-6">
 
       <div>
-        <div class="section-label">Contact Info</div>
+        <div class="section-label">{{ copy.sidebar.info_label }}</div>
         <div class="bg-stone-50 border border-stone-200 p-6 space-y-5">
           <div>
             <a href="tel:{{ site.phone_link }}" class="text-2xl font-extrabold text-stone-800 hover:text-reyco-red-700 transition-colors block">{{ site.phone }}</a>
-            <p class="text-sm text-stone-500 mt-1">Available 24/7 for emergencies</p>
-            <p class="text-xs text-stone-400">Office hours: Mon–Fri, 7AM–5PM</p>
+            <p class="text-sm text-stone-500 mt-1">{{ copy.sidebar.availability }}</p>
+            <p class="text-xs text-stone-400">{{ copy.sidebar.office_hours }}</p>
           </div>
           <div>
-            <div class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1">Address</div>
+            <div class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1">{{ copy.sidebar.address_label }}</div>
             <div class="text-sm text-stone-700">
-              Reyco Electrical Services<br>
+              {{ site.title }}<br>
               {{ site.address }}
             </div>
           </div>
           <div>
-            <div class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1">Service Area</div>
-            <div class="text-sm text-stone-700">Washington DC, Maryland & Virginia<br>
-              <a href="{{ '/service-area/' | relative_url }}" class="text-reyco-red-700 font-semibold hover:text-reyco-red-600 text-xs">View full service area →</a>
+            <div class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1">{{ copy.sidebar.service_area_label }}</div>
+            <div class="text-sm text-stone-700">{{ copy.sidebar.service_area_text }}<br>
+              <a href="{{ '/service-area/' | relative_url }}" class="text-reyco-red-700 font-semibold hover:text-reyco-red-600 text-xs">{{ copy.sidebar.service_area_cta }}</a>
             </div>
           </div>
           <div>
-            <div class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1">Licensed & Insured</div>
-            <div class="text-sm text-stone-700">DC · Maryland · Virginia</div>
+            <div class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1">{{ copy.sidebar.licensed_label }}</div>
+            <div class="text-sm text-stone-700">{{ copy.sidebar.licensed_text }}</div>
           </div>
         </div>
       </div>
 
       <!-- Map placeholder -->
       <div>
-        <div class="section-label">Location</div>
+        <div class="section-label">{{ copy.sidebar.location_label }}</div>
         <!-- TODO: Replace with Google Maps embed -->
         <!-- <iframe src="https://www.google.com/maps/embed?..." width="100%" height="240" style="border:0;" allowfullscreen loading="lazy"></iframe> -->
         <div class="photo-placeholder h-52 border-2 border-stone-200">
-          <span>Map — Hughesville, MD 20637</span>
+          <span>{{ copy.sidebar.map_placeholder }}</span>
         </div>
       </div>
 
       <!-- Quick access for emergencies -->
       <div class="bg-reyco-red-50 border border-reyco-red-200 p-5">
-        <div class="text-sm font-bold text-stone-800 mb-1">Emergency?</div>
-        <p class="text-xs text-stone-600 mb-3">Don't wait for the form. Call us now — we have an on-call tech every night of the week.</p>
-        <a href="tel:{{ site.phone_link }}" class="btn-primary text-sm w-full text-center block">Call {{ site.phone }}</a>
+        <div class="text-sm font-bold text-stone-800 mb-1">{{ copy.emergency_callout.headline }}</div>
+        <p class="text-xs text-stone-600 mb-3">{{ copy.emergency_callout.text }}</p>
+        <a href="tel:{{ site.phone_link }}" class="btn-primary text-sm w-full text-center block">{{ copy.emergency_callout.cta }} {{ site.phone }}</a>
       </div>
 
     </div>

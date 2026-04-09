@@ -1,0 +1,12 @@
+licenses:
+  - state: "Washington DC"
+    label: "Licensed Electrical Contractor"
+  - state: "Maryland"
+    label: "Licensed Electrical Contractor"
+  - state: "Virginia"
+    label: "Licensed Electrical Contractor"
+
+compliance:
+  - "Badged access for restricted institutional facilities"
+  - "Full compliance documentation available for procurement teams"
+  - "Highly favorable workers' compensation loss history"

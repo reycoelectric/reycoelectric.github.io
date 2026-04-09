@@ -9,7 +9,7 @@
       {% assign cta1_href = cta1_href | relative_url %}
     {% endunless %}
     <a href="{{ cta1_href }}" class="{{ include.cta1_class | default: 'btn-brand' }}">
-      {{ include.cta1_label | default: 'Request Service →' }}
+      {{ include.cta1_label | default: site.data.ui.nav.cta_default_label }}
     </a>
     {% if include.cta2_label %}
       {% assign cta2_href = include.cta2_url | default: '#' %}

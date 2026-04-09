@@ -4,20 +4,21 @@ title: "Industries We Serve | Reyco Electrical Services"
 description: "Reyco serves restaurants, multifamily, government, retail, and healthcare facilities across DC, Maryland, and Virginia. Specialized electrical for must-run operations."
 ---
 
+{% assign data = site.data.pages.industries_index %}
 {% include hero-dark.html
-  headline="Specialized Electrical for the Facilities That Matter Most"
-  subhead="We focus on must-run operations — the ones where a power failure isn't an inconvenience, it's a crisis."
+  headline=data.hero.headline
+  subhead=data.hero.subhead
 %}
 
 <!-- Industry card grid -->
 <section class="py-16 px-6 md:px-16 bg-white">
   <div class="max-w-7xl mx-auto">
-    <div class="section-label text-center mb-3">Industries</div>
+    <div class="section-label text-center mb-3">{{ data.section.label }}</div>
     <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 text-center tracking-tight mb-4">
-      We Know Your Facility Type
+      {{ data.section.headline }}
     </h2>
     <p class="text-stone-500 text-center max-w-2xl mx-auto mb-12">
-      Different industries have different electrical priorities. Our teams understand the operational constraints, code requirements, and urgency expectations that come with each.
+      {{ data.section.description }}
     </p>
 
     {% assign sorted_industries = site.industries | sort: "order" %}
@@ -42,7 +43,7 @@ description: "Reyco serves restaurants, multifamily, government, retail, and hea
           </h3>
           <p class="text-stone-500 text-sm leading-relaxed mb-4">{{ industry.subhead }}</p>
           <span class="text-xs font-bold text-reyco-red-700 uppercase tracking-wide">
-            Learn more →
+            {{ data.section.learn_more }}
           </span>
         </div>
       </a>
@@ -56,22 +57,22 @@ description: "Reyco serves restaurants, multifamily, government, retail, and hea
 <!-- Service conversion story -->
 <section class="py-14 px-6 md:px-16 bg-stone-50">
   <div class="max-w-3xl mx-auto text-center">
-    <div class="section-label text-center">How We Grow With You</div>
-    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-4">We Build It, Then We Keep It Running</h2>
+    <div class="section-label text-center">{{ data.conversion_story.label }}</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-4">{{ data.conversion_story.headline }}</h2>
     <p class="text-stone-600 leading-relaxed mb-4">
-      Many of our longest service relationships started with a single construction project. We build it, we learn the facility, and when the general contractor moves on — we stay. That's why 68+ businesses trust us for both their daily electrical needs and their biggest upgrade projects.
+      {{ data.conversion_story.text | replace: "68+", site.active_accounts }}
     </p>
     <p class="text-stone-500 text-sm italic">
-      "We built it, the GC moved on — and now we're doing all the service. That's the typical pattern. We stay because we already know the facility."
+      {{ data.conversion_story.quote }}
     </p>
-    <p class="text-stone-400 text-xs mt-1">— Dave Reynolds, Founder</p>
+    <p class="text-stone-400 text-xs mt-1">{{ data.conversion_story.source }}</p>
   </div>
 </section>
 
 {% include cta-footer.html
-  headline="Serve a facility we should know about?"
-  subhead="Tell us what you need. We respond fast."
-  cta1_label="Request Service →"
+  headline=data.cta.headline
+  subhead=data.cta.subhead
+  cta1_label=data.cta.primary_label
   cta1_url="/contact/"
   cta2_label=site.phone
   cta2_url="tel:3018431848"

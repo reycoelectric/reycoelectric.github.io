@@ -1,3 +1,4 @@
+{% assign ui = site.data.ui.footer %}
 <footer class="bg-stone-900 text-stone-400">
   <div class="max-w-7xl mx-auto px-6 py-14">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm">
@@ -5,54 +6,54 @@
       <!-- Col 1: Company info -->
       <div>
         <a href="{{ '/' | relative_url }}" class="block mb-4">
-          <img src="{{ '/assets/logo/Mark Dark.svg' | relative_url }}" alt="Reyco Electrical Services" class="h-7 w-auto">
+          <img src="{{ '/assets/logo/Mark Dark.svg' | relative_url }}" alt="{{ site.title }}" class="h-7 w-auto">
         </a>
         <div class="space-y-1.5 text-stone-400 text-sm leading-relaxed">
           <p>{{ site.address }}</p>
-          <p>Serving DC, Maryland & Virginia</p>
+          <p>{{ ui.serving_area }}</p>
           <a href="tel:{{ site.phone_link }}" class="block hover:text-white transition-colors font-semibold">{{ site.phone }}</a>
-          <p class="text-xs text-stone-500">Available 24/7 for emergencies</p>
+          <p class="text-xs text-stone-500">{{ ui.availability }}</p>
         </div>
       </div>
 
       <!-- Col 2: Services -->
       <div>
-        <div class="text-white font-bold mb-4">Services</div>
+        <div class="text-white font-bold mb-4">{{ ui.services_label }}</div>
         <div class="space-y-2">
           {% assign sorted_services = site.services | sort: "order" %}
           {% for service in sorted_services %}
           <a href="{{ service.url | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ service.nav_label }}</a>
           {% endfor %}
-          <a href="{{ '/services/' | relative_url }}" class="block text-sm hover:text-white transition-colors">All Services</a>
+          <a href="{{ '/services/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ ui.all_services }}</a>
         </div>
       </div>
 
       <!-- Col 3: Company -->
       <div>
-        <div class="text-white font-bold mb-4">Company</div>
+        <div class="text-white font-bold mb-4">{{ ui.company_label }}</div>
         <div class="space-y-2">
-          <a href="{{ '/about/' | relative_url }}" class="block text-sm hover:text-white transition-colors">About</a>
-          <a href="{{ '/safety/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Safety & Compliance</a>
-          <a href="{{ '/service-area/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Service Area</a>
-          <a href="{{ '/blog/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Blog</a>
+          <a href="{{ '/about/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ site.data.ui.nav.about }}</a>
+          <a href="{{ '/safety/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ ui.safety_label }}</a>
+          <a href="{{ '/service-area/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ ui.service_area_label }}</a>
+          <a href="{{ '/blog/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ ui.blog_label }}</a>
         </div>
       </div>
 
       <!-- Col 4: Careers -->
       <div>
-        <div class="text-white font-bold mb-4">Careers</div>
+        <div class="text-white font-bold mb-4">{{ ui.careers_label }}</div>
         <div class="space-y-2">
-          <a href="{{ '/careers/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Open Positions</a>
-          <a href="{{ '/careers/why-reyco/' | relative_url }}" class="block text-sm hover:text-white transition-colors">Why Reyco</a>
-          <a href="{{ '/careers/' | relative_url }}#benefits" class="block text-sm hover:text-white transition-colors">Benefits & Growth</a>
+          <a href="{{ '/careers/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ ui.open_positions_label }}</a>
+          <a href="{{ '/careers/why-reyco/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ ui.why_reyco_label }}</a>
+          <a href="{{ '/careers/' | relative_url }}#benefits" class="block text-sm hover:text-white transition-colors">{{ ui.benefits_growth_label }}</a>
         </div>
       </div>
 
     </div>
 
     <div class="border-t border-stone-700 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-stone-500">
-      <span>© {{ 'now' | date: "%Y" }} Reyco Electrical Services Inc. All rights reserved.</span>
-      <span>Licensed & Insured — DC, MD, VA</span>
+      <span>© {{ 'now' | date: "%Y" }} {{ ui.copyright_suffix }}</span>
+      <span>{{ ui.compliance_label }}</span>
     </div>
   </div>
 </footer>

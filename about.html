@@ -5,42 +5,30 @@ description: "Founded in 2004 by Dave Reynolds, Reyco is a 53-person commercial 
 and Virginia. EMR 0.81, top 10% nationally."
 ---
 
+{% assign copy = site.data.pages.about %}
+
 {% include hero-dark.html
-headline="21 Years of Doing It Right"
-subhead="How a one-truck electrician built the DMV's most trusted commercial electrical team."
+  headline=copy.hero.headline
+  subhead=copy.hero.subhead
 %}
 
 <!-- Dave's Story -->
 <section class="py-16 px-4 md:px-16">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
     <div>
-      <div class="section-label">The Founding Story</div>
-      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-6">Dave Reynolds, Founder & President</h2>
+      <div class="section-label">{{ copy.founding_story.label }}</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-6">{{ copy.founding_story.headline }}</h2>
       <div class="space-y-4 text-stone-600 leading-relaxed">
-        <p>
-          Dave Reynolds founded Reyco Electrical Services in 2004 with one truck, one phone, and a commitment to showing
-          up when he said he would. Twenty-one years later, Reyco is a 53-person operation serving the most demanding
-          commercial and institutional facilities in DC, Maryland, and Virginia.
-        </p>
-        <p>
-          From emergency service calls at 2 AM to multi-year institutional projects, Reyco's team handles the electrical
-          work that keeps mission-critical facilities running. Our safety record — EMR 0.81, top 10% nationally — means
-          we're trusted in environments where other contractors can't even get through the door.
-        </p>
-        <p>
-          Dave still runs the company day-to-day. He knows every tech by name, is personally involved in hiring, and is
-          focused on building a company where people can grow their careers — not just collect a paycheck.
-        </p>
-        <!-- TODO: Ask Dave for his 2-sentence founding origin story to add here -->
+        {{ copy.founding_story.text | markdownify }}
       </div>
     </div>
     <div class="space-y-3">
       <div class="h-80 overflow-hidden">
         <!-- TODO: Replace with Dave's headshot or team photo -->
-        <!-- <img src="/assets/images/team/dave-reynolds.jpg" alt="Dave Reynolds, Founder & President" class="w-full h-full object-cover"> -->
+        <!-- <img src="{{ '/assets/images/team/dave-reynolds.jpg' | relative_url }}" alt="{{ copy.founding_story.headline }}" class="w-full h-full object-cover"> -->
         <div class="photo-placeholder w-full h-full"></div>
       </div>
-      <p class="text-xs text-stone-400 text-center">Dave Reynolds, Founder & President</p>
+      <p class="text-xs text-stone-400 text-center">{{ copy.founding_story.caption }}</p>
     </div>
   </div>
 </section>
@@ -49,25 +37,16 @@ subhead="How a one-truck electrician built the DMV's most trusted commercial ele
 <section class="bg-stone-50 py-14 px-4 md:px-16">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-10">
-      <div class="section-label text-center">What We Stand For</div>
-      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight">How We Operate</h2>
+      <div class="section-label text-center">{{ copy.how_we_operate.label }}</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight">{{ copy.how_we_operate.headline }}</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {% for value in site.data.values %}
       <div class="border-t-4 border-reyco-red-700 pt-5">
-        <h3 class="text-lg font-extrabold text-stone-800 mb-2">Safety First</h3>
-        <p class="text-stone-600 leading-relaxed text-sm">EMR of 0.81. Top 10% nationally. That's how we earn access to
-          restricted institutional and government facilities that other contractors can't enter.</p>
+        <h3 class="text-lg font-extrabold text-stone-800 mb-2">{{ value.title }}</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">{{ value.description }}</p>
       </div>
-      <div class="border-t-4 border-reyco-red-700 pt-5">
-        <h3 class="text-lg font-extrabold text-stone-800 mb-2">Always Responsive</h3>
-        <p class="text-stone-600 leading-relaxed text-sm">24/7 centralized dispatch. We pick up the phone and we show up
-          — every time.</p>
-      </div>
-      <div class="border-t-4 border-reyco-red-700 pt-5">
-        <h3 class="text-lg font-extrabold text-stone-800 mb-2">People Matter</h3>
-        <p class="text-stone-600 leading-relaxed text-sm">100% employer-paid health and dental. 401(k) with 7% company
-          contribution. Paid apprenticeship training. Low turnover by design.</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -79,22 +58,16 @@ subhead="How a one-truck electrician built the DMV's most trusted commercial ele
 <section class="py-14 px-4 md:px-16">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div>
-      <div class="section-label">How We Work</div>
-      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-5">Modern Systems, Real Accountability</h2>
+      <div class="section-label">{{ copy.how_we_work.label }}</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-5">{{ copy.how_we_work.headline }}</h2>
       <div class="space-y-4 text-stone-600 leading-relaxed">
-        <p>We use BuildOps to dispatch, track, and invoice every service call. Our techs carry tablets with real-time
-          job details, customer information, and the ability to capture photos, collect signatures, and generate
-          invoices on-site.</p>
-        <p>That means you get a digital invoice the same day we're on-site — not 45 days later. And our account managers
-          can see the status of every call in real time, so there's no phone tag and no surprises.</p>
-        <p>Larger projects are estimated through AccuBid and all costs sync to QuickBooks. We run tight, documented
-          processes — our folder structures, job workflows, and dispatch systems have been refined over 10+ years.</p>
+        <p>{{ copy.how_we_work.text1 }}</p>
+        <p>{{ copy.how_we_work.text2 }}</p>
+        <p>{{ copy.how_we_work.text3 }}</p>
       </div>
     </div>
     <div class="grid grid-cols-2 gap-4">
-      {%- assign tech_items = "BuildOps Dispatch & CRM,Digital Invoicing,Tablet-Based Field Workflows,AccuBid
-      Estimating,QuickBooks Accounting,Weekly Job Reviews" | split: "," -%}
-      {% for item in tech_items %}
+      {% for item in site.data.tech_stack %}
       <div class="bg-stone-50 border border-stone-200 p-4">
         <div class="text-reyco-red-600 font-bold text-xs mb-1">✓</div>
         <div class="text-sm font-semibold text-stone-800">{{ item }}</div>
@@ -107,38 +80,34 @@ subhead="How a one-truck electrician built the DMV's most trusted commercial ele
 <!-- Team Structure -->
 <section class="bg-stone-50 py-14 px-4 md:px-16">
   <div class="max-w-7xl mx-auto">
-    <div class="section-label">The Team</div>
-    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">53 People, One Standard</h2>
+    <div class="section-label">{{ copy.the_team.label }}</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-8">{{ copy.the_team.headline }}</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      {% assign team = site.data.team %}
       <div>
-        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Field Force — 40 People</h3>
+        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Field Force — {{ team.field_force.total }} People</h3>
         <div class="space-y-3">
-          {%- assign field_items = "7 Supervisors & Foremen — run crews and own job execution,7 Service Technicians —
-          higher-skill troubleshooting and small projects,6 Mechanics — mid-level production capacity,20 Apprentices &
-          Helpers — leverage today and pipeline for tomorrow" | split: "," -%}
-          {% for item in field_items %}
+          {% for role in team.field_force.roles %}
           <div class="flex items-start gap-3 text-sm text-stone-600">
-            <span class="text-reyco-red-600 font-bold shrink-0">•</span>{{ item }}
+            <span class="text-reyco-red-600 font-bold shrink-0">•</span><strong>{{ role.count }} {{ role.label }}</strong> — {{ role.description }}
           </div>
           {% endfor %}
         </div>
-        <p class="text-xs text-stone-400 mt-4">Average field tenure: ~4 years</p>
+        <p class="text-xs text-stone-400 mt-4">Average field tenure: ~{{ team.field_force.avg_tenure_years }} years</p>
       </div>
       <div>
-        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Office & Leadership — 13
-          People</h3>
+        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Office & Leadership — {{ team.office.total }} People</h3>
         <div class="space-y-2">
-          {% for person in site.data.team.leadership %}
+          {% for person in team.leadership %}
           <div class="text-sm text-stone-600">
             <span class="font-semibold text-stone-800">{{ person.name }}</span> — {{ person.title }}
           </div>
           {% endfor %}
-          <div class="text-sm text-stone-600">3 Service Leadership (Coordinator + Account Managers)</div>
-          <div class="text-sm text-stone-600">4 Project Managers & Assistants (~8-yr avg tenure)</div>
-          <div class="text-sm text-stone-600">2 Warehouse (fleet loading, material flow)</div>
-          <div class="text-sm text-stone-600">3 Back-office (Finance, Office Admin, Business Admin)</div>
+          {% for item in team.office.breakdown %}
+          <div class="text-sm text-stone-600">{{ item }}</div>
+          {% endfor %}
         </div>
-        <p class="text-xs text-stone-400 mt-4">Average back-office tenure: ~10 years</p>
+        <p class="text-xs text-stone-400 mt-4">Average back-office tenure: ~{{ team.office.avg_tenure_years }} years</p>
       </div>
     </div>
   </div>
@@ -149,26 +118,30 @@ subhead="How a one-truck electrician built the DMV's most trusted commercial ele
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div class="h-64 overflow-hidden">
       <!-- TODO: Replace with exterior photo of Hughesville HQ -->
-      <!-- <img src="/assets/images/hq/exterior.jpg" alt="Reyco Headquarters, Hughesville MD" class="w-full h-full object-cover"> -->
+      <!-- <img src="{{ '/assets/images/hq/exterior.jpg' | relative_url }}" alt="{{ copy.hq.headline }}" class="w-full h-full object-cover"> -->
       <div class="photo-placeholder w-full h-full"></div>
     </div>
     <div>
-      <div class="section-label">Our Home Base</div>
-      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-4">New 10,000 sq ft HQ in Hughesville, MD</h2>
-      <p class="text-stone-600 leading-relaxed mb-4">In 2024, Reyco moved into a new 10,000 sq ft headquarters in
-        Hughesville, MD. The facility consolidates our prior locations into a single hub — with yard space, truck
-        parking, and warehouse capacity to support our growing fleet and team.</p>
-      <p class="text-stone-600 leading-relaxed">Positioned in Southern Maryland, we're centrally located to serve DC,
-        the Maryland suburbs, and Northern Virginia from a single dispatch point.</p>
+      <div class="section-label">{{ copy.hq.label }}</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-4">{{ copy.hq.headline }}</h2>
+      <p class="text-stone-600 leading-relaxed mb-4">
+        {{ copy.hq.text1 }}
+      </p>
+      <p class="text-stone-600 leading-relaxed">
+        {{ copy.hq.text2 }}
+      </p>
     </div>
   </div>
 </section>
 
 {% include cta-footer.html
-headline="Ready to work with us?"
-subhead="Whether you need service today or want to join our team, we'd like to hear from you."
-cta1_label="Request Service →"
-cta1_url="/contact/"
-cta2_label="See Open Positions →"
+  headline=copy.footer_cta.headline
+  subhead=copy.footer_cta.subhead
+  cta1_label=copy.footer_cta.cta1.label
+  cta1_url=copy.footer_cta.cta1.url
+  cta2_label=copy.footer_cta.cta2.label
+  cta2_url=copy.footer_cta.cta2.url
+%}
+tions →"
 cta2_url="/careers/"
 %}

@@ -4,9 +4,10 @@ title: "Commercial Electrical Services | Reyco Electrical Services"
 description: "24/7 emergency service, small projects, and contract construction for commercial facilities across DC, Maryland, and Virginia."
 ---
 
+{% assign data = site.data.pages.services_index %}
 {% include hero-dark.html
-  headline="Full-Service Commercial Electrical"
-  subhead="From emergency calls to major infrastructure upgrades — for the facilities that can't wait."
+  headline=data.hero.headline
+  subhead=data.hero.subhead
 %}
 
 <!-- Three service cards -->
@@ -35,8 +36,8 @@ description: "24/7 emergency service, small projects, and contract construction 
         </ul>
         {% endif %}
         <div class="flex items-center gap-4 mt-auto">
-          <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-xs px-4 py-2">Request Service</a>
-          <a href="{{ service.url | relative_url }}" class="text-xs font-bold text-reyco-red-700 uppercase tracking-wide hover:text-reyco-red-600">Details →</a>
+          <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-xs px-4 py-2">{{ data.cards.request_service }}</a>
+          <a href="{{ service.url | relative_url }}" class="text-xs font-bold text-reyco-red-700 uppercase tracking-wide hover:text-reyco-red-600">{{ data.cards.details }}</a>
         </div>
       </div>
     </div>
@@ -47,17 +48,15 @@ description: "24/7 emergency service, small projects, and contract construction 
 <!-- How dispatch works -->
 <section class="bg-stone-50 py-14 px-6 md:px-16">
   <div class="max-w-4xl mx-auto text-center">
-    <div class="section-label text-center">How It Works</div>
-    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-3">Call Us Any Time</h2>
-    <p class="text-stone-600 mb-10">Our centralized dispatch team classifies every call and assigns the right technician based on the problem and your priority window.</p>
+    <div class="section-label text-center">{{ data.dispatch.label }}</div>
+    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-3">{{ data.dispatch.headline }}</h2>
+    <p class="text-stone-600 mb-10">{{ data.dispatch.description }}</p>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-      {%- assign how_steps = "Call us — 24/7 for emergencies|Your call is classified as emergency or scheduled. A tech is assigned based on capability and location.|Tech arrives on-site with full job details on their tablet. Fix is made. Digital invoice same day." | split: "|" -%}
-      {%- assign how_titles = "Call,Dispatch,Resolve" | split: "," -%}
-      {% for title in how_titles %}
+      {% for step in data.dispatch.steps %}
       <div class="border-2 border-stone-200 bg-white p-6 text-center">
         <div class="text-3xl font-extrabold text-reyco-red-700 mb-2">{{ forloop.index }}</div>
-        <div class="font-bold text-stone-800 mb-2">{{ title }}</div>
-        <div class="text-xs text-stone-500 leading-relaxed">{{ how_steps[forloop.index0] }}</div>
+        <div class="font-bold text-stone-800 mb-2">{{ step.title }}</div>
+        <div class="text-xs text-stone-500 leading-relaxed">{{ step.text }}</div>
       </div>
       {% endfor %}
     </div>
@@ -68,19 +67,19 @@ description: "24/7 emergency service, small projects, and contract construction 
 <section class="py-14 px-6 md:px-16">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-8">
-      <div class="section-label text-center">Industries</div>
-      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight">Who We Serve</h2>
+      <div class="section-label text-center">{{ data.industries.label }}</div>
+      <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight">{{ data.industries.headline }}</h2>
     </div>
     <div class="flex flex-wrap justify-center gap-3 mb-6">
-      {% for industry in site.data.industries %}
-      <a href="{{ '/industries/' | relative_url }}#{{ industry.slug }}"
+      {% for industry in site.industries %}
+      <a href="{{ industry.url | relative_url }}"
          class="border-2 {{ industry.accent }} px-5 py-2.5 text-sm font-semibold text-stone-700 hover:bg-stone-50 transition-colors">
-        {{ industry.name }}
+        {{ industry.title }}
       </a>
       {% endfor %}
     </div>
     <p class="text-center text-sm text-stone-500">
-      <a href="{{ '/industries/' | relative_url }}" class="font-bold text-reyco-red-700 hover:text-reyco-red-600">See industry details →</a>
+      <a href="{{ '/industries/' | relative_url }}" class="font-bold text-reyco-red-700 hover:text-reyco-red-600">{{ data.industries.details_link }}</a>
     </p>
   </div>
 </section>
@@ -88,9 +87,9 @@ description: "24/7 emergency service, small projects, and contract construction 
 {% include stats-bar.html %}
 
 {% include cta-footer.html
-  headline="Need electrical service?"
-  subhead="We're available 24/7. Call or submit a request and we'll get back to you fast."
-  cta1_label="Request Service →"
+  headline=data.cta.headline
+  subhead=data.cta.subhead
+  cta1_label=data.cta.primary_label
   cta1_url="/contact/"
   cta2_label=site.phone
   cta2_url="tel:3018431848"
