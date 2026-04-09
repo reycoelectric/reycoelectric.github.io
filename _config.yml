@@ -16,7 +16,7 @@ avg_office_tenure: "~10 yrs"
 health_benefit: "100%"
 # Set baseurl to the repository name if hosted as a project page (e.g. /reycoelectric.github.io)
 # For local dev at root, this is overridden in _config_dev.yml
-baseurl: "/reycoelectric.github.io"
+baseurl: "https://reycoelectric.github.io"
 
 url: "https://reycoelectric.com"
 
