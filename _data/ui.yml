@@ -35,6 +35,7 @@ labels:
   apply_now: "Apply Now →"
   request_quote: "Request Quote"
   contact_us: "Contact Us"
+  facilities_label: "We've worked with"
 service_layout:
   breadcrumb_root: "Services"
   availability_default: "Available 24/7"

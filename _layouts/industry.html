@@ -26,7 +26,8 @@ layout: default
     <div class="max-w-7xl mx-auto w-full">
       <!-- Breadcrumb -->
       <div class="text-reyco-red-300 text-xs font-bold uppercase tracking-widest mb-3">
-        <a href="{{ '/industries/' | relative_url }}" class="hover:text-reyco-red-200 transition-colors">{{ ui.breadcrumb_root }}</a>
+        <a href="{{ '/industries/' | relative_url }}" class="hover:text-reyco-red-200 transition-colors">{{
+          ui.breadcrumb_root }}</a>
         <span class="mx-1.5 opacity-60">›</span>
         {{ page.title }}
       </div>
@@ -45,17 +46,17 @@ layout: default
 
 <!-- ─── Client proof strip ─── Full-width, above content -->
 {% if page.clients %}
-<div class="bg-white border-b-2 border-stone-100 px-4 md:px-16 py-6">
-  <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-x-8 gap-y-3">
-    <span class="text-xs font-bold text-stone-400 uppercase tracking-widest shrink-0">{{ ui.worked_with_label }}</span>
+<section class="bg-stone-100 border-y border-stone-200 py-5 px-6 md:px-16">
+  <div class="text-[10px] font-bold text-stone-400 uppercase tracking-widest shrink-0 mb-3">{{ ui.worked_with_label }}
+  </div>
+  <div class="flex flex-wrap items-center gap-2">
     {% for client in page.clients %}
-    <span class="text-sm font-bold text-stone-600">{{ client }}</span>
-    {% unless forloop.last %}
-    <span class="text-stone-300 hidden sm:inline">·</span>
-    {% endunless %}
+    <div class="text-xs font-bold text-stone-500 tracking-wide px-3 py-1.5 bg-white border border-stone-200">
+      {{ client }}
+    </div>
     {% endfor %}
   </div>
-</div>
+</section>
 {% endif %}
 
 <!-- ─── Main content grid ─── -->
@@ -107,20 +108,25 @@ layout: default
       {% if page.why_reyco %}
       <div class="bg-stone-900 px-8 py-8 text-white">
         <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-400 mb-4">{{ page.why_reyco_heading |
-          default: ui.why_reyco_default_heading }}{% unless page.why_reyco_heading %}{{ page.title }}{% endunless %}</div>
+          default: ui.why_reyco_default_heading }}{% unless page.why_reyco_heading %}{{ page.title }}{% endunless %}
+        </div>
         <p class="text-stone-300 leading-relaxed">{{ page.why_reyco }}</p>
         <div class="mt-6 pt-6 border-t border-stone-700 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
           <div>
             <div class="text-2xl font-black text-white">{{ site.emr }}</div>
-            <div class="text-xs text-stone-500 mt-1">{{ ui.why_reyco_stats.safety }}<br>{{ ui.why_reyco_stats.safety_desc }}</div>
+            <div class="text-xs text-stone-500 mt-1">{{ ui.why_reyco_stats.safety }}<br>{{
+              ui.why_reyco_stats.safety_desc }}</div>
           </div>
           <div>
             <div class="text-2xl font-black text-white">24/7</div>
-            <div class="text-xs text-stone-500 mt-1">{{ ui.why_reyco_stats.emergency }}<br>{{ ui.why_reyco_stats.emergency_desc }}</div>
+            <div class="text-xs text-stone-500 mt-1">{{ ui.why_reyco_stats.emergency }}<br>{{
+              ui.why_reyco_stats.emergency_desc }}</div>
           </div>
           <div>
-            <div class="text-2xl font-black text-white">{{ site.founded | date: "%Y" | minus: 2004 | plus: 20 }} yrs</div>
-            <div class="text-xs text-stone-500 mt-1">{{ ui.why_reyco_stats.business }}<br>{{ ui.why_reyco_stats.business_desc }}</div>
+            <div class="text-2xl font-black text-white">{{ site.founded | date: "%Y" | minus: 2004 | plus: 20 }} yrs
+            </div>
+            <div class="text-xs text-stone-500 mt-1">{{ ui.why_reyco_stats.business }}<br>{{
+              ui.why_reyco_stats.business_desc }}</div>
           </div>
         </div>
       </div>
@@ -192,10 +198,12 @@ layout: default
 
       <!-- Industry-specific sticky CTA -->
       <div class="border-2 border-stone-800 p-6 sticky top-24 bg-white">
-        <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-600 mb-2">{{ page.title }}{{ ui.sidebar_cta.headline_prefix }}
+        <div class="text-xs font-bold uppercase tracking-widest text-reyco-red-600 mb-2">{{ page.title }}{{
+          ui.sidebar_cta.headline_prefix }}
         </div>
         <h3 class="text-base font-extrabold text-stone-800 mb-3 leading-snug">
-          {{ page.sidebar_cta_headline | default: ui.sidebar_cta.headline_default | replace: "[NOUN]", page.cta_noun | default: "a facility" }}
+          {{ page.sidebar_cta_headline | default: ui.sidebar_cta.headline_default | replace: "[NOUN]", page.cta_noun |
+          default: "a facility" }}
         </h3>
         <p class="text-xs text-stone-500 mb-5 leading-relaxed">
           {{ ui.sidebar_cta.text }}
@@ -218,7 +226,8 @@ layout: default
         </div>
         <div class="px-4 py-3">
           <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">{{ ui.facts.service_area }}</div>
-          <div class="text-sm font-extrabold text-stone-800">{{ ui.facts.service_area_val | default: site.service_area }}</div>
+          <div class="text-sm font-extrabold text-stone-800">{{ ui.facts.service_area_val | default: site.service_area
+            }}</div>
         </div>
         <div class="px-4 py-3">
           <div class="text-xs font-bold text-stone-400 uppercase tracking-wide mb-1">{{ ui.facts.emergency }}</div>
