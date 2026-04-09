@@ -22,24 +22,21 @@ The site is built into the `_site/` directory. This build uses the default `base
 
 ## 🌐 Dynamic URL Handling (Staging vs. Production)
 
-The site is configured to work in both a GitHub Pages subdirectory (Staging) and at the root of a custom domain (Production).
+The site is configured to work at the root of a domain (e.g., `https://reycoelectric.github.io/` or `https://reycoelectric.com`).
 
-### 1. Staging (GitHub Pages Subdirectory)
-By default, `_config.yml` is configured with:
-```yaml
-baseurl: "/reycoelectric.github.io"
-```
-This ensures all assets (CSS, images) and internal links are correctly resolved when hosted at `https://reycoelectric.github.io/reycoelectric.github.io/`.
+### 1. Configuration in `_config.yml`
+- **`url`**: The absolute domain (e.g., `https://reycoelectric.github.io`). Used for canonical URLs and SEO tags.
+- **`baseurl`**: The path prefix. Set to `""` for root-level hosting.
 
-### 2. Production (Custom Domain at Root)
-When the site is moved to its permanent home (e.g., `https://reycoelectric.com`), you only need to change one line in `_config.yml`:
-```yaml
-baseurl: ""
-```
+### 2. Local Development
+Local development overrides are handled in `_config_dev.yml`:
+- `url`: `http://localhost:4000`
+- `baseurl`: `""`
 
 ### ⚠️ Important: Using `relative_url`
-Always use the `relative_url` filter for internal paths to ensure they work across environments:
+To ensure links work across all environments, **always** use the `relative_url` filter for internal paths:
 - **HTML:** `<link rel="stylesheet" href="{{ '/assets/css/output.css' | relative_url }}">`
+- **Liquid:** `<a href="{{ '/contact/' | relative_url }}">Contact</a>`
 - **Markdown:** `[Contact]({{ '/contact/' | relative_url }})`
 
 ---
