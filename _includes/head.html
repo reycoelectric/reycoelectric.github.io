@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap" rel="stylesheet">
 
   <!-- ─── Styles ────────────────────────────────────────────────────────── -->
-  <link rel="stylesheet" href="{{ '/assets/css/output.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/output.css' | absolute_url }}">
 
   <!-- ─── Favicons & Icons ──────────────────────────────────────────────── -->
   <!-- SVG favicon — works in all modern browsers -->
@@ -33,10 +33,4 @@
        save to /assets/og-default.png — referenced automatically by jekyll-seo-tag
        via image: in _config.yml once the file exists -->
 
-  <!-- ─── Canonical ────────────────────────────────────────────────────── -->
-  {% if page.canonical_url %}
-  <link rel="canonical" href="{{ page.canonical_url }}">
-  {% else %}
-  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
-  {% endif %}
 </head>

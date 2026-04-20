@@ -7,5 +7,4 @@ _site/
 vendor/
 # Node
 node_modules/
-# Compiled CSS (committed by CI, not locally)
-assets/css/output.css
+
