@@ -3,9 +3,9 @@ title: "Contract & Construction"
 nav_label: "Contract & Construction"
 slug: construction
 order: 3
-description: "Infrastructure projects for institutional and government clients. Used strategically for trusted partners — not our primary growth engine, but a core capability."
+description: "Infrastructure projects for institutional and government clients"
 headline: "When the Job Demands More"
-overview: "Reyco has delivered millions of dollars in complex electrical work for institutional clients, general contractors, and portfolio owners. These are the projects that require professional estimating, dedicated project management, and field crews with the credentials to work in restricted environments.\n\nWe take on a select number of larger projects at a time — enough to keep our best crews engaged and our institutional relationships strong, without overextending."
+overview: "Reyco specializes in high-stakes electrical infrastructure for institutional clients, general contractors, and portfolio owners who demand precision and reliability. We excel in complex environments that require rigorous project management, professional estimating, and specialized crews with high-security credentials. By selectively managing our construction pipeline, we ensure that our top-tier talent is fully dedicated to your project’s success, delivering institutional-grade quality without the risk of overextension."
 what_we_handle:
   - "Infrastructure projects for international institutions and government clients"
   - "Medium-sized renovation and tenant fit-out projects for institutional owners and GCs"

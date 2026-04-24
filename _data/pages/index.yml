@@ -1,6 +1,6 @@
 hero:
   headline: "Keeping the Lights On for<br>DC, Maryland & Virginia"
-  subhead: "24/7 commercial electrical service for the facilities that can't afford downtime. Since 2004."
+  subhead: "24/7 commercial electrical service and institutional construction for the facilities that can't afford downtime. Since 2004."
   cta1: { label: "Request Service →", url: "/contact/" }
   cta2: { label: "Join Our Team →", url: "/careers/" }
 
