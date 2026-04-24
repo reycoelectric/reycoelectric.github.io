@@ -1,7 +1,8 @@
 <section class="bg-stone-100 border-y border-stone-200 py-5 px-6 md:px-16">
-  <div class="text-[10px] font-bold text-stone-400 uppercase tracking-widest shrink-0 mb-3">{{
-    site.data.ui.labels.facilities_label }}</div>
-  <div class="flex flex-wrap items-center gap-2">
+  <div
+    class="text-[10px] font-bold text-stone-400 uppercase tracking-widest shrink-0 mb-3 max-w-7xl mx-auto text-center">
+    {{ site.data.ui.labels.facilities_label }}</div>
+  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2 ">
     {% for client in site.data.clients %}
     <div class="text-xs font-bold text-stone-500 tracking-wide px-3 py-1.5 bg-white border border-stone-200">
       {{ client.name }}
