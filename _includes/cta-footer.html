@@ -6,7 +6,12 @@
   <div class="flex flex-col sm:flex-row gap-3 justify-center">
     {% assign cta1_href = include.cta1_url | default: '/contact/' %}
     {% unless cta1_href contains 'tel:' or cta1_href contains 'http' %}
-      {% assign cta1_href = cta1_href | relative_url %}
+      {% assign cta1_first = cta1_href | slice: 0, 1 %}
+      {% if cta1_first == '#' %}
+        {# Fragment-only: do not pass through relative_url or it becomes /#... (wrong page). #}
+      {% else %}
+        {% assign cta1_href = cta1_href | relative_url %}
+      {% endif %}
     {% endunless %}
     <a href="{{ cta1_href }}" class="{{ include.cta1_class | default: 'btn-brand' }}">
       {{ include.cta1_label | default: site.data.ui.nav.cta_default_label }}

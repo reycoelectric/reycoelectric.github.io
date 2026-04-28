@@ -1,7 +1,7 @@
 hero:
   headline: "Build a Career,<br>Not Just a Job"
   subhead: "Whether you're a Helper looking to start in the trades, a licensed journeyman who wants better pay and variety, or a project manager who wants to run real projects on professional systems — we're hiring across the board."
-  cta1: { label: "See Open Positions", url: "#openings" }
+  cta1: { label: "See Open Positions", url: "/careers/#openings" }
   cta2: { label: "Why Reyco? →", url: "/careers/why-reyco/" }
 
 tracks_overview:
