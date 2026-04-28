@@ -41,7 +41,7 @@ This is why EMR matters beyond the form. It's not bureaucratic box-checking. It'
 
 Reyco's current EMR is 0.81, which places us in the top 10% of electrical contractors nationally.
 
-That number reflects 21 years of consistent safety practices — the same hiring standards, the same site protocols, the same expectations for our supervisors and crew members, maintained across a 40-person field force working in varied commercial and institutional environments.
+That number reflects 22 years of consistent safety practices — the same hiring standards, the same site protocols, the same expectations for our supervisors and crew members, maintained across a 40-person field force working in varied commercial and institutional environments.
 
 It's also why we work at international institutions and government facilities in the DC metro area that other contractors can't access. Not because we applied and got lucky, but because we meet their requirements and other contractors don't.
 

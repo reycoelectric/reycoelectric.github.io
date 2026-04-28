@@ -67,7 +67,7 @@ layout: default
     <p class="text-stone-300 leading-relaxed max-w-2xl mb-8">{{ copy.tenure_section.text }}</p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-t border-stone-700 pt-8">
       <div>
-        <div class="text-3xl font-black text-white">{{ site.founded | date: "%Y" | minus: 2004 | plus: 21 }} yrs</div>
+        <div class="text-3xl font-black text-white">{{ site.time | date: "%Y" | minus: 2004 }} yrs</div>
         <div class="text-xs text-stone-400 uppercase tracking-widest mt-1">{{ copy.tenure_section.stats.in_business }}</div>
       </div>
       <div>

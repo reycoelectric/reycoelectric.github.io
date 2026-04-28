@@ -4,7 +4,7 @@
     <div>
       <div class="text-white text-3xl font-extrabold tracking-tight">
         {% if stat.key == "founded" %}
-          {{ site.founded | date: "%Y" | minus: 2004 | plus: 21 }}
+          {{ site.time | date: "%Y" | minus: 2004 }}
         {% elsif stat.key %}
           {{ site[stat.key] }}
         {% else %}

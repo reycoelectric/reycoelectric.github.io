@@ -10,7 +10,7 @@ services_overview:
 
 about_teaser:
   label: "Our Story"
-  headline: "21 Years of Doing It Right"
+  headline: "22 Years of Doing It Right"
   text: |
     Founded by Dave Reynolds in 2004, Reyco has grown from a one-truck operation into a 53-person team serving the
     region's most demanding facilities. We're headquartered in a new 10,000 sq ft facility in Hughesville, MD — and
@@ -22,7 +22,7 @@ careers_teaser:
   headline: "Build a Career, Not Just a Job"
   text: |
     Whether you're looking to start in the trades, grow as a licensed journeyman, or run projects on professional
-    systems — we're hiring. Real benefits, competitive pay, 21 years of stability.
+    systems — we're hiring. Real benefits, competitive pay, 22 years of stability.
   cta1: { label: "Field Careers →", url: "/careers/field/" }
   cta2: { label: "Office & Professional →", url: "/careers/office/" }
   track:
