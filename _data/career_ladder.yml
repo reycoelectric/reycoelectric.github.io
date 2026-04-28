@@ -1,24 +1,31 @@
-- role: "Helper"
-  desc: "Start here. Learn the basics, assist crews, build your foundation."
-  color: "bg-stone-300"
-  height: 100
+# Core rungs: sequential progression
+core:
+  - role: "Helper"
+    desc: "Start here. Learn the basics, assist crews, build your foundation."
+    color: "bg-stone-300"
+    height: 100
 
-- role: "Apprentice"
-  desc: "Hands-on training. Work toward your journeyman license."
-  color: "bg-stone-400"
-  height: 140
+  - role: "Apprentice"
+    desc: "Hands-on training. Work toward your journeyman license."
+    color: "bg-stone-400"
+    height: 140
 
-- role: "Mechanic"
-  desc: "Mid-level production. Run your own scope of work."
-  color: "bg-stone-500"
-  height: 180
+  - role: "Mechanic"
+    desc: "Mid-level production. Run your own scope of work."
+    color: "bg-stone-500"
+    height: 180
 
-- role: "Service Tech"
-  desc: "Higher-skill troubleshooting, small projects, customer-facing."
-  color: "bg-reyco-grey"
-  height: 220
+# Senior field roles: parallel tracks (same level — not Service Tech then Foreman)
+senior_paths:
+  label: "Two paths, same level"
+  subhead: "From Mechanic, you move into a senior field role. Service Tech and Foreman are peer positions — different focus, not a promotion from one to the other."
+  paths:
+    - role: "Service Tech"
+      desc: "Higher-skill troubleshooting, small projects, customer-facing."
+      color: "bg-reyco-grey"
+      height: 220
 
-- role: "Foreman"
-  desc: "Run crews. Own job execution. Lead from the front."
-  color: "bg-reyco-red-800"
-  height: 260
+    - role: "Foreman"
+      desc: "Run crews. Own job execution. Lead from the front."
+      color: "bg-reyco-red-800"
+      height: 220

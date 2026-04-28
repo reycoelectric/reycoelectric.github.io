@@ -5,7 +5,7 @@ type: "Full-time"
 level: "Helper"
 active: true
 indeed_url: "https://www.indeed.com/cmp/reyco-electrical-services"
-summary: "No experience? No problem — this is where the career starts. As a Helper at Reyco, you'll work alongside our service techs and foremen, learning commercial electrical from the ground up. We'll pair you with experienced crew members, support your path into the apprenticeship program, and pay your apprenticeship fees once you're enrolled. The career ladder is real: Helper → Apprentice → Mechanic → Service Tech → Foreman. People here have walked that path. If you're dependable, willing to work hard, and interested in a skilled trade with real earning potential, apply."
+summary: "No experience? No problem — this is where the career starts. As a Helper at Reyco, you'll work alongside our service techs and foremen, learning commercial electrical from the ground up. We'll pair you with experienced crew members, support your path into the apprenticeship program, and pay your apprenticeship fees once you're enrolled. The career ladder is real: Helper → Apprentice → Mechanic, then Service Tech or Foreman as peer senior roles (same level, different focus). People here have walked that path. If you're dependable, willing to work hard, and interested in a skilled trade with real earning potential, apply."
 responsibilities:
   - "Assist electricians and apprentices on commercial service calls and project sites"
   - "Transport materials, tools, and equipment to and from job sites"

@@ -97,6 +97,12 @@ job_layout:
   breadcrumb:
     root: "Careers"
     open_positions: "Open Positions"
+  career_path:
+    label: "Field career path"
+    this_role: "← you are here"
+    same_level: "Two paths, same level"
+    senior_or: "or"
+    why_reyco_link: "Why Reyco →"
   responsibilities_label: "Responsibilities"
   requirements_label: "Requirements"
   nice_to_have_label: "Nice to Have"

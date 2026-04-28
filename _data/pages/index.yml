@@ -27,8 +27,8 @@ careers_teaser:
   cta2: { label: "Office & Professional →", url: "/careers/office/" }
   track:
     label: "Field"
-    headline: "Helper → Foreman"
-    text: "Clear career ladder. Paid apprenticeship. Emergency, service, and construction work."
+    headline: "Two senior paths, same level"
+    text: "Helper through Mechanic, then service leadership or crew leadership — not a step from one to the other. Paid apprenticeship. Real variety of work."
   benefits:
     - { number: "100%", label: "Employer-paid health" }
     - { number: "7%", label: "401(k) contribution" }

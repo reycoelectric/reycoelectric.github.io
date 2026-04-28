@@ -120,11 +120,12 @@ layout: default
         </div>
       </div>
 
-      <!-- Career path -->
+      <!-- Career path: core rungs, then two senior peer roles (same level) -->
       <div class="border-2 border-stone-200 p-5">
         <div class="section-label">{{ ui.career_path.label }}</div>
         <div class="flex flex-col gap-1">
-          {% for step in site.data.career_ladder %}
+          {% assign cl = site.data.career_ladder %}
+          {% for step in cl.core %}
           <div class="flex items-center gap-2">
             <div class="w-2 h-2 rounded-full {% if step.role == page.level %}bg-reyco-red-600{% else %}bg-stone-300{% endif %}"></div>
             <span class="text-sm {% if step.role == page.level %}font-bold text-reyco-red-700{% else %}text-stone-500{% endif %}">
@@ -134,6 +135,20 @@ layout: default
           </div>
           {% unless forloop.last %}
           <div class="w-px h-3 bg-stone-200 ml-1"></div>
+          {% endunless %}
+          {% endfor %}
+          <div class="w-px h-2 bg-stone-200 ml-1"></div>
+          <p class="text-[10px] text-stone-500 font-semibold tracking-wide pl-0.5 pt-0.5 mb-0.5">{{ ui.career_path.same_level }}</p>
+          {% for step in cl.senior_paths.paths %}
+          <div class="flex items-center gap-2">
+            <div class="w-2 h-2 rounded-full {% if step.role == page.level %}bg-reyco-red-600{% else %}bg-stone-300{% endif %}"></div>
+            <span class="text-sm {% if step.role == page.level %}font-bold text-reyco-red-700{% else %}text-stone-500{% endif %}">
+              {{ step.role }}
+            </span>
+            {% if step.role == page.level %}<span class="text-xs text-reyco-red-600 font-semibold">{{ ui.career_path.this_role }}</span>{% endif %}
+          </div>
+          {% unless forloop.last %}
+          <div class="pl-2 text-[10px] text-stone-400 leading-tight">{{ ui.career_path.senior_or }}</div>
           {% endunless %}
           {% endfor %}
         </div>

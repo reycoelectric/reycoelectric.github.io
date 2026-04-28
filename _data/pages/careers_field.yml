@@ -5,6 +5,7 @@ hero:
 career_ladder_section:
   label: "The Career Ladder"
   headline: "Where You Start. Where You Can Go."
+  intro: "The first three rungs are a clear path forward. At the senior end, Service Tech and Foreman are the same level — one track isn’t a stepping stone to the other; they’re different ways to lead."
 
 typical_week:
   label: "The Work"
@@ -30,7 +31,7 @@ benefits_section:
     - label: "401(k)"
       text: "7% company contribution — we put it in whether or not you contribute. 94% of employees participate."
     - label: "Paid Apprenticeship"
-      text: "We pay your IHS Peak apprenticeship fees. You don't pay out of pocket."
+      text: "We pay your ICS Chesapeake apprenticeship fees. You don't pay out of pocket."
     - label: "Vehicle & Tablet"
       text: "Company vehicle and tablet for Service Techs and above."
     - label: "PTO & Holidays"
@@ -54,6 +55,6 @@ openings_section:
 
 footer_cta:
   headline: "Ready to join the team?"
-  subhead: "Competitive pay, real benefits, and a clear path from Helper to Foreman."
+  subhead: "Competitive pay, real benefits, and a clear path up through Mechanic, then a senior field role in service or in the field (same level, different job)."
   cta1: { label: "See Open Positions →", url: "/careers/field/#openings" }
   cta2: { label: "Why Reyco? →", url: "/careers/why-reyco/" }
