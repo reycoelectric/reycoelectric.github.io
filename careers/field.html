@@ -12,40 +12,12 @@ layout: default
 <!-- Career ladder — full version -->
 <section class="py-16 px-6 md:px-16 bg-white">
   <div class="max-w-7xl mx-auto">
-    <div class="section-label">{{ copy.career_ladder_section.label }}</div>
-    <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-10">{{ copy.career_ladder_section.headline }}</h2>
-
-    <p class="text-stone-500 text-sm max-w-2xl mb-8">{{ copy.career_ladder_section.intro }}</p>
-    <div class="space-y-0">
-      {% assign cl = site.data.career_ladder %}
-      {% for step in cl.core %}
-      <div class="flex items-start gap-6 py-8 {% unless forloop.last %}border-b border-stone-100{% endunless %}">
-        <div class="w-12 h-12 {{ step.color }} flex items-center justify-center shrink-0 text-white font-black text-lg">
-          {{ forloop.index }}
-        </div>
-        <div class="flex-1">
-          <h3 class="text-lg font-extrabold text-stone-800 mb-2">{{ step.role }}</h3>
-          <p class="text-stone-600 leading-relaxed text-sm">{{ step.desc }}</p>
-        </div>
-      </div>
-      {% endfor %}
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <div class="section-label">{{ copy.career_ladder_section.label }}</div>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-4">{{ copy.career_ladder_section.headline }}</h2>
+      <p class="text-stone-500 text-sm">{{ copy.career_ladder_section.intro }}</p>
     </div>
-    <div class="mt-10 pt-2 border-t border-stone-200">
-      <p class="section-label mb-1">{{ cl.senior_paths.label }}</p>
-      <p class="text-stone-500 text-sm mb-6 max-w-2xl">{{ cl.senior_paths.subhead }}</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        {% for step in cl.senior_paths.paths %}
-        <div class="border-2 border-stone-200 p-6 flex gap-4 items-start">
-          <div class="w-12 h-12 {{ step.color }} flex items-center justify-center shrink-0 text-white font-black text-lg"
-            title="Same level as other senior field role">4</div>
-          <div>
-            <h3 class="text-lg font-extrabold text-stone-800 mb-2">{{ step.role }}</h3>
-            <p class="text-stone-600 text-sm leading-relaxed">{{ step.desc }}</p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
+    {% include career-ladder.html %}
   </div>
 </section>
 

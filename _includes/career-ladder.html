@@ -1,57 +1,96 @@
 {% assign cl = site.data.career_ladder %}
-{% if include.compact %}
-<!-- Compact: 3 rungs, then 2 equal senior bars -->
-<div class="flex flex-col items-stretch gap-1 shrink-0 max-w-xs">
-  <div class="flex items-end justify-center gap-0.5">
-    {% for step in cl.core %}
-    <div class="w-9 text-center">
-      <div class="{{ step.color }} text-white flex flex-col items-center justify-end px-0.5 pb-1.5 rounded-t-sm"
-        style="height: {{ step.height | times: 0.4 | round }}px">
-        <div class="text-[7px] font-extrabold leading-tight px-0.5">{{ step.role }}</div>
-      </div>
-    </div>
-    {% endfor %}
+<div class="career-ladder">
+
+  <!-- SVG diagram: line + dots, with a fork at Mechanic into Service Tech / Foreman -->
+  <div class="overflow-x-auto -mx-2 px-2 sm:mx-0 sm:px-0">
+    <svg viewBox="0 0 720 230"
+         class="w-full min-w-[520px] max-w-3xl mx-auto h-auto block"
+         xmlns="http://www.w3.org/2000/svg"
+         role="img"
+         aria-label="Field career path: Helper to Apprentice to Mechanic, then Service Tech or Foreman at the same level">
+
+      <!-- Core line: Helper -> Apprentice -> Mechanic -->
+      <line x1="60" y1="115" x2="360" y2="115" stroke="#a8a29e" stroke-width="2.5" />
+      <!-- Trunk: Mechanic -> fork point -->
+      <line x1="360" y1="115" x2="440" y2="115" stroke="#a8a29e" stroke-width="2.5" />
+      <!-- Top fork (to Service Tech) -->
+      <path d="M 440 115 C 510 115, 560 60, 620 60"
+            fill="none" stroke="#af1c0f" stroke-width="2.5" />
+      <!-- Bottom fork (to Foreman) -->
+      <path d="M 440 115 C 510 115, 560 170, 620 170"
+            fill="none" stroke="#af1c0f" stroke-width="2.5" />
+
+      <!-- Subtle marker at the fork point -->
+      <circle cx="440" cy="115" r="3.5" fill="#a8a29e" />
+
+      <!-- Core dots + labels -->
+      {% assign core_x = "60,210,360" | split: "," %}
+      {% for step in cl.core %}
+        {% assign cx = core_x[forloop.index0] %}
+        <circle cx="{{ cx }}" cy="115" r="12" fill="#ffffff" stroke="#57534e" stroke-width="2.5" />
+        <circle cx="{{ cx }}" cy="115" r="5"  fill="#57534e" />
+        <text x="{{ cx }}" y="155" text-anchor="middle"
+              font-size="14" font-weight="800" fill="#292524">{{ step.role }}</text>
+      {% endfor %}
+
+      <!-- Senior dots + labels (parallel) -->
+      {% assign st = cl.senior_paths.paths[0] %}
+      {% assign fm = cl.senior_paths.paths[1] %}
+
+      <!-- Service Tech -->
+      <circle cx="620" cy="60" r="12" fill="#ffffff" stroke="#af1c0f" stroke-width="2.5" />
+      <circle cx="620" cy="60" r="5"  fill="#af1c0f" />
+      <text x="620" y="40" text-anchor="middle"
+            font-size="14" font-weight="800" fill="#292524">{{ st.role }}</text>
+
+      <!-- Foreman -->
+      <circle cx="620" cy="170" r="12" fill="#ffffff" stroke="#af1c0f" stroke-width="2.5" />
+      <circle cx="620" cy="170" r="5"  fill="#af1c0f" />
+      <text x="620" y="200" text-anchor="middle"
+            font-size="14" font-weight="800" fill="#292524">{{ fm.role }}</text>
+
+      <!-- "Same level" annotation between senior dots -->
+      <text x="555" y="119" text-anchor="middle"
+            font-size="10" font-weight="700" fill="#af1c0f"
+            letter-spacing="1">SAME LEVEL</text>
+    </svg>
   </div>
-  <p class="text-center text-[7px] font-bold text-stone-400 uppercase tracking-tight">Same level</p>
-  <div class="flex items-end justify-center gap-0.5">
-    {% for step in cl.senior_paths.paths %}
-    <div class="w-14 text-center">
-      <div class="{{ step.color }} text-white flex flex-col items-center justify-end px-0.5 pb-1.5 rounded-t-sm"
-        style="height: {{ step.height | times: 0.4 | round }}px">
-        <div class="text-[7px] font-extrabold leading-tight px-0.5">{{ step.role }}</div>
-      </div>
+
+  <!-- Caption -->
+  <p class="text-center text-sm text-stone-500 italic mt-2 max-w-xl mx-auto">{{ cl.senior_paths.subhead }}</p>
+
+  {% unless include.compact %}
+  <!-- Description grid -->
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+    <div>
+      <p class="section-label mb-3">The path forward</p>
+      <ul class="space-y-2.5">
+        {% for step in cl.core %}
+        <li class="flex gap-3 items-start">
+          <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-stone-200 text-[10px] font-black text-stone-700 mt-0.5 shrink-0">{{ forloop.index }}</span>
+          <div class="text-sm leading-relaxed">
+            <span class="font-bold text-stone-800">{{ step.role }}</span>
+            <span class="text-stone-500"> — {{ step.desc }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
-    {% endfor %}
+    <div>
+      <p class="section-label mb-3 text-reyco-red-700">{{ cl.senior_paths.label }}</p>
+      <ul class="space-y-2.5">
+        {% for step in cl.senior_paths.paths %}
+        <li class="flex gap-3 items-start">
+          <span class="w-2.5 h-2.5 rounded-full bg-reyco-red-700 mt-1.5 shrink-0"></span>
+          <div class="text-sm leading-relaxed">
+            <span class="font-bold text-stone-800">{{ step.role }}</span>
+            <span class="text-stone-500"> — {{ step.desc }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
+  {% endunless %}
+
 </div>
-{% else %}
-<!-- Full: core rungs, label, then two equal senior rungs + explanation -->
-<div class="space-y-3 max-w-3xl mx-auto">
-  <div class="flex items-end justify-center gap-2">
-    {% for step in cl.core %}
-    <div class="flex-1 text-center min-w-0">
-      <div class="{{ step.color }} text-white flex flex-col items-center justify-end px-2 pb-4 pt-2 rounded-t-sm"
-        style="height: {{ step.height }}px">
-        <div class="text-sm font-extrabold mb-1 leading-tight">{{ step.role }}</div>
-        <div class="text-[9px] leading-tight opacity-90 hidden sm:block px-0.5">{{ step.desc }}</div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  <div class="text-center">
-    <p class="text-[11px] sm:text-xs font-bold text-stone-500 tracking-wide uppercase">{{ cl.senior_paths.label }}</p>
-  </div>
-  <div class="flex items-end justify-center gap-3 sm:gap-4 max-w-lg mx-auto">
-    {% for step in cl.senior_paths.paths %}
-    <div class="flex-1 text-center min-w-0">
-      <div class="{{ step.color }} text-white flex flex-col items-center justify-end px-2 pb-4 pt-2 rounded-t-sm"
-        style="height: {{ step.height }}px">
-        <div class="text-sm font-extrabold mb-1 leading-tight">{{ step.role }}</div>
-        <div class="text-[9px] leading-tight opacity-90 hidden sm:block px-0.5">{{ step.desc }}</div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  <p class="text-center text-xs sm:text-sm text-stone-500 max-w-2xl mx-auto leading-relaxed pt-1">{{ cl.senior_paths.subhead }}</p>
-</div>
-{% endif %}
