@@ -120,6 +120,8 @@ layout: default
         </div>
       </div>
 
+      {% comment %}Field ladder is irrelevant for office / professional roles (e.g. Estimator).{% endcomment %}
+      {% unless page.track == "office" %}
       <!-- Career path: core rungs, then two senior peer roles (same level) -->
       <div class="border-2 border-stone-200 p-5">
         <div class="section-label">{{ ui.career_path.label }}</div>
@@ -154,6 +156,7 @@ layout: default
         </div>
         <a href="{{ '/careers/why-reyco/' | relative_url }}" class="text-xs font-bold text-reyco-red-700 mt-4 inline-block">{{ ui.career_path.why_reyco_link }}</a>
       </div>
+      {% endunless %}
 
     </div>
   </div>
