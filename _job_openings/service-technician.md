@@ -3,6 +3,7 @@ title: "Service Technician"
 location: "DMV Metro Area"
 type: "Full-time"
 level: "Service Tech"
+track: "field"
 active: true
 indeed_url: "https://www.indeed.com/cmp/reyco-electrical-services"
 summary: "Reyco's service team handles the commercial electrical work that can't wait — restaurants, multifamily buildings, government facilities, and institutional clients across DC, Maryland, and Virginia. As a Service Technician, you'll troubleshoot and repair a wide range of commercial electrical systems, work directly with facility managers, and document everything through our BuildOps tablet workflow. This is not factory work. One day you're at a restaurant at 7 AM, the next you're at a multifamily building, the week after you're on a government campus. If you want variety and want to be trusted with real responsibility, this is the role."

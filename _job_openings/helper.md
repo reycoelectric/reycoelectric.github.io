@@ -3,6 +3,7 @@ title: "Electrical Helper"
 location: "Hughesville, MD"
 type: "Full-time"
 level: "Helper"
+track: "field"
 active: true
 indeed_url: "https://www.indeed.com/cmp/reyco-electrical-services"
 summary: "No experience? No problem — this is where the career starts. As a Helper at Reyco, you'll work alongside our service techs and foremen, learning commercial electrical from the ground up. We'll pair you with experienced crew members, support your path into the apprenticeship program, and pay your apprenticeship fees once you're enrolled. The career ladder is real: Helper → Apprentice → Mechanic, then Service Tech or Foreman as peer senior roles (same level, different focus). People here have walked that path. If you're dependable, willing to work hard, and interested in a skilled trade with real earning potential, apply."

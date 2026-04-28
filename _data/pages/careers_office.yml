@@ -38,6 +38,13 @@ operations_hire:
   text: "FP&A, Service Coordination, and warehouse operations. If you want to work at a company that's growing, uses real systems, and has a back-office team with ~10-year average tenure, reach out."
   cta: { label: "Get in Touch →", url: "/contact/" }
 
+openings_section:
+  label: "Open Positions"
+  headline: "Office & Professional Openings"
+  apply_label: "Apply on Indeed →"
+  view_label: "View Position →"
+  no_openings_text: "No office roles posted right now — check the main careers page or reach out directly."
+
 benefits_section:
   label: "Compensation"
   headline: "Pay & Benefits"
@@ -68,5 +75,5 @@ retention_section:
 footer_cta:
   headline: "Ready to build something?"
   subhead: "We're growing and we're building out the team to match."
-  cta1: { label: "See Open Positions →", url: "/careers/#openings" }
+  cta1: { label: "See Open Positions →", url: "/careers/office/#openings" }
   cta2: { label: "Why Reyco? →", url: "/careers/why-reyco/" }
