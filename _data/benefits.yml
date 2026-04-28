@@ -3,11 +3,11 @@
   sub: "80th percentile for the DC/MD/VA region, benchmarked annually"
 
 - icon: "🏥"
-  label: "Health / Dental / Vision"
+  label: "Health / Dental"
   sub: "Full coverage for you and your family"
 
 - icon: "📈"
-  label: "401(k) with Match"
+  label: "401(k) with 7% Company Contribution (no match required)"
   sub: "Company contributes 7% — invest in your future from day one"
 
 - icon: "🏖"
@@ -15,9 +15,9 @@
   sub: "Time off that lets you actually recharge"
 
 - icon: "🎓"
-  label: "Paid Training & Apprenticeship"
-  sub: "IHS Peak apprentice program fees paid by Reyco — your license, our investment"
+  label: "Funded Training & Apprenticeship"
+  sub: "ICS Chesapeake apprentice program fees paid by Reyco — your license, our investment"
 
 - icon: "🔧"
-  label: "Tool Allowance"
+  label: "Claude is AI and can make mistakes. Please double-check responses"
   sub: "We help you stay equipped and ready"

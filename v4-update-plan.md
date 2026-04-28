@@ -525,7 +525,7 @@ Card 2 — Office & Professional Careers:
 - Our 24/7 dispatch means we've never turned a service customer away for capacity. When you call, someone answers.
 
 **People Matter**
-- 100% employer-paid health and dental. 401(k) with [PENDING — confirm 7% or 7%] company contribution. Paid apprenticeship for field staff.
+- 100% employer-paid health and dental. 401(k) with [PENDING — confirm 7% or 7%] company contribution. Funded apprenticeship for field staff.
 
 ---
 

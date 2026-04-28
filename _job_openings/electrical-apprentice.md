@@ -5,11 +5,11 @@ type: "Full-time"
 level: "Apprentice"
 active: true
 indeed_url: "https://www.indeed.com/cmp/reyco-electrical-services"
-summary: "Reyco pays your apprenticeship fees. That's not a slogan — we write the check to IHS Peak Training and Apprenticeship so you can work toward your journeyman license while getting paid. As an Apprentice, you'll work alongside experienced service techs and foremen, building the hands-on skills and code knowledge that lead to a real career. Our career ladder is: Helper → Apprentice → Mechanic → Service Tech → Foreman. If you show up, work hard, and keep learning, the path is clear."
+summary: "Reyco pays your apprenticeship fees. That's not a slogan — we write the check to ICS Chesapeake Training and Apprenticeship so you can work toward your journeyman license while getting paid. As an Apprentice, you'll work alongside experienced service techs and foremen, building the hands-on skills and code knowledge that lead to a real career. Our career ladder is: Helper → Apprentice → Mechanic → Service Tech → Foreman. If you show up, work hard, and keep learning, the path is clear."
 responsibilities:
   - "Assist service technicians and foremen on commercial electrical calls and projects"
   - "Learn to read electrical drawings and understand code requirements"
-  - "Complete assigned coursework through the IHS Peak apprenticeship program"
+  - "Complete assigned coursework through the ICS Chesapeake apprenticeship program"
   - "Maintain tools, materials, and job site cleanliness"
   - "Follow all safety protocols — Reyco's EMR of 0.81 is earned on every job"
   - "Document work through BuildOps tablet as you develop proficiency"
