@@ -13,14 +13,14 @@ responsibilities:
   - "Interface professionally with facility managers and on-site contacts"
   - "Document work, capture photos, and collect sign-offs via BuildOps tablet"
   - "Identify upgrade opportunities and communicate findings to account managers"
-  - "Maintain your assigned vehicle and keep tools and materials organized"
+  - "Maintain assigned take-home vehicle in clean, road-ready condition; keep tools and materials organized, inventoried, and secured at all times"
 requirements:
   - "Journeyman electrician license or actively working toward it"
-  - "3+ years of commercial electrical experience"
+  - "5+ years of electrical experience"
   - "Experience troubleshooting under time pressure (emergency service background preferred)"
   - "Valid driver's license with clean record"
   - "Ability to work on-call rotation (on-call and backup-on-call weeks rotate through the team)"
-  - "Comfortable with tablet-based work order and invoicing systems"
+  - "Comfortable with tablet-based work order and scheduling systems"
 nice_to_have:
   - "Experience with restaurant, multifamily, or institutional facilities"
   - "Familiarity with BuildOps or similar field service software"
