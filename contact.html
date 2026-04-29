@@ -105,8 +105,11 @@ description: "Request commercial electrical service or get in touch with our tea
             {% assign _addr_parts = site.address | split: ", " %}
             <div class="text-sm text-stone-700">
               {{ site.title }}<br>
-              {{ _addr_parts[0] }}<br>
-              {{ _addr_parts[1] }}, {{ _addr_parts[2] }}
+              <a href="{{ site.address_google_maps_url }}" target="_blank" rel="noopener noreferrer"
+                class="text-stone-700 hover:text-reyco-red-700 transition-colors underline decoration-stone-300 hover:decoration-reyco-red-600 underline-offset-2">
+                {{ _addr_parts[0] }}<br>
+                {{ _addr_parts[1] }}, {{ _addr_parts[2] }}
+              </a>
             </div>
           </div>
           <div>

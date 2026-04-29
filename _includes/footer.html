@@ -9,7 +9,8 @@
           <img src="{{ '/assets/logo/Mark Dark.svg' | relative_url }}" alt="{{ site.title }}" class="h-7 w-auto">
         </a>
         <div class="space-y-1.5 text-stone-400 text-sm leading-relaxed">
-          <p>{{ site.address }}</p>
+          <a href="{{ site.address_google_maps_url }}" target="_blank" rel="noopener noreferrer"
+            class="block hover:text-white transition-colors">{{ site.address }}</a>
           <p>{{ ui.serving_area }}</p>
           <a href="tel:{{ site.phone_link }}" class="block hover:text-white transition-colors font-semibold">{{ site.phone }}</a>
           <p class="text-xs text-stone-500">{{ ui.availability }}</p>
