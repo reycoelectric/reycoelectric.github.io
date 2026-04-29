@@ -30,7 +30,7 @@ Compensation is competitive and based on experience — we're not going to post 
 
 - **Health and dental insurance: 100% employer-paid.** Not a contribution toward a premium — we cover it.
 - **401(k) with 7% employer match.** That's above market, and it vests on a reasonable schedule.
-- **Paid apprenticeship through ICS Chesapeake** for field staff pursuing their license. We pay for the program, and we schedule around it.
+- **Paid apprenticeship through IEC Chesapeake** for field staff pursuing their license. We pay for the program, and we schedule around it.
 
 ## The Work
 

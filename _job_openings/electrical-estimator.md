@@ -1,6 +1,6 @@
 ---
 title: "Electrical Estimator"
-location: "Hughesville, MD"
+location: "DMV Metro Area"
 type: "Full-time"
 level: "Estimating"
 track: "office"

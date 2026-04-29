@@ -13,12 +13,12 @@ benefits_deep_dive:
     - label: "Retirement"
       text: "7% company contribution regardless of whether you contribute. We put the money in because we want our people building a future. 94% of employees participate because it's worth it."
     - label: "Time Off & Training"
-      text: "PTO, paid holidays, and fully paid apprenticeship training through ICS Chesapeake. We write the check so you can earn your license without taking on the cost yourself."
+      text: "PTO, paid holidays, and fully paid apprenticeship training through IEC Chesapeake. We write the check so you can earn your license without taking on the cost yourself."
 
 training_growth:
   label: "Training & Career Growth"
   headline: "A Real Apprentice-to-Journeyman Path"
-  text1: "At Reyco, growth isn't a vague promise. We pair new hires with experienced techs, support your licensing through the ICS Chesapeake apprenticeship program, and promote from within."
+  text1: "At Reyco, growth isn't a vague promise. We pair new hires with experienced techs, support your licensing through the IEC Chesapeake apprenticeship program, and promote from within."
   text2: "Our career ladder: <strong class=\"text-stone-800\">Helper → Apprentice → Mechanic</strong>, then <strong class=\"text-stone-800\">Service Tech or Foreman</strong> at the same level — two ways to lead, not a line from one to the other."
   text3: "Average field tenure is ~4 years. Back-office tenure averages ~10 years. People stay because the path is real and the company is stable."
   cta: { label: "See Open Positions →", url: "/careers/#openings" }

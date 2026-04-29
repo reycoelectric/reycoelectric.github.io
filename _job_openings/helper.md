@@ -1,6 +1,6 @@
 ---
 title: "Electrical Helper"
-location: "Hughesville, MD"
+location: "DMV Metro Area"
 type: "Full-time"
 level: "Helper"
 track: "field"

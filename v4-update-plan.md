@@ -33,7 +33,7 @@ Resolve these with Dave before starting the relevant sections. Do not write plac
 | Named employee example ("So-and-so started as a Helper and is now a Foreman") | `careers/field.html` | Marked `[PENDING]` in v4 |
 | Phone number | All pages, nav, footer | v4 shows `(301) XXX-XXXX` — confirm whether to keep existing `(301) 843-1848` |
 | 401(k) match rate | `careers/why-reyco.html`, `careers/field.html`, `careers/office.html` | v4 says 7%, current `why-reyco.html` says 7% — confirm with Dave |
-| Vision / STD / LTD benefits | Why Reyco, Field, Office pages | v4 notes these are being added — do NOT add until confirmed |
+| STD / LTD benefits | Why Reyco, Field, Office pages | v4 notes these are being added — do NOT add until confirmed |
 
 ---
 
@@ -185,7 +185,7 @@ New page. Use a new layout (`_layouts/careers-field.html`) or a standalone HTML 
 - Pay in top percentile for the market
 - Health/dental: 100% employer-paid for employee coverage
 - 401(k): [PENDING — confirm 7% or 7%] company contribution; 94% of employees participate
-- IHS Peak fees covered
+- IEC Chesapeake fees covered
 - PTO
 - Company vehicle or vehicle allowance
 - Tablet for field work
