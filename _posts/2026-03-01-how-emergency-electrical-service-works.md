@@ -37,11 +37,11 @@ This is where a lot of contractors fall apart. The tech shows up, doesn't know t
 
 The tablet workflow gives the tech everything they need before they walk through the door: facility type, prior service history, any known issues, and the name of the person they're meeting. They can get started immediately.
 
-## Step 4: Fix, document, invoice — same day
+## Step 4: Fix, document — same visit; invoice follows
 
-When the work is done, the tech captures it in BuildOps: photos, work performed, materials used, sign-off from the on-site contact. The invoice generates immediately and goes out digitally.
+When the work is done, the tech captures it in BuildOps: photos, work performed, materials used, sign-off from the on-site contact. The work order is complete the same visit; your digital invoice follows by the next business day (often the same business day when the call wraps during business hours).
 
-You don't wait 45 days for a paper invoice. You don't have to chase someone down to find out what was done. The record is there the same day.
+You don't wait 45 days for a paper invoice. You don't have to chase someone down to find out what was done. The record is in BuildOps the same day.
 
 ---
 

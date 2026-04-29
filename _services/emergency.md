@@ -5,7 +5,7 @@ slug: emergency
 order: 1
 description: "Same-day and after-hours emergency response for commercial facilities across DC, Maryland, and Virginia. When the lights go out, we show up."
 headline: "When the Lights Go Out, We Show Up"
-overview: "Electrical problems don't wait for business hours. Neither do we. Reyco provides same-day and after-hours emergency response for commercial facilities across DC, Maryland, and Virginia. Our centralized dispatch team classifies your call, assigns the right technician, and gets someone on their way.\n\nEvery tech carries a tablet with real-time job details. You'll get a digital invoice with full documentation — tech notes, photos, materials used, time on-site — typically by end of day."
+overview: "Electrical problems don't wait for business hours. Neither do we. Reyco provides same-day and after-hours emergency response for commercial facilities across DC, Maryland, and Virginia. Our centralized dispatch team classifies your call, assigns the right technician, and gets someone on their way.\n\nEvery tech carries a tablet with real-time job details. The work order is closed out in BuildOps the same visit with full documentation — tech notes, photos, materials used, time on-site. Your digital invoice follows by the next business day (often the same business day when the job closes during business hours)."
 what_we_handle:
   - "Troubleshooting and repair of failed circuits, panels, and branch wiring"
   - "Power restoration and temporary solutions to keep your facility operational"
@@ -22,7 +22,7 @@ who_its_for:
     reyco_response: "We handle banks, restaurants, multifamily common areas, and retail locations every week. One point of contact, consistent quality, digital documentation for your records."
   - type: "National Facility Services Companies"
     context: "You dispatch vendors through work order platforms and need contractors who integrate cleanly."
-    reyco_response: "We're set up to receive work orders, check in on arrival, report findings same-day, and submit quotes immediately. No chasing us for paperwork."
+    reyco_response: "We're set up to receive work orders, check in on arrival, close out documentation the same visit, and submit quotes immediately. No chasing us for paperwork."
 how_it_works:
   - step: "1"
     title: "Call"
@@ -32,7 +32,7 @@ how_it_works:
     detail: "We classify the call, assign a qualified tech based on the problem type, and confirm an ETA."
   - step: "3"
     title: "Resolve"
-    detail: "Tech arrives, diagnoses, and fixes. Digital invoice with full documentation the same day."
+    detail: "Tech arrives, diagnoses, and fixes. Work is documented in BuildOps the same visit; your invoice follows by the next business day."
 quote: '"I literally call and most of the time they say yes, I can have a tech. They are always willing to work with us time-wise and money-wise." — Facility Manager, National Services Company'
 cta_primary: "Request Emergency Service"
 availability: "Available 24/7 — Emergencies answered live"
@@ -43,7 +43,7 @@ faq:
   - q: "Do you handle emergencies for restaurants and food service?"
     a: "Yes. Kitchen electrical failures — tripped circuits, failed cooler lines, hood system issues — are among the most common emergency calls we receive. Our techs are familiar with commercial food service equipment and the urgency of keeping a kitchen operational."
   - q: "What happens if the problem can't be fully fixed on the first visit?"
-    a: "We'll stabilize the situation and keep your facility operational where possible, then schedule the permanent repair as quickly as we can. You get a digital invoice same-day for whatever work was completed — no waiting weeks for paperwork."
+    a: "We'll stabilize the situation and keep your facility operational where possible, then schedule the permanent repair as quickly as we can. You get a complete digital work order for whatever was completed the same visit; your invoice follows by the next business day — not weeks later on paper."
   - q: "Are you licensed and insured in Maryland, Virginia, and DC?"
     a: "Yes. Reyco is licensed and insured in Maryland, Virginia, and Washington DC. Our safety EMR of 0.81 puts us in the top 10% of electrical contractors nationally."
 hero_image: ../assets/images/hero/emergency.jpg

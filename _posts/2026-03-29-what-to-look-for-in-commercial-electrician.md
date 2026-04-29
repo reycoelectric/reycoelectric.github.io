@@ -40,9 +40,9 @@ Make sure the certificates name your entity as an additional insured, and confir
 
 Commercial property management runs on documentation. After the work is done, you need clear records of what was performed, what materials were used, and what was inspected. An electrician who hands you a handwritten invoice on a carbon copy form is not set up for modern facility management workflows.
 
-Ask what platform they use for work orders and invoicing. Can they provide digital invoices same day? Can you access service history for a facility? Will the tech document photos of completed work?
+Ask what platform they use for work orders and invoicing. Can they close out a digital work order the same visit, and deliver invoices on a predictable schedule? Can you access service history for a facility? Will the tech document photos of completed work?
 
-Reyco runs on BuildOps, which means every job generates a digital work order, materials log, and invoice — same day, accessible to the facility contact on record.
+Reyco runs on BuildOps, which means every job generates a digital work order and materials log the same visit, with invoicing typically by the next business day — accessible to the facility contact on record.
 
 ## Emergency Response Capability
 

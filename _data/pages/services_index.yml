@@ -16,7 +16,7 @@ dispatch:
     - title: "Dispatch"
       text: "Your call is classified as emergency or scheduled. A tech is assigned based on capability and location."
     - title: "Resolve"
-      text: "Tech arrives on-site with full job details on their tablet. Fix is made. Digital invoice same day."
+      text: "Tech arrives on-site with full job details on their tablet. Fix is made. Work is documented in BuildOps the same visit; your invoice follows by the next business day."
 
 industries:
   label: "Industries"

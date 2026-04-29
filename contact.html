@@ -102,9 +102,11 @@ description: "Request commercial electrical service or get in touch with our tea
           </div>
           <div>
             <div class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1">{{ copy.sidebar.address_label }}</div>
+            {% assign _addr_parts = site.address | split: ", " %}
             <div class="text-sm text-stone-700">
               {{ site.title }}<br>
-              {{ site.address }}
+              {{ _addr_parts[0] }}<br>
+              {{ _addr_parts[1] }}, {{ _addr_parts[2] }}
             </div>
           </div>
           <div>

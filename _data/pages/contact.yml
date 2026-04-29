@@ -44,7 +44,7 @@ sidebar:
   licensed_label: "Licensed & Insured"
   licensed_text: "DC · Maryland · Virginia"
   location_label: "Location"
-  map_placeholder: "Map — Hughesville, MD 20637"
+  map_placeholder: "Map — 7700 Leonardtown Rd, Hughesville, MD 20637"
 
 emergency_callout:
   headline: "Emergency?"
