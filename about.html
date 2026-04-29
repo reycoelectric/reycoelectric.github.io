@@ -77,7 +77,8 @@ and Virginia. EMR 0.81, top 10% nationally."
   </div>
 </section>
 
-<!-- Team Structure -->
+{% unless copy.the_team.hidden %}
+<!-- Team Structure (driven by _data/team.yml) -->
 <section class="bg-stone-50 py-14 px-4 md:px-16">
   <div class="max-w-7xl mx-auto">
     <div class="section-label">{{ copy.the_team.label }}</div>
@@ -112,6 +113,7 @@ and Virginia. EMR 0.81, top 10% nationally."
     </div>
   </div>
 </section>
+{% endunless %}
 
 <!-- HQ -->
 <section class="py-14 px-4 md:px-16">

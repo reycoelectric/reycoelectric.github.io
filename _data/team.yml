@@ -8,14 +8,6 @@ leadership:
     title: "Business Administrator"
     note: "Manages IT, systems, and BuildOps implementation."
 
-  - name: "Thomas Bryant"
-    title: "Service Manager"
-    note: "Manages dispatch and coordinates field technicians."
-
-  - name: "Kevin Shipp"
-    title: "Superintendent"
-    note: "Field oversight, quality control, weekly job reviews."
-
 field_force:
   total: 40
   avg_tenure_years: 4

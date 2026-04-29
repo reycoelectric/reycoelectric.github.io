@@ -38,6 +38,7 @@ how_we_work:
     processes — our folder structures, job workflows, and dispatch systems have been refined over 10+ years.
 
 the_team:
+  hidden: true
   label: "The Team"
   headline: "53 People, One Standard"
 
