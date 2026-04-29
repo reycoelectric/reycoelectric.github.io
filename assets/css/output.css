@@ -1513,6 +1513,10 @@ input:where([type='file']):focus {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
+.-mx-2 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
 .-mx-6 {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
@@ -1524,6 +1528,9 @@ input:where([type='file']):focus {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
@@ -1561,11 +1568,17 @@ input:where([type='file']):focus {
 .ml-1 {
   margin-left: 0.25rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
 .mt-0\.5 {
   margin-top: 0.125rem;
 }
 .mt-1 {
   margin-top: 0.25rem;
+}
+.mt-1\.5 {
+  margin-top: 0.375rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -1630,11 +1643,11 @@ input:where([type='file']):focus {
 .h-1\.5 {
   height: 0.375rem;
 }
-.h-12 {
-  height: 3rem;
-}
 .h-2 {
   height: 0.5rem;
+}
+.h-2\.5 {
+  height: 0.625rem;
 }
 .h-24 {
   height: 6rem;
@@ -1687,6 +1700,9 @@ input:where([type='file']):focus {
 .h-\[480px\] {
   height: 480px;
 }
+.h-auto {
+  height: auto;
+}
 .h-full {
   height: 100%;
 }
@@ -1696,14 +1712,11 @@ input:where([type='file']):focus {
 .w-10 {
   width: 2.5rem;
 }
-.w-12 {
-  width: 3rem;
-}
-.w-16 {
-  width: 4rem;
-}
 .w-2 {
   width: 0.5rem;
+}
+.w-2\.5 {
+  width: 0.625rem;
 }
 .w-4 {
   width: 1rem;
@@ -1725,6 +1738,9 @@ input:where([type='file']):focus {
 }
 .min-w-0 {
   min-width: 0px;
+}
+.min-w-\[520px\] {
+  min-width: 520px;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1789,9 +1805,6 @@ input:where([type='file']):focus {
 }
 .items-center {
   align-items: center;
-}
-.justify-end {
-  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -1918,6 +1931,9 @@ input:where([type='file']):focus {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-x-auto {
+  overflow-x: auto;
 }
 .truncate {
   overflow: hidden;
@@ -2136,10 +2152,6 @@ input:where([type='file']):focus {
   padding-left: 0px;
   padding-right: 0px;
 }
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2226,8 +2238,11 @@ input:where([type='file']):focus {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
-.pb-4 {
-  padding-bottom: 1rem;
+.pl-0\.5 {
+  padding-left: 0.125rem;
+}
+.pl-2 {
+  padding-left: 0.5rem;
 }
 .pl-4 {
   padding-left: 1rem;
@@ -2237,6 +2252,9 @@ input:where([type='file']):focus {
 }
 .pl-6 {
   padding-left: 1.5rem;
+}
+.pt-0\.5 {
+  padding-top: 0.125rem;
 }
 .pt-2 {
   padding-top: 0.5rem;
@@ -2280,9 +2298,6 @@ input:where([type='file']):focus {
 }
 .text-\[11px\] {
   font-size: 11px;
-}
-.text-\[8px\] {
-  font-size: 8px;
 }
 .text-\[9px\] {
   font-size: 9px;
@@ -2408,6 +2423,15 @@ input:where([type='file']):focus {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+.underline {
+  text-decoration-line: underline;
+}
+.decoration-stone-300 {
+  text-decoration-color: #d6d3d1;
+}
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
 .opacity-0 {
   opacity: 0;
 }
@@ -2419,9 +2443,6 @@ input:where([type='file']):focus {
 }
 .opacity-60 {
   opacity: 0.6;
-}
-.opacity-90 {
-  opacity: 0.9;
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -2521,6 +2542,9 @@ input:where([type='file']):focus {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+.hover\:decoration-reyco-red-600:hover {
+  text-decoration-color: #af1c0f;
+}
 .hover\:shadow-md:hover {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -2579,8 +2603,9 @@ input:where([type='file']):focus {
 }
 @media (min-width: 640px) {
 
-  .sm\:block {
-    display: block;
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .sm\:w-auto {
@@ -2617,6 +2642,11 @@ input:where([type='file']):focus {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
+  }
+
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .sm\:px-8 {
