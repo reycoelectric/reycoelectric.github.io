@@ -4,7 +4,7 @@
 
 - icon: "🏥"
   label: "Health / Dental"
-  sub: "Full coverage for you and your family"
+  sub: "100% employer-paid for employee coverage"
 
 - icon: "📈"
   label: "401(k) with 7% Company Contribution (no match required)"
@@ -17,7 +17,9 @@
 - icon: "🎓"
   label: "Funded Training & Apprenticeship"
   sub: "IEC Chesapeake apprentice program fees paid by Reyco — your license, our investment"
+  field_only: true
 
 - icon: "🔧"
   label: "Company provides all power tools; employees are responsible for hand tools only"
-  sub: "We help you stay equipped and ready"
+  sub: "We supply power tools; you provide hand tools"
+  field_only: true

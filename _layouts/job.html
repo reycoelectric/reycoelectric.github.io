@@ -87,10 +87,12 @@ layout: default
         <div class="section-label">{{ ui.benefits_reminder_label }}</div>
         <div class="grid grid-cols-2 gap-2">
           {% for benefit in site.data.benefits %}
+          {% if page.track == "office" and benefit.field_only %}{% else %}
           <div class="flex items-center gap-2 text-sm text-stone-600">
             <span>{{ benefit.icon }}</span>
             <span class="font-semibold">{{ benefit.label }}</span>
           </div>
+          {% endif %}
           {% endfor %}
         </div>
         <a href="{{ '/careers/why-reyco/' | relative_url }}" class="text-sm font-bold text-reyco-red-700 mt-4 inline-block">{{ ui.benefits_link_text }}</a>

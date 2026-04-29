@@ -11,12 +11,12 @@ tracks_overview:
   field:
     label: "Field Careers"
     headline: "Build a Career with Your Hands"
-    text: "For electricians, apprentices, helpers, and anyone looking to get into the trades. A clear ladder through Mechanic, then two senior field paths (Service Tech or Foreman) at the same level, paid apprenticeship, and the variety of working on emergency calls, panel upgrades, and institutional projects — not the same outlet box every day."
+    text: "For electricians, apprentices, helpers, and anyone looking to get into the trades. A clear ladder through Mechanic, then two senior field paths (Service Tech or Foreman) at the same level, funded apprenticeship, and the variety of working on emergency calls, panel upgrades, and institutional projects — not the same outlet box every day."
     cta: { label: "Explore Field Careers →", url: "/careers/field/" }
   office:
     label: "Office & Professional"
     headline: "Build the Business, Not Just Buildings"
-    text: "For project managers, estimators, account managers, and operations professionals. Real systems (BuildOps, AccuBid, QuickBooks), a a strong project pipeline, and the chance to build something at a company that's scaling — not just maintaining."
+    text: "For project managers, estimators, account managers, and operations professionals. Real systems (BuildOps, AccuBid, QuickBooks), a strong project pipeline, and the chance to build something at a company that's scaling — not just maintaining."
     cta: { label: "Explore Office Careers →", url: "/careers/office/" }
 
 benefits_snapshot:
