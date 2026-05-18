@@ -30,5 +30,6 @@ clients:
   - "Institutional campus operators"
 compliance_note: "Many government and institutional facilities in the DC region require contractors to carry an EMR below 0.90, and some require below 0.85. Reyco's current EMR of 0.81 meets the most restrictive thresholds in the market. We can provide verification documentation on request."
 hero_image: ../assets/images/hero/institutional.png
-
+related_photos:
+  - ../assets/images/related/institutional-1.png
 ---

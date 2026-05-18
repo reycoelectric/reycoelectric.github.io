@@ -24,7 +24,8 @@ layout: default
     <div class="max-w-7xl mx-auto w-full">
       <!-- Breadcrumb -->
       <div class="text-reyco-red-300 text-xs font-bold uppercase tracking-widest mb-3">
-        <a href="{{ '/services/' | relative_url }}" class="hover:text-reyco-red-200 transition-colors">{{ ui.breadcrumb_root }}</a>
+        <a href="{{ '/services/' | relative_url }}" class="hover:text-reyco-red-200 transition-colors">{{
+          ui.breadcrumb_root }}</a>
         <span class="mx-1.5 opacity-60">›</span>
         {{ page.nav_label }}
       </div>
@@ -235,7 +236,6 @@ layout: default
       <!-- Project photos -->
       {% if page.related_photos %}
       <div>
-        <div class="section-label">{{ ui.photos_label }}</div>
         <div class="space-y-2">
           {% for photo in page.related_photos %}
           <div class="h-32 overflow-hidden">
@@ -260,7 +260,8 @@ layout: default
   <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">{{ ui.bottom_cta_headline }}</h2>
   <p class="text-stone-400 mb-7 max-w-xl mx-auto">{{ ui.bottom_cta_text }}</p>
   <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-    <a href="{{ '/contact/' | relative_url }}" class="btn-brand w-full sm:w-auto">{{ page.cta_primary | default: ui.bottom_cta_button }}
+    <a href="{{ '/contact/' | relative_url }}" class="btn-brand w-full sm:w-auto">{{ page.cta_primary | default:
+      ui.bottom_cta_button }}
       →</a>
     <a href="tel:{{ site.phone_link }}" class="btn-secondary w-full sm:w-auto">{{ site.phone }}</a>
   </div>

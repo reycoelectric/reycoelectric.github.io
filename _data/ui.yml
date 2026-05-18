@@ -57,7 +57,6 @@ service_layout:
     safety_val: "0.81 (top 10%)"
     invoicing: "Invoicing"
     invoicing_val: "Digital work orders; invoice next business day"
-  photos_label: "Project Photos"
   bottom_cta_headline: "Ready when you are."
   bottom_cta_text: "Whether it's an emergency call at 2 AM or a scheduled project next month — we respond."
 industry_layout:
@@ -90,7 +89,6 @@ industry_layout:
     emergency_val: "24/7 dispatch, on-call tech every night"
     invoicing: "Invoicing"
     invoicing_val: "Digital work orders; next-business-day invoice"
-  photos_label: "Project Photos"
   bottom_cta_headline: "Electrical service built for your industry."
   bottom_cta_text: "Tell us about your facility. We respond fast and we're available around the clock."
 job_layout:

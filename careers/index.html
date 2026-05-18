@@ -87,25 +87,6 @@ benefits, and a clear path from Helper through Mechanic, then two senior field t
   </div>
 </section>
 
-<!-- What you'll work on -->
-<section class="py-14 px-6 md:px-16">
-  <div class="max-w-7xl mx-auto">
-    <div class="section-label">{{ copy.work_overview.label }}</div>
-    <h2 class="text-2xl font-extrabold text-stone-800 tracking-tight mb-2">{{ copy.work_overview.headline }}</h2>
-    <p class="text-stone-500 mb-8 text-sm">{{ copy.work_overview.subhead }}</p>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-      {% for work in copy.work_overview.types %}
-      <div>
-        <div class="photo-placeholder h-40 mb-3">
-          <!-- TODO: Add work-type photo -->
-        </div>
-        <div class="text-sm font-bold text-stone-700">{{ work }}</div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 <!-- Stability stats -->
 <section class="bg-stone-800 py-10 px-6 md:px-16">
   <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

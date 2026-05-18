@@ -49,5 +49,4 @@ faq:
 hero_image: ../assets/images/hero/emergency.png
 related_photos:
   - ../assets/images/related/emergency-1.png
-  - ../assets/images/related/emergency-2.png
 ---
