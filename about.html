@@ -8,8 +8,8 @@ and Virginia. EMR 0.81, top 10% nationally."
 {% assign copy = site.data.pages.about %}
 
 {% include hero-dark.html
-  headline=copy.hero.headline
-  subhead=copy.hero.subhead
+headline=copy.hero.headline
+subhead=copy.hero.subhead
 %}
 
 <!-- Dave's Story -->
@@ -25,7 +25,7 @@ and Virginia. EMR 0.81, top 10% nationally."
     <div class="space-y-3">
       <div class="h-80 overflow-hidden">
         <!-- TODO: Replace with Dave's headshot or team photo -->
-        <!-- <img src="{{ '/assets/images/team/dave-reynolds.jpg' | relative_url }}" alt="{{ copy.founding_story.headline }}" class="w-full h-full object-cover"> -->
+        <!-- <img src="{{ '/assets/images/team/dave-reynolds.png' | relative_url }}" alt="{{ copy.founding_story.headline }}" class="w-full h-full object-cover"> -->
         <div class="photo-placeholder w-full h-full"></div>
       </div>
       <p class="text-xs text-stone-400 text-center">{{ copy.founding_story.caption }}</p>
@@ -86,18 +86,21 @@ and Virginia. EMR 0.81, top 10% nationally."
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       {% assign team = site.data.team %}
       <div>
-        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Field Force — {{ team.field_force.total }} People</h3>
+        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Field Force — {{
+          team.field_force.total }} People</h3>
         <div class="space-y-3">
           {% for role in team.field_force.roles %}
           <div class="flex items-start gap-3 text-sm text-stone-600">
-            <span class="text-reyco-red-600 font-bold shrink-0">•</span><strong>{{ role.count }} {{ role.label }}</strong> — {{ role.description }}
+            <span class="text-reyco-red-600 font-bold shrink-0">•</span><strong>{{ role.count }} {{ role.label
+              }}</strong> — {{ role.description }}
           </div>
           {% endfor %}
         </div>
         <p class="text-xs text-stone-400 mt-4">Average field tenure: ~{{ team.field_force.avg_tenure_years }} years</p>
       </div>
       <div>
-        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Office & Leadership — {{ team.office.total }} People</h3>
+        <h3 class="text-base font-bold text-stone-800 mb-4 border-b border-stone-200 pb-2">Office & Leadership — {{
+          team.office.total }} People</h3>
         <div class="space-y-2">
           {% for person in team.leadership %}
           <div class="text-sm text-stone-600">
@@ -120,7 +123,7 @@ and Virginia. EMR 0.81, top 10% nationally."
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div class="h-64 overflow-hidden">
       <!-- TODO: Replace with exterior photo of Hughesville HQ -->
-      <!-- <img src="{{ '/assets/images/hq/exterior.jpg' | relative_url }}" alt="{{ copy.hq.headline }}" class="w-full h-full object-cover"> -->
+      <!-- <img src="{{ '/assets/images/hq/exterior.png' | relative_url }}" alt="{{ copy.hq.headline }}" class="w-full h-full object-cover"> -->
       <div class="photo-placeholder w-full h-full"></div>
     </div>
     <div>
@@ -137,10 +140,10 @@ and Virginia. EMR 0.81, top 10% nationally."
 </section>
 
 {% include cta-footer.html
-  headline=copy.footer_cta.headline
-  subhead=copy.footer_cta.subhead
-  cta1_label=copy.footer_cta.cta1.label
-  cta1_url=copy.footer_cta.cta1.url
-  cta2_label=copy.footer_cta.cta2.label
-  cta2_url=copy.footer_cta.cta2.url
+headline=copy.footer_cta.headline
+subhead=copy.footer_cta.subhead
+cta1_label=copy.footer_cta.cta1.label
+cta1_url=copy.footer_cta.cta1.url
+cta2_label=copy.footer_cta.cta2.label
+cta2_url=copy.footer_cta.cta2.url
 %}

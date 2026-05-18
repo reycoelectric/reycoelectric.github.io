@@ -47,8 +47,8 @@ faq:
     a: "Frequently. We build the facility, we learn it, and when the general contractor moves on, we're the contractor who already knows where everything is. Many of our longest service accounts started as a single construction project."
   - q: "What estimating and project management systems do you use?"
     a: "We estimate via AccuBid and manage projects through BuildOps with real-time job tracking and digital documentation. Our foremen and superintendents run weekly progress reviews and coordinate directly with GC project managers."
-hero_image: ../assets/images/hero/construction.jpg
+hero_image: ../assets/images/hero/construction.png
 related_photos: 
-  - ../assets/images/related/construction-1.jpg
-  - ../assets/images/related/construction-2.jpg
+  - ../assets/images/related/construction-1.png
+  - ../assets/images/related/construction-2.png
 ---

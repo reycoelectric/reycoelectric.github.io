@@ -31,6 +31,6 @@ clients:
   - "Multi-location portfolio operators"
   - "Travel center and convenience operators"
 compliance_note: "Restaurant electrical work often intersects with health department requirements, hood suppression systems, and NSF-compliant equipment circuits. We understand the operational context — not just the electrical code."
-hero_image: ../assets/images/hero/restaurant.jpg
+hero_image: ../assets/images/hero/restaurant.png
 
 ---

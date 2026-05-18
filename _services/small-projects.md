@@ -46,8 +46,8 @@ faq:
     a: "That's how many of our best project relationships start. Our service techs are trained to notice upgrade opportunities while on-site and flag them for follow-up. If we see a panel that's due for replacement or a parking lot with failing fixtures, we'll tell you — no pressure, just a straight quote if you want one."
   - q: "Do you handle EV charging installations for commercial properties?"
     a: "Yes. We install Level 2 and DC fast charging stations for office buildings, retail centers, multifamily garages, and government facilities. We handle the full scope: load analysis, panel upgrades if needed, trenching, conduit, and charging equipment installation."
-hero_image: ../assets/images/hero/small-projects.jpg
+hero_image: ../assets/images/hero/small-projects.png
 related_photos: 
-  - ../assets/images/related/small-project-1.jpg
-  - ../assets/images/related/small-project-2.jpg
+  - ../assets/images/related/small-project-1.png
+  - ../assets/images/related/small-project-2.png
 ---

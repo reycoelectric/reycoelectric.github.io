@@ -46,8 +46,8 @@ faq:
     a: "We'll stabilize the situation and keep your facility operational where possible, then schedule the permanent repair as quickly as we can. You get a complete digital work order for whatever was completed the same visit; your invoice follows by the next business day — not weeks later on paper."
   - q: "Are you licensed and insured in Maryland, Virginia, and DC?"
     a: "Yes. Reyco is licensed and insured in Maryland, Virginia, and Washington DC. Our safety EMR of 0.81 puts us in the top 10% of electrical contractors nationally."
-hero_image: ../assets/images/hero/emergency.jpg
+hero_image: ../assets/images/hero/emergency.png
 related_photos:
-  - ../assets/images/related/emergency-1.jpg
-  - ../assets/images/related/emergency-2.jpg
+  - ../assets/images/related/emergency-1.png
+  - ../assets/images/related/emergency-2.png
 ---

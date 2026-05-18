@@ -26,6 +26,6 @@ why_reyco: "In a healthcare setting, an electrical contractor needs to understan
 clients:
   - "Healthcare facilities across DC, Maryland & Virginia"
 compliance_note: "Healthcare electrical work is governed by NFPA 99 for health care facilities and NFPA 110 for emergency power systems. Critical branch, equipment branch, and life safety branch circuits have specific requirements. Reyco's EMR of 0.81 and safety culture meet the expectations of clinical environments where errors have real consequences."
-hero_image: ../assets/images/hero/healthcare.jpg
+hero_image: ../assets/images/hero/healthcare.png
 
 ---

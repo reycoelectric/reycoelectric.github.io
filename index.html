@@ -10,7 +10,8 @@ projects, and institutional construction since 2004."
 <section class="relative">
   <div class="bg-stone-700 h-[480px] md:h-[540px] overflow-hidden">
     <!-- TODO: Replace with real hero photo -->
-    <img src="{{ '/assets/images/hero/homepage.jpg' | relative_url }}" alt="{{ copy.hero.headline | strip_html }}" class="w-full h-full object-cover">
+    <img src="{{ '/assets/images/hero/homepage.png' | relative_url }}" alt="{{ copy.hero.headline | strip_html }}"
+      class="w-full h-full object-cover">
     <div class="w-full h-full photo-placeholder"></div>
   </div>
   <div
@@ -82,17 +83,19 @@ projects, and institutional construction since 2004."
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div class="h-72 overflow-hidden">
       <!-- TODO: Replace with real photo of Dave Reynolds or team -->
-      <!-- <img src="/assets/images/team/dave-reynolds.jpg" alt="Dave Reynolds, Founder" class="w-full h-full object-cover"> -->
+      <!-- <img src="/assets/images/team/dave-reynolds.png" alt="Dave Reynolds, Founder" class="w-full h-full object-cover"> -->
       <div class="photo-placeholder w-full h-full"></div>
     </div>
     <div>
       <div class="section-label">{{ copy.about_teaser.label }}</div>
-      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-4">{{ copy.about_teaser.headline }}</h2>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-4">{{ copy.about_teaser.headline
+        }}</h2>
       <p class="text-stone-600 leading-relaxed mb-6">
         {{ copy.about_teaser.text | markdownify | strip_html }}
       </p>
       <a href="{{ copy.about_teaser.cta.url | relative_url }}"
-        class="text-sm font-bold text-reyco-red-700 uppercase tracking-wide hover:text-reyco-red-600">{{ copy.about_teaser.cta.label }}</a>
+        class="text-sm font-bold text-reyco-red-700 uppercase tracking-wide hover:text-reyco-red-600">{{
+        copy.about_teaser.cta.label }}</a>
     </div>
   </div>
 </section>
@@ -101,20 +104,25 @@ projects, and institutional construction since 2004."
 <section class="bg-reyco-red-50 border-y-2 border-reyco-red-200 py-14 px-4 md:px-16">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     <div>
-      <div class="text-xs font-bold text-reyco-red-700 uppercase tracking-widest mb-2">{{ copy.careers_teaser.label }}</div>
-      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-3">{{ copy.careers_teaser.headline }}
+      <div class="text-xs font-bold text-reyco-red-700 uppercase tracking-widest mb-2">{{ copy.careers_teaser.label }}
+      </div>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-3">{{ copy.careers_teaser.headline
+        }}
       </h2>
       <p class="text-stone-600 leading-relaxed mb-6">
         {{ copy.careers_teaser.text | markdownify | strip_html }}
       </p>
       <div class="flex flex-col sm:flex-row gap-3">
-        <a href="{{ copy.careers_teaser.cta1.url | relative_url }}" class="btn-brand">{{ copy.careers_teaser.cta1.label }}</a>
-        <a href="{{ copy.careers_teaser.cta2.url | relative_url }}" class="btn-primary">{{ copy.careers_teaser.cta2.label }}</a>
+        <a href="{{ copy.careers_teaser.cta1.url | relative_url }}" class="btn-brand">{{ copy.careers_teaser.cta1.label
+          }}</a>
+        <a href="{{ copy.careers_teaser.cta2.url | relative_url }}" class="btn-primary">{{
+          copy.careers_teaser.cta2.label }}</a>
       </div>
     </div>
     <div class="grid grid-cols-2 gap-4">
       <div class="bg-white border-2 border-stone-200 p-5">
-        <div class="text-xs font-bold text-reyco-red-700 uppercase tracking-widest mb-2">{{ copy.careers_teaser.track.label }}</div>
+        <div class="text-xs font-bold text-reyco-red-700 uppercase tracking-widest mb-2">{{
+          copy.careers_teaser.track.label }}</div>
         <div class="text-sm font-extrabold text-stone-800 mb-1">{{ copy.careers_teaser.track.headline }}</div>
         <p class="text-xs text-stone-500 leading-relaxed">{{ copy.careers_teaser.track.text }}</p>
       </div>
@@ -153,7 +161,8 @@ projects, and institutional construction since 2004."
       {% endfor %}
     </div>
     <div class="text-center mt-8">
-      <a href="{{ copy.industries_overview.all_cta.url | relative_url }}" class="text-sm font-bold text-reyco-red-700">{{ copy.industries_overview.all_cta.label }}</a>
+      <a href="{{ copy.industries_overview.all_cta.url | relative_url }}"
+        class="text-sm font-bold text-reyco-red-700">{{ copy.industries_overview.all_cta.label }}</a>
     </div>
   </div>
 </section>

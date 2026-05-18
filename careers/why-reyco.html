@@ -8,8 +8,8 @@ Reyco different from the other shops in the DMV."
 {% assign copy = site.data.pages.careers_why_reyco %}
 
 {% include hero-dark.html
-  headline=copy.hero.headline
-  subhead=copy.hero.subhead
+headline=copy.hero.headline
+subhead=copy.hero.subhead
 %}
 
 <!-- Benefits deep-dive -->
@@ -39,11 +39,12 @@ Reyco different from the other shops in the DMV."
         <p>{{ copy.training_growth.text2 }}</p>
         <p>{{ copy.training_growth.text3 }}</p>
       </div>
-      <a href="{{ copy.training_growth.cta.url | relative_url }}" class="btn-primary mt-6 inline-block">{{ copy.training_growth.cta.label }}</a>
+      <a href="{{ copy.training_growth.cta.url | relative_url }}" class="btn-primary mt-6 inline-block">{{
+        copy.training_growth.cta.label }}</a>
     </div>
     <div class="h-72 overflow-hidden">
       <!-- TODO: Replace with mentor/apprentice working together photo -->
-      <!-- <img src="{{ '/assets/images/careers/training.jpg' | relative_url }}" alt="Reyco technician training an apprentice" class="w-full h-full object-cover"> -->
+      <!-- <img src="{{ '/assets/images/careers/training.png' | relative_url }}" alt="Reyco technician training an apprentice" class="w-full h-full object-cover"> -->
       <div class="photo-placeholder w-full h-full"></div>
     </div>
   </div>
@@ -143,8 +144,8 @@ Reyco different from the other shops in the DMV."
 </section>
 
 {% include cta-footer.html
-  headline=copy.footer_cta.headline
-  subhead=copy.footer_cta.subhead
-  cta1_label=copy.footer_cta.cta.label
-  cta1_url=copy.footer_cta.cta.url
+headline=copy.footer_cta.headline
+subhead=copy.footer_cta.subhead
+cta1_label=copy.footer_cta.cta.label
+cta1_url=copy.footer_cta.cta.url
 %}
