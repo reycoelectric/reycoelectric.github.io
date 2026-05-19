@@ -66,6 +66,14 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      image:
+        path: "/assets/og-default.png"
+        width: 1200
+        height: 630
+        alt: "Reyco Electrical Services"
+  - scope:
+      path: ""
       type: "services"
     values:
       layout: "service"
