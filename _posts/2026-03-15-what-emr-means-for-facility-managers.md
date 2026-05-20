@@ -1,5 +1,6 @@
 ---
 layout: post
+hero_image: /assets/images/careers/work-government.png
 title: "What an EMR Below 1.0 Actually Means — And Why Facility Managers Should Care"
 date: 2026-03-15
 category: "Safety"

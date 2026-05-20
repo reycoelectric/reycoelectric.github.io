@@ -27,6 +27,9 @@ clients:
   - "Property management companies across DC, MD & VA"
   - "Apartment communities in the DMV metro area"
 compliance_note: "Multifamily electrical work in Maryland and Virginia must meet specific panel sizing and metering requirements. We stay current on local amendments and can coordinate inspection scheduling with your property management team."
-hero_image: ../assets/images/hero/multifamily.jpg
+hero_image: ../assets/images/hero/multifamily.png
+related_photos:
+  - ../assets/images/careers/work-panel-upgrades.png
+  - ../assets/images/careers/work-ev-charging.png
 
 ---

@@ -142,10 +142,14 @@ subhead=copy.hero.subhead
 
       <div>
         <div class="section-label">{{ copy.sidebar.location_label }}</div>
-        <iframe class="w-full h-80 border-0" loading="lazy" allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZEwf66wWXe8kil8sIussgiydJR7btcIA&q={{ site.address | url_encode }}">
-        </iframe>
+        <div class="border-2 border-stone-200 bg-stone-50 p-6">
+          <div class="text-sm font-extrabold text-stone-800 mb-1">{{ site.title }}</div>
+          <p class="text-sm text-stone-600 leading-relaxed mb-5">{{ site.address }}</p>
+          <a href="{{ site.address_google_maps_url }}" target="_blank" rel="noopener noreferrer"
+            class="btn-primary text-sm inline-block">
+            Open in Google Maps
+          </a>
+        </div>
       </div>
 
       <!-- Quick access for emergencies -->

@@ -1,5 +1,6 @@
 ---
 layout: post
+hero_image: /assets/images/careers/work-emergency.png
 title: "How Emergency Electrical Service Actually Works — From the Call to the Invoice"
 date: 2026-03-01
 category: "Service"

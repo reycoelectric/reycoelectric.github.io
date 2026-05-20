@@ -9,10 +9,8 @@ projects, and institutional construction since 2004."
 <!-- Hero -->
 <section class="relative">
   <div class="bg-stone-700 h-[480px] md:h-[540px] overflow-hidden">
-    <!-- TODO: Replace with real hero photo -->
     <img src="{{ '/assets/images/hero/homepage.png' | relative_url }}" alt="{{ copy.hero.headline | strip_html }}"
       class="w-full h-full object-cover">
-    <div class="w-full h-full photo-placeholder"></div>
   </div>
   <div
     class="absolute inset-0 bg-gradient-to-r from-stone-900/90 via-stone-900/60 to-stone-900/20 flex items-end px-4 md:px-16 pb-10">
@@ -80,13 +78,7 @@ projects, and institutional construction since 2004."
 
 <!-- About Teaser -->
 <section class="py-16 px-4 md:px-16">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    <div class="h-72 overflow-hidden">
-      <!-- TODO: Replace with real photo of Dave Reynolds or team -->
-      <!-- <img src="/assets/images/team/dave-reynolds.png" alt="Dave Reynolds, Founder" class="w-full h-full object-cover"> -->
-      <div class="photo-placeholder w-full h-full"></div>
-    </div>
-    <div>
+  <div class="max-w-3xl mx-auto">
       <div class="section-label">{{ copy.about_teaser.label }}</div>
       <h2 class="text-2xl md:text-3xl font-extrabold text-stone-800 tracking-tight mb-4">{{ copy.about_teaser.headline
         }}</h2>
@@ -96,7 +88,6 @@ projects, and institutional construction since 2004."
       <a href="{{ copy.about_teaser.cta.url | relative_url }}"
         class="text-sm font-bold text-reyco-red-700 uppercase tracking-wide hover:text-reyco-red-600">{{
         copy.about_teaser.cta.label }}</a>
-    </div>
   </div>
 </section>
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+hero_image: /assets/images/careers/work-panel-upgrades.png
 title: "When to Replace vs. Repair Your Commercial Electrical Panel"
 date: 2026-03-08
 category: "Upgrades"

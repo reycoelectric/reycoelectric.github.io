@@ -1,5 +1,6 @@
 ---
 layout: post
+hero_image: /assets/images/careers/work-ev-charging.png
 title: "EV Charging at Commercial Properties: What Property Managers Need to Know"
 date: 2026-03-22
 category: "Upgrades"

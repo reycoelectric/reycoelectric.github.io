@@ -1,5 +1,6 @@
 ---
 layout: post
+hero_image: /assets/images/careers/tablet-workflow.png
 title: "What to Look for When Hiring a Commercial Electrician in the DMV"
 date: 2026-03-29
 category: "Facility Management"

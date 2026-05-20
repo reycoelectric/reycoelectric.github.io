@@ -233,24 +233,6 @@ layout: default
         </div>
       </div>
 
-      <!-- Project photos -->
-      {% if page.related_photos %}
-      <div>
-        <div class="space-y-2">
-          {% for photo in page.related_photos %}
-          <div class="h-32 overflow-hidden">
-            <img src="{{ photo | relative_url }}" alt="Project photo" class="w-full h-full object-cover">
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% else %}
-      <div class="space-y-2">
-        <div class="photo-placeholder h-32"></div>
-        <div class="photo-placeholder h-32"></div>
-      </div>
-      {% endif %}
-
     </div><!-- /sidebar -->
   </div>
 </div><!-- /grid -->

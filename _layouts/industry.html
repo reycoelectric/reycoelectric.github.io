@@ -47,14 +47,15 @@ layout: default
 <!-- ─── Client proof strip ─── Full-width, above content -->
 {% if page.clients %}
 <section class="bg-stone-100 border-y border-stone-200 py-5 px-6 md:px-16">
-  <div class="text-[10px] font-bold text-stone-400 uppercase tracking-widest shrink-0 mb-3">{{ ui.worked_with_label }}
-  </div>
-  <div class="flex flex-wrap items-center gap-2">
-    {% for client in page.clients %}
-    <div class="text-xs font-bold text-stone-500 tracking-wide px-3 py-1.5 bg-white border border-stone-200">
-      {{ client }}
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center gap-3 md:gap-5">
+    <div class="text-[10px] font-bold text-stone-400 uppercase tracking-widest shrink-0">{{ ui.worked_with_label }}</div>
+    <div class="flex flex-wrap items-center gap-4">
+      {% for client in page.clients %}
+      <div class="text-xs font-bold text-stone-600 tracking-wide">
+        {{ client }}
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
 </section>
 {% endif %}
@@ -239,24 +240,6 @@ layout: default
         </div>
       </div>
 
-      <!-- Project photos -->
-      {% if page.related_photos %}
-      <div>
-        <div class="space-y-2">
-          {% for photo in page.related_photos %}
-          <div class="h-36 overflow-hidden">
-            <img src="{{ photo | relative_url }}" alt="{{ page.title }} project" class="w-full h-full object-cover">
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% else %}
-      <div class="space-y-2">
-        <div class="photo-placeholder h-36"></div>
-        <div class="photo-placeholder h-36"></div>
-      </div>
-      {% endif %}
-
     </div><!-- /sidebar -->
   </div>
 </div><!-- /grid -->
@@ -266,7 +249,8 @@ layout: default
   <h2 class="text-white text-2xl font-extrabold tracking-tight mb-3">{{ ui.bottom_cta_headline }}</h2>
   <p class="text-stone-400 mb-7 max-w-xl mx-auto">{{ ui.bottom_cta_text }}</p>
   <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-    <a href="{{ '/contact/' | relative_url }}" class="btn-brand w-full sm:w-auto">{{ ui.bottom_cta_button }}</a>
+    <a href="{{ '/contact/' | relative_url }}" class="btn-brand w-full sm:w-auto">{{
+      ui.bottom_cta_button | default: "Request Service →" }}</a>
     <a href="tel:{{ site.phone_link }}" class="btn-secondary w-full sm:w-auto">{{ site.phone }}</a>
   </div>
 </section>

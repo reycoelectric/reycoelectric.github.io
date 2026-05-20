@@ -32,10 +32,14 @@ work_variety:
   headline: "You Won't Be Bored"
   text: "One day you're troubleshooting an emergency at a restaurant. The next you're upgrading panels in a multifamily building. The week after, you're on a project at a government institution. This is not factory work."
   types:
-    - "Emergency calls"
-    - "Panel upgrades"
-    - "EV charging installs"
-    - "Government projects"
+    - label: "Emergency calls"
+      image: "/assets/images/careers/work-emergency.png"
+    - label: "Panel upgrades"
+      image: "/assets/images/careers/work-panel-upgrades.png"
+    - label: "EV charging installs"
+      image: "/assets/images/careers/work-ev-charging.png"
+    - label: "Government projects"
+      image: "/assets/images/careers/work-government.png"
 
 operating_culture:
   label: "How We Operate"

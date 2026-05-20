@@ -1,5 +1,6 @@
 ---
 layout: post
+hero_image: /assets/images/careers/hero-crew.png
 title: "Reyco Is Hiring — Here's What That Actually Means"
 date: 2026-04-05
 category: "Careers"
