@@ -16,7 +16,7 @@ We're growing, and we're looking for people to grow with us. This isn't a post a
 
 **Field roles:**
 
-- **Helper / Apprentice** — No experience required. If you're motivated and want to learn a trade with real career trajectory, this is where it starts. We run a structured apprenticeship through IEC Chesapeake, fully funded by Reyco.
+- **Helper / Apprentice** — No experience required. If you're motivated and want to learn a trade with real career trajectory, this is where it starts. We run a structured apprenticeship through IHS Peak, fully paid by Reyco.
 - **Journeyman / Service Tech** — Licensed electricians with commercial experience. We do a high volume of service work — restaurants, government buildings, multifamily — and we need techs who can run a job independently, communicate with clients, and work at pace.
 
 **Office roles:**
@@ -30,8 +30,8 @@ We're growing, and we're looking for people to grow with us. This isn't a post a
 Compensation is competitive and based on experience — we're not going to post numbers here that don't reflect the full picture. What we will tell you is what's included beyond base pay:
 
 - **Health and dental insurance: 100% employer-paid.** Not a contribution toward a premium — we cover it.
-- **401(k) with 7% employer match.** That's above market, and it vests on a reasonable schedule.
-- **Funded apprenticeship through IEC Chesapeake** for field staff pursuing their license. We pay for the program, and we schedule around it.
+- **401(k) with 7% company contribution.** We put the money in because we want our people building a future.
+- **Fully paid apprenticeship through IHS Peak** for field staff pursuing their license. We pay for the program, and we schedule around it.
 
 ## The Work
 

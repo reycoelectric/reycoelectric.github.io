@@ -1,14 +1,14 @@
 - icon: "💰"
   label: "Competitive Pay"
-  sub: "80th percentile for the DC/MD/VA region, benchmarked annually"
+  sub: "Pay at the 80th percentile for the DC/MD/VA region, benchmarked annually"
 
 - icon: "🏥"
-  label: "Health / Dental"
-  sub: "100% employer-paid for employee coverage"
+  label: "Health & Wellness"
+  sub: "100% employer-paid for employee coverage. BlueChoice HMO with $0 deductible"
 
 - icon: "📈"
-  label: "401(k) with 7% Company Contribution (no match required)"
-  sub: "Company contributes 7% — invest in your future from day one"
+  label: "Retirement"
+  sub: "7% company contribution regardless of whether you contribute"
 
 - icon: "🏖"
   label: "PTO + Paid Holidays"
@@ -16,7 +16,7 @@
 
 - icon: "🎓"
   label: "Funded Training & Apprenticeship"
-  sub: "IEC Chesapeake apprentice program fees paid by Reyco — your license, our investment"
+  sub: "IHS Peak apprenticeship training paid by Reyco — your license, our investment"
   field_only: true
 
 - icon: "🔧"

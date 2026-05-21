@@ -1,5 +1,5 @@
 - key: "founded"
-  label: "Years in Business"
+  label: "Founded"
 - key: "employees"
   label: "Employees"
 - key: "active_accounts"
