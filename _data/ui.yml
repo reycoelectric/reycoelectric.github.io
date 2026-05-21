@@ -7,6 +7,7 @@ nav:
   all_services: "All Services →"
   all_industries: "All Industries →"
   all_careers: "All Careers →"
+  openings: "Openings"
   field_careers: "Field Careers"
   office_careers: "Office & Professional"
   why_reyco: "Why Reyco"
@@ -108,7 +109,7 @@ job_layout:
   benefits_link_text: "See full benefits details →"
   sidebar:
     cta_headline: "Apply for this Role"
-    apply_indeed: "Apply on Indeed →"
+    apply: "Apply →"
     get_in_touch: "Get in Touch →"
     location: "Location:"
     type: "Type:"

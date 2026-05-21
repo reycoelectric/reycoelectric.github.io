@@ -52,7 +52,7 @@ tenure_section:
 openings_section:
   label: "Open Positions"
   headline: "Field Openings"
-  apply_label: "Apply on Indeed →"
+  apply_label: "Apply →"
   view_label: "View Position →"
 
 footer_cta:

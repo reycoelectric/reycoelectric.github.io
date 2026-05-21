@@ -20,7 +20,13 @@ subhead=copy.hero.subhead
       <div class="section-label">{{ copy.form.label }}</div>
       <h2 class="text-xl font-extrabold text-stone-800 tracking-tight mb-7">{{ copy.form.headline }}</h2>
 
-      <form action="https://formspree.io/f/xojbjdbo" method="POST" class="space-y-5">
+      {% assign service_route_values = copy.form.routing.service_values | join: "||" %}
+      <form id="contact-form" action="{{ copy.form.routing.general_endpoint }}" method="POST" class="space-y-5"
+        data-general-endpoint="{{ copy.form.routing.general_endpoint }}"
+        data-service-endpoint="{{ copy.form.routing.service_endpoint }}"
+        data-general-destination="{{ copy.form.routing.general_destination }}"
+        data-service-destination="{{ copy.form.routing.service_destination }}"
+        data-service-values="{{ service_route_values | escape }}">
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
@@ -83,8 +89,10 @@ subhead=copy.hero.subhead
 
         <!-- Honeypot spam prevention -->
         <input type="text" name="_gotcha" style="display:none">
-        <input type="hidden" name="_subject"
+        <input type="hidden" id="contact-subject" name="_subject"
           value="New service request from {{ site.url | remove: 'https://' | remove: 'http://' }}">
+        <input type="hidden" id="routing_destination" name="routing_destination"
+          value="{{ copy.form.routing.general_destination }}">
 
         <button type="submit" class="btn-primary w-full sm:w-auto px-8 py-3">
           {{ copy.form.submit_label }}
@@ -96,6 +104,43 @@ subhead=copy.hero.subhead
         </p>
       </form>
     </div>
+
+    <script>
+      (function () {
+        var form = document.getElementById("contact-form");
+        var serviceSelect = document.getElementById("service_needed");
+        var routingDestination = document.getElementById("routing_destination");
+        var subjectField = document.getElementById("contact-subject");
+
+        if (!form || !serviceSelect) {
+          return;
+        }
+
+        var serviceValues = (form.dataset.serviceValues || "").split("||").filter(Boolean);
+        var siteHost = "{{ site.url | remove: 'https://' | remove: 'http://' }}";
+
+        function updateFormRouting() {
+          var isServiceRequest = serviceValues.indexOf(serviceSelect.value) !== -1;
+          var destination = isServiceRequest ? form.dataset.serviceDestination : form.dataset.generalDestination;
+
+          form.action = isServiceRequest ? form.dataset.serviceEndpoint : form.dataset.generalEndpoint;
+
+          if (routingDestination) {
+            routingDestination.value = destination;
+          }
+
+          if (subjectField) {
+            subjectField.value = isServiceRequest
+              ? "New service request from " + siteHost
+              : "New website inquiry from " + siteHost;
+          }
+        }
+
+        serviceSelect.addEventListener("change", updateFormRouting);
+        form.addEventListener("submit", updateFormRouting);
+        updateFormRouting();
+      }());
+    </script>
 
     <!-- Info sidebar: 2/5 -->
     <div class="md:col-span-2 space-y-6">

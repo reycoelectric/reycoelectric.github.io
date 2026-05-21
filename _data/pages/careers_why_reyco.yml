@@ -67,5 +67,5 @@ customer_quotes:
 
 footer_cta:
   headline: "Ready to make a move?"
-  subhead: "View our open positions and apply directly on Indeed."
+  subhead: "View our open positions and apply directly online."
   cta: { label: "See Open Positions →", url: "/careers/#openings" }

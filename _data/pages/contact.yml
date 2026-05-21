@@ -5,6 +5,15 @@ hero:
 form:
   label: "Service Request"
   headline: "Tell Us What You Need"
+  routing:
+    general_endpoint: "https://formspree.io/f/xojbjdbo"
+    service_endpoint: "https://formspree.io/f/mjgzwwkk"
+    general_destination: "reyco@reycoelectric.com"
+    service_destination: "service@reycoelectric.com"
+    service_values:
+      - "Emergency / Same-Day Service"
+      - "Planned Service or Maintenance"
+      - "Small Project or Upgrade Quote"
   fields:
     name: "Name"
     company: "Company"

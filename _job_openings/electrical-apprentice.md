@@ -5,7 +5,7 @@ type: "Full-time"
 level: "Apprentice"
 track: "field"
 active: true
-indeed_url: "https://www.indeed.com/cmp/reyco-electrical-services"
+apply_url: "https://app.dover.com/apply/Reyco%20Electrical%20Services,%20LLC/fcaf9f0d-2380-4946-b9cf-a16becda348d"
 summary: "Reyco pays your apprenticeship fees. That's not a slogan — we write the check to IEC Chesapeake Training and Apprenticeship so you can work toward your journeyman license while getting paid. As an Apprentice, you'll work alongside experienced service techs and foremen, building the hands-on skills and code knowledge that lead to a real career. Our career path is: Helper → Apprentice → Mechanic, then two senior tracks at the same level — Service Tech or Foreman. If you show up, work hard, and keep learning, the path is clear."
 responsibilities:
   - "Assist service technicians and foremen on commercial electrical calls and projects"

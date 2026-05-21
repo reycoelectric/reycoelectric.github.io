@@ -41,7 +41,7 @@ operations_hire:
 openings_section:
   label: "Open Positions"
   headline: "Office & Professional Openings"
-  apply_label: "Apply on Indeed →"
+  apply_label: "Apply →"
   view_label: "View Position →"
   no_openings_text: "No office roles posted right now — check the main careers page or reach out directly."
 

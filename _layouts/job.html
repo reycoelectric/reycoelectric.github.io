@@ -105,9 +105,9 @@ layout: default
       <!-- Apply CTA -->
       <div class="bg-reyco-red-50 border border-reyco-red-200 p-5 sticky top-24">
         <h3 class="text-base font-bold text-stone-800 mb-4">{{ ui.sidebar.cta_headline }}</h3>
-        {% if page.indeed_url %}
-        <a href="{{ page.indeed_url }}" target="_blank" rel="noopener noreferrer"
-           class="btn-primary text-sm w-full text-center block mb-4">{{ ui.sidebar.apply_indeed }}</a>
+        {% if page.apply_url %}
+        <a href="{{ page.apply_url }}" target="_blank" rel="noopener noreferrer"
+           class="btn-primary text-sm w-full text-center block mb-4">{{ ui.sidebar.apply }}</a>
         {% else %}
         <a href="{{ '/contact/' | relative_url }}" class="btn-primary text-sm w-full text-center block mb-4">{{ ui.sidebar.get_in_touch }}</a>
         {% endif %}

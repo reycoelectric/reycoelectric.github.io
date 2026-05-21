@@ -130,9 +130,9 @@ benefits, and a clear path from Helper through Mechanic, then two senior field t
           <a href="{{ job.url | relative_url }}"
             class="text-sm font-bold text-reyco-red-700 hover:text-reyco-red-600">{{
             copy.openings_section.view_details_label }}</a>
-          {% if job.indeed_url %}
-          <a href="{{ job.indeed_url }}" target="_blank" rel="noopener noreferrer"
-            class="btn-primary text-xs px-4 py-2">{{ copy.openings_section.apply_indeed_label }}</a>
+          {% if job.apply_url %}
+          <a href="{{ job.apply_url }}" target="_blank" rel="noopener noreferrer"
+            class="btn-primary text-xs px-4 py-2">{{ copy.openings_section.apply_label }}</a>
           {% endif %}
         </div>
       </div>

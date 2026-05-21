@@ -44,7 +44,7 @@ openings_section:
   headline: "Current Openings"
   no_openings_text: "No positions posted right now — check back soon or reach out directly."
   view_details_label: "View Details"
-  apply_indeed_label: "Apply on Indeed →"
+  apply_label: "Apply →"
   footer_text: "Don't see the right role? We're always interested in strong people."
   contact_cta: { label: "Get in touch →", url: "/contact/" }
 

@@ -5,7 +5,7 @@ type: "Full-time"
 level: "Estimating"
 track: "office"
 active: true
-indeed_url: "https://www.indeed.com/cmp/reyco-electrical-services"
+apply_url: "https://app.dover.com/apply/Reyco%20Electrical%20Services,%20LLC/d0818cd9-ffcc-427b-8b40-0172c1fcf79c"
 summary: "Reyco bids a steady volume of commercial and federal work across the DC metro. We need an Estimator who can own a bid from drawing review through proposal delivery — not someone who hands off at takeoff. You'll work directly with the Chief Estimator and ownership, and your number is the number we go to market with."
 responsibilities:
   - "Perform takeoffs from drawings, specifications, addenda, and bid documents"
