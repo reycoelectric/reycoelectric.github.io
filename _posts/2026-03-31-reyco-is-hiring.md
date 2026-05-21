@@ -47,4 +47,4 @@ We're not going to tell you it's perfect. We're a growing company, and growing c
 
 ## How to Apply
 
-We review every application. [Visit our careers page](/careers/) to see current openings and submit your information. If you have questions before applying, call us at [{{ site.phone }}](tel:{{ site.phone_link }}) and ask for someone in the office.
+We review every application. [View current openings](https://app.dover.com/jobs/reycoelectric) and submit your information online. If you have questions before applying, call us at [{{ site.phone }}](tel:{{ site.phone_link }}) and ask for someone in the office.

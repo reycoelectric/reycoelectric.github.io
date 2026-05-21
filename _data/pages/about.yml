@@ -60,4 +60,4 @@ footer_cta:
   headline: "Ready to work with us?"
   subhead: "Whether you need service today or want to join our team, we'd like to hear from you."
   cta1: { label: "Request Service →", url: "/contact/" }
-  cta2: { label: "See Open Positions →", url: "/careers/" }
+  cta2: { label: "See Open Positions →", url: "https://app.dover.com/jobs/reycoelectric" }

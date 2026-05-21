@@ -75,5 +75,5 @@ retention_section:
 footer_cta:
   headline: "Ready to build something?"
   subhead: "We're growing and we're building out the team to match."
-  cta1: { label: "See Open Positions →", url: "/careers/office/#openings" }
+  cta1: { label: "See Open Positions →", url: "https://app.dover.com/jobs/reycoelectric" }
   cta2: { label: "Why Reyco? →", url: "/careers/why-reyco/" }

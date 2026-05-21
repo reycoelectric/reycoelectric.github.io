@@ -48,7 +48,7 @@ subhead=copy.hero.subhead
         <p>{{ copy.training_growth.text2 }}</p>
         <p>{{ copy.training_growth.text3 }}</p>
       </div>
-      <a href="{{ copy.training_growth.cta.url | relative_url }}" class="btn-primary mt-6 inline-block">{{
+      <a href="{{ copy.training_growth.cta.url | relative_url }}" {% if copy.training_growth.cta.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %} class="btn-primary mt-6 inline-block">{{
         copy.training_growth.cta.label }}</a>
     </div>
     <div class="h-72 overflow-hidden">

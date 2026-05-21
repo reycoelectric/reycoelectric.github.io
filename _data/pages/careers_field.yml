@@ -58,5 +58,5 @@ openings_section:
 footer_cta:
   headline: "Ready to join the team?"
   subhead: "Competitive pay, real benefits, and a clear path up through Mechanic, then a senior field role in service or in the field (same level, different job)."
-  cta1: { label: "See Open Positions →", url: "/careers/field/#openings" }
+  cta1: { label: "See Open Positions →", url: "https://app.dover.com/jobs/reycoelectric" }
   cta2: { label: "Why Reyco? →", url: "/careers/why-reyco/" }

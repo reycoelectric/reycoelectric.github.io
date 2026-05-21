@@ -23,7 +23,7 @@ benefits, and a clear path from Helper through Mechanic, then two senior field t
           {{ copy.hero.subhead }}
         </p>
         <div class="flex flex-col sm:flex-row gap-3">
-          <a href="{{ copy.hero.cta1.url | relative_url }}" class="btn-brand">{{ copy.hero.cta1.label }}</a>
+          <a href="{{ copy.hero.cta1.url | relative_url }}" {% if copy.hero.cta1.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %} class="btn-brand">{{ copy.hero.cta1.label }}</a>
           <a href="{{ copy.hero.cta2.url | relative_url }}" class="btn-secondary">{{ copy.hero.cta2.label }}</a>
         </div>
       </div>
@@ -127,13 +127,12 @@ benefits, and a clear path from Helper through Mechanic, then two senior field t
           </div>
         </div>
         <div class="flex items-center gap-3 shrink-0">
-          <a href="{{ job.url | relative_url }}"
+          {% assign job_apply_url = job.apply_url | default: 'https://app.dover.com/jobs/reycoelectric' %}
+          <a href="{{ job_apply_url }}" target="_blank" rel="noopener noreferrer"
             class="text-sm font-bold text-reyco-red-700 hover:text-reyco-red-600">{{
             copy.openings_section.view_details_label }}</a>
-          {% if job.apply_url %}
-          <a href="{{ job.apply_url }}" target="_blank" rel="noopener noreferrer"
+          <a href="{{ job_apply_url }}" target="_blank" rel="noopener noreferrer"
             class="btn-primary text-xs px-4 py-2">{{ copy.openings_section.apply_label }}</a>
-          {% endif %}
         </div>
       </div>
       {% endfor %}
