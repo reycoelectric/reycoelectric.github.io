@@ -98,6 +98,8 @@ subhead=copy.hero.subhead
           {{ copy.form.submit_label }}
         </button>
 
+        <p id="contact-form-status" class="hidden text-sm font-semibold text-reyco-red-700" role="status" aria-live="polite"></p>
+
         <p class="text-xs text-stone-400">
           {{ copy.form.footer_text }} <a href="tel:{{ site.phone_link }}"
             class="font-bold text-stone-600 hover:text-reyco-red-700">{{ site.phone }}</a>
@@ -111,6 +113,8 @@ subhead=copy.hero.subhead
         var serviceSelect = document.getElementById("service_needed");
         var routingDestination = document.getElementById("routing_destination");
         var subjectField = document.getElementById("contact-subject");
+        var statusMessage = document.getElementById("contact-form-status");
+        var submitButton = form ? form.querySelector("button[type='submit']") : null;
 
         if (!form || !serviceSelect) {
           return;
@@ -118,6 +122,8 @@ subhead=copy.hero.subhead
 
         var serviceValues = (form.dataset.serviceValues || "").split("||").filter(Boolean);
         var siteHost = "{{ site.url | remove: 'https://' | remove: 'http://' }}";
+        var thankYouUrl = "{{ '/thank-you/' | relative_url }}";
+        var submitLabel = submitButton ? submitButton.textContent : "";
 
         function updateFormRouting() {
           var isServiceRequest = serviceValues.indexOf(serviceSelect.value) !== -1;
@@ -136,8 +142,67 @@ subhead=copy.hero.subhead
           }
         }
 
+        function setSubmitting(isSubmitting) {
+          if (!submitButton) {
+            return;
+          }
+
+          submitButton.disabled = isSubmitting;
+          submitButton.textContent = isSubmitting ? "Sending..." : submitLabel;
+        }
+
+        function showSubmissionError(message) {
+          if (!statusMessage) {
+            return;
+          }
+
+          statusMessage.textContent = message;
+          statusMessage.classList.remove("hidden");
+        }
+
         serviceSelect.addEventListener("change", updateFormRouting);
-        form.addEventListener("submit", updateFormRouting);
+        form.addEventListener("submit", function (event) {
+          updateFormRouting();
+
+          if (!window.fetch || !window.FormData) {
+            return;
+          }
+
+          event.preventDefault();
+          setSubmitting(true);
+
+          if (statusMessage) {
+            statusMessage.textContent = "";
+            statusMessage.classList.add("hidden");
+          }
+
+          fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: {
+              Accept: "application/json"
+            }
+          }).then(function (response) {
+            if (response.ok) {
+              window.location.href = thankYouUrl;
+              return;
+            }
+
+            return response.json().catch(function () {
+              return null;
+            }).then(function (data) {
+              var errors = data && data.errors ? data.errors : [];
+              var message = errors.length
+                ? errors.map(function (error) { return error.message; }).join(" ")
+                : "Sorry, your request could not be sent. Please call us directly.";
+
+              throw new Error(message);
+            });
+          }).catch(function (error) {
+            showSubmissionError(error.message || "Sorry, your request could not be sent. Please call us directly.");
+            setSubmitting(false);
+          });
+        });
         updateFormRouting();
       }());
     </script>
