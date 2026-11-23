@@ -6,6 +6,8 @@ phone: "(301) 843-1848"
 phone_link: "3018431848"
 address: "7700 Leonardtown Rd, Hughesville, MD 20637"
 # Keep query in sync with address (Google Maps place search)
+# Google Business Profile share link (shown in footer)
+google_business_url: "https://share.google/duvjRasUQI2mMncCv"
 address_google_maps_url: "https://www.google.com/maps/search/?api=1&query=7700+Leonardtown+Rd%2C+Hughesville%2C+MD+20637"
 service_area: "Washington DC, Maryland & Virginia"
 founded: "2004"

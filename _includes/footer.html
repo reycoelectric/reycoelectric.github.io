@@ -37,6 +37,7 @@
           <a href="{{ '/safety/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ ui.safety_label }}</a>
           <a href="{{ '/service-area/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ ui.service_area_label }}</a>
           <a href="{{ '/blog/' | relative_url }}" class="block text-sm hover:text-white transition-colors">{{ ui.blog_label }}</a>
+          {% if site.google_business_url %}<a href="{{ site.google_business_url }}" target="_blank" rel="noopener noreferrer" class="block text-sm hover:text-white transition-colors">Find us on Google</a>{% endif %}
         </div>
       </div>
 
