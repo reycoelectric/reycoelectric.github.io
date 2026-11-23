@@ -25,7 +25,7 @@ The site is built into the `_site/` directory. This build uses the default `base
 The site is configured to work at the root of a domain (e.g., `https://reycoelectric.github.io/` or `https://reycoelectric.com`).
 
 ### 1. Configuration in `_config.yml`
-- **`url`**: The absolute domain (e.g., `https://reycoelectric.github.io`). Used for canonical URLs and SEO tags.
+- **`url`**: The absolute domain (production: `https://www.reycoelectric.com`, matching `CNAME`). Used for canonical URLs and SEO tags.
 - **`baseurl`**: The path prefix. Set to `""` for root-level hosting.
 
 ### 2. Local Development

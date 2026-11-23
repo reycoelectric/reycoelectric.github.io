@@ -20,7 +20,7 @@ health_benefit: "100%"
 # For local dev at root, this is overridden in _config_dev.yml
 baseurl: ""
 
-url: "https://reycoelectric.github.io"
+url: "https://www.reycoelectric.com"
 
 # Build
 markdown: kramdown
