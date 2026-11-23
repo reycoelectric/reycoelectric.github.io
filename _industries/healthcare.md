@@ -1,6 +1,7 @@
 ---
 title: "Healthcare & Critical Facilities"
 slug: healthcare
+description: "Commercial electrical for hospitals, clinics and critical facilities in DC, Maryland & Virginia. Generator backup, UPS and code-compliant critical power from a team with an EMR of 0.81."
 order: 5
 nav_label: "Healthcare & Critical Facilities"
 accent: "border-red-400"

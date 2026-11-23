@@ -1,6 +1,7 @@
 ---
 title: "Retail"
 slug: retail
+description: "Electrical for retail stores in DC, Maryland & Virginia: store buildouts, signage and lighting circuits, and ongoing 24/7 service for single and multi-location operators."
 order: 4
 nav_label: "Retail"
 accent: "border-green-500"

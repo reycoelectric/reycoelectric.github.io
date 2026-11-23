@@ -1,6 +1,7 @@
 ---
 title: "Restaurants & QSR"
 slug: restaurants
+description: "24/7 electrical service for restaurants and QSR in DC, Maryland & Virginia. Kitchen power, parking lot lighting and brand-standard buildouts delivered on schedule."
 order: 1
 nav_label: "Restaurants & QSR"
 accent: "border-orange-400"

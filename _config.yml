@@ -67,6 +67,8 @@ defaults:
   - scope:
       path: ""
     values:
+      seo:
+        type: WebPage
       image:
         path: "/assets/og-default.png"
         width: 1200
@@ -97,6 +99,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      seo:
+        type: BlogPosting
       permalink: /blog/:title/
 
 plugins:

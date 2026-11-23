@@ -1,6 +1,7 @@
 ---
 title: "Institutional"
 slug: government
+description: "Electrical contractor for schools, government and institutional buildings in DC, Maryland & Virginia. EMR 0.81, badged access and the safety record institutions require."
 order: 3
 nav_label: "Institutional"
 accent: "border-stone-600"

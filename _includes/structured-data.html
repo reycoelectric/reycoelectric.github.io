@@ -1,0 +1,88 @@
+{%- comment -%}
+  JSON-LD structured data. Included from head.html.
+  - Every page: ElectricalContractor (LocalBusiness) describing the company.
+  - Service pages: Service. Job pages: JobPosting (active roles only).
+  Business data comes from _config.yml so there is one source of truth.
+{%- endcomment -%}
+{%- assign p = site.phone_link -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ElectricalContractor",
+  "@id": "{{ '/#organization' | absolute_url }}",
+  "name": "Reyco Electrical Services",
+  "legalName": "Reyco Electrical Services, LLC",
+  "url": "{{ '/' | absolute_url }}",
+  "logo": "{{ '/assets/apple-touch-icon.png' | absolute_url }}",
+  "image": "{{ '/assets/og-default.png' | absolute_url }}",
+  "description": {{ site.description | jsonify }},
+  "email": {{ site.email | jsonify }},
+  "telephone": "+1-{{ p | slice: 0, 3 }}-{{ p | slice: 3, 3 }}-{{ p | slice: 6, 4 }}",
+  "foundingDate": {{ site.founded | jsonify }},
+  "numberOfEmployees": { "@type": "QuantitativeValue", "value": {{ site.employees }} },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7700 Leonardtown Rd",
+    "addressLocality": "Hughesville",
+    "addressRegion": "MD",
+    "postalCode": "20637",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Washington, DC" },
+    { "@type": "State", "name": "Maryland" },
+    { "@type": "State", "name": "Virginia" }
+  ],
+  "hasMap": "https://www.google.com/maps?cid=12533012803753982474",
+  "sameAs": [
+    "https://www.google.com/maps?cid=12533012803753982474"
+  ]
+}
+</script>
+{%- if page.collection == 'services' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ page.title | jsonify }},
+  "serviceType": {{ page.title | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "provider": { "@id": "{{ '/#organization' | absolute_url }}" },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Washington, DC" },
+    { "@type": "State", "name": "Maryland" },
+    { "@type": "State", "name": "Virginia" }
+  ]
+}
+</script>
+{%- endif %}
+{%- if page.collection == 'job_openings' and page.active %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": {{ page.title | jsonify }},
+  "description": {{ page.summary | default: site.description | jsonify }},
+  "datePosted": "{{ page.date_posted | default: site.time | date: '%Y-%m-%d' }}",
+  "employmentType": "{% if page.type contains 'Part' %}PART_TIME{% else %}FULL_TIME{% endif %}",
+  "directApply": true,
+  "url": "{{ page.url | absolute_url }}",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Reyco Electrical Services",
+    "sameAs": "{{ '/' | absolute_url }}",
+    "logo": "{{ '/assets/apple-touch-icon.png' | absolute_url }}"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hughesville",
+      "addressRegion": "MD",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+{%- endif %}

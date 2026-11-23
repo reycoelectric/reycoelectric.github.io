@@ -1,6 +1,7 @@
 ---
 title: "Multifamily & Residential"
 slug: multifamily
+description: "Electrical service for multifamily properties in DC, Maryland & Virginia: panel upgrades, EV charging, risers and common-area lighting for property managers."
 order: 2
 nav_label: "Multifamily & Residential"
 accent: "border-blue-400"
